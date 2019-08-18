@@ -1,0 +1,72 @@
+﻿
+@charset "utf-8";
+/* CSS by TeckStack.com */
+
+.textbox {
+        position: relative;
+    width: 300px;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: normal;
+    background: #FFF;
+    margin: 5px 0px 0px 0px;
+    color: #7c7c7c;
+    line-height: 1.4;
+    padding: 6px 2px;
+    outline: none;
+    transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    border: 1px #CCC solid;
+    box-shadow: 0 1px rgba(34, 25, 25, 0.2) inset, 0 1px #fff;
+}
+.loginform { background: #eee; padding: 10px;height: 245px; }
+.loginform p{ padding: 5px 0;}
+.loginform .title{ min-width: 100px; display: inline-block; }
+
+.loginpopup{ padding: 10px 10px 35px; background: #fff; z-index: 999;margin-top: 75px; display: none; position: absolute; right: 0; }
+
+.loginbutton {
+     width: 100px;
+    height: 45px;
+    cursor: pointer;
+    padding: 0px 0px 5px 0px;
+    background: #327ad4;
+    color: #FFF;
+    font-size: 18px;
+    font-family: Tahoma;
+    border: none !important;
+    margin: 0px 0px 0px 10px;
+}
+.loginbutton :hover {
+      background-color: #e10000;
+}
+.close{ font-weight: bold; color: #F00; float: right; position: absolute;  right: 10px; }
+
+/** start main code for 26 jan sticky banner**/
+
+.stickybanner{
+	position: absolute;
+	width: 200px;
+	height: 400px;
+	background:url(../images/26jan-popup.jpg);
+	bottom: 20px;
+	z-index:1;
+}
+
+#stickybanner_right{
+	right: 5px;
+}
+
+.stickyzindex{
+	z-index: 999;
+}
+
+.stickybanner a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border:0;
+	text-indent: -9999px
+}
+/** end main code for 26 jan sticky banner**/

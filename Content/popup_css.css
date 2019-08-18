@@ -1,0 +1,145 @@
+a{ text-decoration: none;}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 100;
+    display: none;
+}
+
+.main_box_popup a {
+    text-decoration: none;
+}
+
+.popup {
+    width: 772px;
+    margin: 0 auto;
+    display: none;
+    z-index: 101;
+}
+
+.main_box_popup {
+    min-width: 772px;
+    min-height: 361px;
+    margin: 15px auto;
+    background-image: url(../images/ask-a-doctor-popup.png);
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 103;
+    box-shadow: 0 2px 5px #000;
+}
+
+    .main_box_popup p {
+        clear: both;
+        color: #555555;
+        text-align: justify;
+    }
+
+        .main_box_popup p a {
+            color: #d91900;
+            font-weight: bold;
+        }
+
+    .main_box_popup .x {
+        float: right;
+        height: 35px;
+        left: -3px;
+        position: relative;
+        top: 3px;
+        width: 34px;
+    }
+
+        .main_box_popup .x:hover {
+            cursor: pointer;
+        }
+
+#trans {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: none;
+    z-index: 9999999999999;
+}
+
+#box {
+    width: 100%;
+    height: auto !important;
+    position: absolute;
+    display: none;
+    border: 2px solid #C00;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: justify;
+    color: #FFFFFF;
+    margin: 10px 0px 0px 0px;
+    background-color: #eeefef;
+    z-index: 9999999999999;
+}
+
+    #box img {
+        width: 100%;
+        height: 200px;
+    }
+
+#close {
+    width: 32px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    background: url("../../file/E_/bodyonloadpopup/images/close.png");
+}
+
+.button_popup {
+  font-family:tahoma,verdana !important;
+    font-size: 24px;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none !important;
+    margin: 242px  0px 0px 336px;
+   padding: 0 10px;
+    font-weight: bold;
+    width: 362px;
+    height: 67px;
+    display: block;
+    line-height: 70px;
+    background-color: #e10000;
+   border-bottom: 6px solid  #AD0808;
+    z-index: 9999;
+   position: fixed;
+}
+.button_popup1{
+
+       z-index: 9999;
+    position: relative;
+     font-family:tahoma,verdana !important;
+    width: 225px;
+    border-radius: 20px;
+     text-decoration: none;
+    margin: 350px;
+    margin-left: 200px;
+    padding: 0 20px;
+    font-weight: bold;
+    background-color: #005ac4;
+    border-bottom: 4px solid #005ac4;
+
+}
+.button_popup:hover {
+      text-decoration: none;
+       background-color:  #005ac4;
+    border-bottom: 6px solid  #064DA0;
+}
+
+.term_condition{margin: 315px 0px 0px 422px; padding:0px 0px 0px 0px; z-index:1000;font-family: Tahoma;position: fixed;}
+.underline_link{ margin:0px;padding:0px;text-decoration: underline;color: #005ac4;}

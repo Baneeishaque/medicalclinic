@@ -1,0 +1,64 @@
+
+html, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    
+}
+@font-face {
+	font-family: 'MYRIADPROREGULAR';
+	src: url('../ErrorPage/HttpError404.html');
+	src: local('MYRIADPROREGULAR'), url('../ErrorPage/HttpError404.html') format('woff'), url('../ErrorPage/HttpError404.html') format('truetype');
+}
+
+.clear { clear:both;}
+
+/* Font downloaded from FontsForWeb.com */
+
+.wrapper_subscription_plan{ width:982px; height:410px; margin:0px auto ; padding:0px; }
+
+
+.health_subscription_plan_box_cover{width: 1150px; height:400px; margin:0px auto 0px ; padding:0px 0px 0px 0px; background-color:#fff;background-image:url(../images/Keys-to-Happy-Family.png); background-repeat:no-repeat;  }
+
+.health_subscription_plan_box_1{width:34%; height:400px; margin:0px 0px 0px 0px ; padding:0px 0px 0px 0px; border:0px solid #CCC;  float:left;  }
+
+.health_subscription_plan_box_2{    height: 500px;
+    width: 693px;margin:50px 0px 0px 20px ; background-color:#FFF; padding:0px 0px 0px 0px; border:1px solid #CCC; float:left;  -moz-box-shadow: 0 0 2px #888;
+-webkit-box-shadow: 0 0 2px#888;box-shadow: 0 0 2px #888;}
+
+
+
+
+.box_2_top_heading{ width:100%; height:auto; margin:0px ; padding:10px 0px 8px 0px;  border-bottom:1px solid #999; font-size:22px; text-align:center; font-weight:normal; color:#fff;background: #D00;line-height: 26px;}
+
+.normal_text2{width:100%; height:auto; margin:0px ; padding:2px 0px 5px 5px;   font-size:17px; text-align:left; font-weight:normal; color:#666;}
+.middle_content2{width:100%; height:auto; margin:0px ; padding:2px 0px 2px 5px;  font-size:14px;  font-weight:normal; color:#000;}
+.middle_content2 ul{ width:100%; margin:20px auto 0px !important ; padding:0px 0px 0px 55px; line-height:12px; }
+.middle_content2 ul li{ width:100%; margin:0px 0px 0px 0px ; padding:5px 0px 5px 0px; }
+.radio_box_cover{width:90%; height:auto; margin:5px auto 0px !important;  padding:2px 0px 2px 5px;   font-size:14px; text-align:justify ;  font-weight:normal; color:#000;}
+.normal_text{font-size:17px; margin:0px auto 0px; padding:0px;}
+
+.nav_content{margin: 10px 20px 0px 50px;
+padding: 0px;
+width: 211px;
+background: url('../images/menu_bg.png') repeat-x scroll left top #1266CE;
+height: 45px;
+float: right;}
+.nav_content ul{margin:0px; padding:0px; list-style-type:none; }
+.nav_content ul li{ margin:0px; padding:0px; list-style-type:none; font-family:Tahoma, Geneva, sans-serif; font-size:20px; color:#FFF; font-weight:normal;float:left; background:url(../images/divider.png) center right  no-repeat; line-height:40px; text-align:center !important }
+.nav_content ul li a{ margin:0px auto 0px;  padding:0px 40px; height:45px; display:block; color:#FFF; text-decoration:none; list-style-type:none !important; text-align:center !important;} 
+.nav_content ul li a:hover{ background:#e10000;   background-color: #e10000; -webkit-transition: background-color 1000ms linear;  -moz-transition: background-color 1000ms linear;  -o-transition: background-color 1000ms linear; behavior: url(../ErrorPage/HttpError404.html);  -ms-transition: background-color 1000ms linear;  transition: background-color 1000ms linear; behavior: url(../ErrorPage/HttpError404.html);}
+

@@ -1,0 +1,56 @@
+ ol, ul {list-style:none;}table td {padding:0;border:none;border-collapse:collapse;}
+ html, body {width:100%; padding:0; margin:0; }
+ img{max-width:100%;}
+ .clearfix{ margin:0px; padding:0px; clear:both;}
+ html { margin:0px; padding:0px;}
+.wrapper_traditional_healthcare
+{
+	width:982px; height:1100px; margin:0px auto 0px !important; padding:0px; background-color:#fff;
+}
+.header_traditional_healthcare
+{ width:100%; height:100px; margin:0px; padding:0px;background-color:#fff;	
+}
+.heading_traditional_healthcare
+{ width:80%; height:auto; margin:0px auto 0px !important; text-align:center; padding:27px 0px 0px 0px; position:relative; color:#005aca !important; font-size:31px; font-family:Tahoma, Geneva, sans-serif; font-weight:Regular;
+}
+.normal_heading_traditional_healthcare
+{
+ width:80%; height:auto; text-align:center; margin:12px auto 0px !important; position:relative; padding:0px; color:#e5112c !important; font-size:20px; font-family:Tahoma, Geneva, sans-serif; font-weight:normal;	
+}
+.header_bottom_image{ width:75%; height:30px; margin:5px auto 0px; padding:0px; border-bottom: 1px solid #dedede;}
+.cover_traditional_healthcare{width:75%; height:830px; margin:0px auto 0px !important; padding:0px;	}
+.cover_traditional_top{width:100%; height:85px;  padding:0px; position:relative; border-bottom: 1px solid #dedede; margin: 0px 0px 10px 0px;}
+.cover_traditional_top_left{width:50%; height:50px; margin: 29px 0px 0px 0px; padding:0px; position:relative; color:#e5112c; float:left; font-size:20px; font-family:Tahoma, Geneva, sans-serif; font-weight:Regular;}
+.cover_traditional_top_right{width:50%; height:50px; margin:0px; padding:0px; position:relative; float:left; }
+.cover_traditional_top_right_logo{width:200px; height:50px;  margin: 29px 0px 0px 35px; padding:0px; position:relative; color:#e5112c; float:left; font-size:20px; font-family:Tahoma, Geneva, sans-serif; font-weight:Regular;}
+
+.cover_traditional_bottom{width:100%; height:100px;  padding:0px; position:relative; border-bottom: 1px solid #dedede; margin: 0px 0px 10px 0px;}
+.cover_traditional_bottom_left{width:42%; height:100px;margin:0px 40px 0px 0px; padding:0px; position:relative;  float:left; }
+.cover_traditional_bottom_left_icon{width:80px; height:50px; margin:0px; padding:0px; position:relative;  float:left; }
+.cover_traditional_bottom_left_text{width:200px; height:100px; margin:0px; padding:5px; word-spacing: 1px; letter-spacing: 2px; font-size:14px; color:#8c816d !important; font-family:Tahoma, Geneva, sans-serif; position:relative; float:left; text-align:left;  letter-spacing:normal;}
+
+.cover_traditional_bottom_right{width:42%; height:100px; margin:0px 0px 0px 50px; padding:0px; position:relative; float:left; }
+
+
+.cover_traditional_bottom_writt{width:100%; height:120px; padding:0px; position:relative; border-bottom: 1px solid #dedede; margin: 0px 0px 10px 0px;}
+.cover_traditional_bottom_left_writt{width:54.5%; height:100px;margin:0px 0px 0px 0px; padding:0px; position:relative;  float:left; }
+.cover_traditional_bottom_left_icon_writt{width:80px; height:50px; margin:0px; padding:0px; position:relative;  float:left; }
+.cover_traditional_bottom_left_text_writt{width:255px; height:100px; margin:0px; padding:5px; position:relative; word-spacing: 1px; font-size:14px; color:#8c816d !important; font-family:Tahoma, Geneva, sans-serif; float:left;text-align:left;  letter-spacing:normal;}
+
+.cover_traditional_bottom_right_writt{width:42%; height:100px; margin:0px 0px 0px 0px; padding:0px; position:relative; float:left; }
+.cover_traditional_bottom_right_icon_writt{width:80px; height:50px; margin:0px; padding:0px; position:relative;  float:left; }
+.cover_traditional_bottom_right_text_writt{width:219px; height:100px; margin:0px; padding:5px; position:relative;  float:left; text-align:left; letter-spacing:normal; font-size:14px; font-family:Tahoma, Geneva, sans-serif;}
+
+
+.cover_traditional_middle{width:100%; height:70px; margin:0px; padding:0px; position:relative;border-bottom: 1px solid #dedede; margin: 0px 0px 10px 0px;}
+.cover_traditional_middle_left{width:50%; height:30px; margin:0px; padding:20px 0px 0px 0px; position:relative; color:#e5112c; float:left; font-size:20px; font-family:Century; font-weight:normal;}
+.cover_traditional_middle_right{width:50%; height:100px; margin:0px; padding:0px; position:relative; float:left; }
+
+.cover_traditional_bottom_heading{width:100%; height:65px !important; margin:0px 0px 30px 0px !important; padding:0px 0px 0px 0px !important; position:relative ; border-bottom: 1px solid #dedede; }
+.cover_traditional_bottom_headinginner{width:100%; height:20px; margin:0px 0px 0px 0px; padding:10px 0px 0px 0px !important; position:relative; color:#0055bf; text-align:center; font-size:15.5px; font-family:Tahoma, Geneva, sans-serif; font-weight:normal;}
+
+.cover_traditional_footer_heading{width:100%; height:140px !important; margin:0px 0px 0px 0px !important; padding:0px 0px 0px 0px !important; position:relative ; background-color:#fff;}
+.cover_traditional_footer_heading_in{width:71%; height:auto;    line-height: 25px; margin:0px auto 0px !important; text-align:center; padding:10px 0px 0px 0px !important; position:relative; color:#78797A; font-size:22px; font-family:Tahoma, Geneva, sans-serif; font-weight:Regular;}
+
+.traditional_footer_horizentalline{width:70%; height:1px !important; margin:0px auto 0px !important; padding:0px 0px 0px 0px !important; position:relative ; background-color:#EFECEC;}
+.heading_text{ padding: 0px; font-size:14px; color:#000000 !important; font-family:Tahoma, Geneva, sans-serif;}

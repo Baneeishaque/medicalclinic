@@ -1,0 +1,125 @@
+﻿/*@keyframes neonspark {
+    0% {
+        box-shadow: 0 0 10px rgba(255,255,255,255);
+    }
+
+    20% {
+        box-shadow: 0 0 10px rgba(255,255,255,255), 0 0 20px rgba(255,255,255,255);
+    }
+
+    30% {
+        box-shadow: 0 0 20px rgba(255,255,255,255), 0 0 30px rgba(255,255,255,255);
+    }
+
+    40% {
+        box-shadow: 0 0 30px rgba(255,255,255,255), 0 0 40px rgba(255,255,255,255);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(255, 255, 255, 255), 0 0 50px rgba(255, 255, 255, 255);
+    }
+
+    60% {
+        box-shadow: 0 0 50px rgba(255, 255, 255, 255), 0 0 40px rgba(255, 255, 255, 255);
+    }
+
+    70% {
+        box-shadow: 0 0 40px rgba(255, 255, 255, 255), 0 0 30px rgba(255, 255, 255, 255);
+    }
+
+    80% {
+        box-shadow: 0 0 30px rgba(255,255,255,255), 0 0 20px rgba(255,255,255,255);
+    }
+
+    90% {
+        box-shadow: 0 0 20px rgba(255,255,255,255), 0 0 10px rgba(255,255,255,255);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 255), 0 0 0px rgba(255, 255, 255, 255);
+    }
+}
+
+
+#neon-tubing {
+    color: rgba(255,255,255,255);
+    font-family: tahoma;
+     font-size: 27px;
+}
+
+#neon-tubing {
+    animation: neonspark 1s 3s forwards;
+    animation: neonspark 4s 3s infinite;
+    box-shadow: 0 0 20px rgba(255,255,255,255), 0 0 40px rgba(255,255,255,255), 0 0 60px rgba(255,255,255,255), 0 0 80px rgba(255,255,255,255);
+}*/
+
+
+
+
+.buttondemo {
+    width: 345px;
+    height: 70px;
+	position:absolute;left:35%;
+    border-radius: 50px;
+    border: 1px  #e10000 solid;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #e10000;
+    font-weight: bold;
+
+}
+
+.hoverdemo {
+    text-decoration: none;
+    color: #fff;
+    width: 345px;
+    height: 70px;
+    padding: 20px 20px 0px 0px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+    .hoverdemo :hover {
+        /*width: 300px;
+        height: 70px;
+        padding: 20px 20px 0px 20px;*/
+         border: 1px  #0e63cd solid;
+        text-align: center;
+        background-color: #0e63cd;
+        font-weight: bold;
+
+    }
+
+.buttonSubscription {
+    width: 345px;
+    height: 70px;
+        font-size: 25px;
+    border-radius: 50px;
+    border: 1px  #e10000 solid;
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+    background-color: #e10000;
+    font-weight: bold;
+}
+
+.hoverSubscription {
+    text-decoration: none;
+    color: #fff;
+    width: 345px;
+    height: 70px;
+    padding: 20px 20px 0px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+
+    .hoverSubscription :hover {
+        /*width: 300px;
+        height: 70px;
+        padding: 20px 20px 0px 20px;*/
+                border: 1px  #0e63cd solid;
+        text-align: center;
+        background-color: #0e63cd;
+        font-weight: bold;
+    }

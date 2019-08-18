@@ -1,0 +1,122 @@
+﻿#content
+        {
+            float: right;
+            background-color: #FFFFFF;
+        }
+.clear2 {clear:both;}
+.mapper{}
+.fmapper{}
+.noborder{}
+.fnoborder{}
+.trans-bg { background:url(../images/transparent.png); height:1200px; width:100%; display:block}
+.symptopm
+{
+    width: 982px;
+    margin: 0 auto;
+}
+
+.symptopm_left {
+    width: 349px;
+    padding: 0px 0px;
+    float: left;
+}
+.symptopm_left h1 {font-size: 18px; color:#005aca; font-weight:normal; margin-top:27px; background:url(../images/com-head-bg.gif) right bottom no-repeat; padding-right:20px; float:left; }
+
+.symptopm_left_tour_btn {
+	width:86px; margin-top:10px;
+
+}
+.symptopm_left_tour_btn a{ display:none; background:#d3d3d3; color:#fff; font-weight:bold;
+height:34px; border-radius:10px; font-size:12px; text-align:center; text-decoration:none;width:86px; padding:4px; line-height:33px;}
+
+.symptopm_left_arrow_l {
+width:64px; margin-top:-80px; margin-left:40px;
+	
+}
+.symptopm_left_arrow_r {
+width:64px; margin-top:-70px; margin-left:230px;
+	
+}
+.symptopm_zoom_btnl {float:left; width:173px; text-align: right; margin-top:15px;}
+.symptopm_zoom_btnr {float:left; width:173px; text-align: left;margin-top:15px;}
+
+.symptopm_right {
+	width:633px; float:left;padding-bottom: 30px
+}
+.symptopm_right_info {
+	background:url(../images/info-icon.gif) left top no-repeat; padding:5px 10px 10px 40px; font-size:12px; margin-top:20px; line-height:21px;
+	}
+	
+.symptopm_right_info span {font-size:12px;}
+.symptopm_right h2 {font-size:14px; font-weight:bold;
+color:#000; margin-top:20px;}
+.symptopm_right h2 span {font-size:12px; font-weight:normal;}
+
+
+.symptopm_right_tags { margin-top:15px;}
+.symptopm_right_tags input{cursor: pointer;outline: none;border-radius: 10px;border: none;margin-left: 2px;margin-bottom: 3px;padding: 5px 8px;
+                           background: #999797;font-size: 11px;color: #fff;text-decoration: none;}
+.symptopm_right_tags input.blue {cursor: pointer;outline: none;border-radius: 10px;border: none;margin-left: 2px;margin-bottom: 3px;padding: 5px 8px;
+                                background: #0e63cd;font-size: 11px;color: #fff;text-decoration: none;}
+
+.symptopm_right_slide {height:182px; border:1px solid #ededed; margin-left:4px; float:left; background:url(../images/slider-bg.gif) repeat-x; font-size:12px; padding:0px 2px;}
+.symptopm_right_slide2 {height:162px; border:1px solid #ededed; margin-left:5px; float:left; background:url(../images/slider-bg.gif) repeat-x; font-size:12px; width:173px; padding:10px;}
+.symptopm_right_slide2 strong {font-size:14px;}
+
+
+.symptopm_right_slide2_btn { width:97px; margin:10px 10px 0px 40px}
+.symptopm_right_slide2_btn a{font-size:12px; font-weight:bold; color:#fff; background:#005aca; width:77px; text-align:center; padding:10px; display:block; text-decoration:none;}
+
+
+
+
+.symptom_sort { background:#0e63cd;}
+
+.symptom_sort div.age { width:181px; border-right:3px solid #fff; float:left; padding:15px; color:#fff;}
+.symptom_sort div.gender{ width:171px; border-right:3px solid #fff; float:left; padding:15px; color:#fff;}  
+
+.symptom_sort div.search { width:194px; float:left; padding:10px; color:#fff;} 
+
+.symptom_sort input.txt { color: black;border: 1px solid #93b5e0; width: 138px;height: 26px;}/*24-03-14*/
+
+.symptom-indicator { font-size:12px; margin-left:-82px;}
+.symptom-indicator img{ float:left; margin-right:10px; margin-top:-10px}
+.symptom-indicator span{ font-size:14px; font-style:italic; color:#e64242;}
+
+.savesearch { border-top:1px solid #e2e2e2; padding-top:20px; margin-left:5px; }
+.savesearch div.one { width:278px; color:#005aca; font-size:14px; font-weight:bold; float:left;}
+.savesearch div.one span {color:#000; font-size:12px; font-weight:normal;}
+.savesearch div.two { width:214px; margin-left:8px; background:url(../images/text-field-bg.gif) no-repeat top left; height:28px; font-size:12px;  padding:5px 10px; float: left}
+.savesearch div.two input {border:0px; background:none;color: black; width:230px;font-size: 14px;line-height: 14px;}
+
+.savesearch div.three { width:97px; height:32px;float:left; margin-left:10px;}
+.savesearch div.three a{font-size:12px; font-weight:bold; color:#fff; background:#005aca; width:77px; text-align:center; padding:8px; display:block; text-decoration:none;}
+
+.symptom_mid {width:380px; margin-right:17px; float:left; font-size: 12px;text-align: justify;}
+	
+.symptom_mid_tools { font-size:10px; text-align:right; padding:5px 0px; color:#000;}
+.symptom_mid_tools a {color:#000;}
+
+.symptom_mid h1 {font-size:14px; color:#000; padding:8px 0px;}
+
+.symptom_mid_line { border-bottom:1px solid #e2e2e2; margin:10px 0px;}
+
+.video_thumbnail { padding:7px; background :url(../images/video-img-border.png) repeat-x top; margin-right:10px; float:left;}
+
+
+.symptom_right_small {width:233px; float:left; padding-top:24px;}
+
+.symptom_right_small div.inside {background:#f1f1f1 url(../images/right-module-bg.png) repeat-x top; border:1px solid #ededed; padding:10px 6px;}
+
+.symptom_right_small div.inside h1 {color:#005aca; font-size:14px; margin-bottom:15px;} 
+.symptom_right_small div.column {width:89px; font-size:12px; float:left; margin-bottom:12px;}
+.symptom_right_small div.column2 { clear:both; font-size:12px; }
+
+.symptom_right_small div.column2 a { color:#0066cc; text-decoration:none;}
+.symptom_right_small div.column2 a.color { color:#e00000; text-decoration:none;}
+
+.symptom_right_small_btn {width:95px; height:27px; line-height:27px; font-weight:bold; font-size:12px; margin-left:123px; background:#005aca; border:1px solid #92b6e3; text-align:center;}
+.symptom_right_small_btn a {color:#fff; display:block; text-decoration:none;}
+
+.symptom_right_small_search{width:221px; background: url(../images/symptom_right_small_textfield.png) no-repeat top left; height:28px; font-size:12px;padding: 5px 10px; float: left}
+.symptom_right_small_search input {border:0px; color:#000000 !important;background:none; width:207px;font-size: 14px;line-height: 18px;}

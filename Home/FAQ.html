@@ -1,0 +1,1110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html prefix="og:http://ogp.me/ns#" itemscope itemtype="http://schema.org/Product" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from www.icliniccare.com/Home/FAQ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Feb 2016 12:33:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="../favicon.ico" rel="shortcut icon" hreflang="en-us" type="image/x-icon" />
+    <meta name="google-site-verification" content="HNZ4ajCc_qbQ9uU2xqm3bNeNnz52GcgZT2k2EDgL16E" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8" />
+    <meta name="msvalidate.01" content="0115DEE5670E9B0C5999DD7007854BBB" />
+
+    <title></title>
+    <link href="../Content/cssbc8c.css?v=InJltDZ8bHen1D1USNEWkUld_x2v8aCeoa3XA2OLqN81" rel="stylesheet"/>
+
+    <script src="../bundles/modernizr70f4?v=eoxdJieroS4aKFRd6Ig4jp_oRSgXQeeG6hbHlkvv-EY1"></script>
+
+    <script src="../bundles/jquery53b1?v=Mr8z7cwRVicid8NnJliEmOE7FU6vgy1m3T3KGKT0ZA01"></script>
+
+    <link rel="author" href="https://plus.google.com/+icliniccareonlinedoctor" />
+    
+<script type="text/javascript" src="../Scripts/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.jcarousel.js"></script>
+    <script src="../Scripts/XSSValidate.js" type="text/javascript"></script>
+    <link href="../content/CouponCode_form.css" hreflang="en-us" type="text/css" rel="stylesheet" />
+    <!--[if IE ]>
+            <style type="text/css">
+                #searchtext{padding:0 4px !important;}   
+            </style>
+    <![endif]-->
+    <script type='text/javascript'>
+
+        //Check checkbox change of appointmentcode's checkbox
+        function redirectToVideoChat() {
+            window.location.href = '../doctor-video-call.html';
+        }
+        function appointmentcheckchange() {
+            if (document.getElementById('prehidden').value == 0) {
+                document.getElementById('consultappointmentcode').removeAttribute("disabled");
+                document.getElementById('videoconsult').style.backgroundColor = "#ec0505";
+                document.getElementById('prehidden').value = 1;
+            } else {
+                document.getElementById('prehidden').value = 0;
+                document.getElementById('videoconsult').style.backgroundColor = "#005aca";
+                document.getElementById('consultappointmentcode').setAttribute("disabled", "disabled");
+            }
+        }
+        function LoginForCorporate(url, credentials) {
+            var messageobj = document.getElementById('messageid');
+            messageobj.style.display = "";
+            $.ajax({
+                type: "Post",
+                url: url,
+                data: credentials,
+                contentType: "application/json; charset=utf-8",
+                success: function (msg) {
+                    if (msg.Message == "" || msg.Message == null) {
+                        if (msg.appointmentCode == "" || msg.appointmentCode == null) {
+                            if (msg.area == 'null' || msg.area == "" || msg.area == null) {
+                                window.location.href = "http://" + window.location.host + "/" + msg.controllername;
+                            } else {
+                                if (msg.viewname == "" || msg.viewname == null) {
+                                    window.location.href = "http://" + window.location.host + "/" + msg.area + "/" + msg.controllername;
+                                } else {
+                                    window.location.href = "http://" + window.location.host + "/" + msg.area + "/" + msg.controllername + "/" + msg.viewname;
+                                }
+                            }
+                        } else {
+                            window.location.href = "http://" + window.location.host + "/" + msg.area + "/" + msg.controllername + "/" + msg.viewname + "/" + msg.appointmentCode;
+                        }
+                    } else {
+                        messageobj.innerHTML = msg.Message;
+                    }
+                },
+                error: function (msg) {
+                    messageobj.innerHTML = "Please fill in proper values";
+                }
+            });
+        }
+        function LoginToVideoChat() {
+
+            var appointmentCode = document.getElementById('consultappointmentcode').value;
+
+            if (appointmentCode != "Appointment Code" && appointmentCode != null && appointmentCode != "") {
+                var appointmentCredentials = {
+                    appointmentCode: appointmentCode
+                };
+                var appointmentCodeJson = JSON.stringify(appointmentCredentials);
+                var url = '/iClinicCenters/Home/StartVideoChat';
+                LoginForCorporate(url, appointmentCodeJson);
+            } else {
+                jQuery.msgBox({
+                    title: "iClinic",
+                    content: "Please enter appointmentCode !",
+                    type: "info"
+                });
+            }
+        }
+    
+    </script>
+    
+    
+    <meta name="description" content="FAQ">
+    <meta name="keywords" content="FAQ">
+    <meta name="robot" content="index,follow">
+    <meta name="revisit-after" content="30">
+    <meta lang="en" />
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //checkSupportUserStatus();
+            //document.getElementById("docemailId").focus();
+            $(document).bind('keypress', pressed);
+        });
+        function pressed(e) {
+            if (e.keyCode === 13) {
+                LoginbtnClick();
+            }
+        }
+    </script>
+    <!--Start of Zopim Live Chat Script-->
+
+    <script type="text/javascript">
+        // Popup window code
+        function newPopup2(url) {
+            popupWindow2 = window.open(
+                url, 'popUpWindow2', 'height=403,width=296,left=10,top=10,resizable=no,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+        }
+    </script>
+
+    <script type="text/javascript">
+        window.$zopim || (function (d, s) {
+            var z = $zopim = function (c) { z._.push(c) }, $ = z.s =
+                d.createElement(s), e = d.getElementsByTagName(s)[0]; z.set = function (o) {
+                    z.set.
+                        _.push(o)
+                }; z._ = []; z.set._ = []; $.async = !0; $.setAttribute('charset', 'utf-8');
+            $.src = 'http://v2.zopim.com/?1z8u8gYrzoZpXC8ThHnOdDLUnmOuzkZX'; z.t = +new Date; $.
+                type = 'text/javascript'; e.parentNode.insertBefore($, e)
+        })(document, 'script');
+    </script>
+    <!--End of Zopim Live Chat Script-->
+
+    <script type="text/javascript">
+        setTimeout(function () {
+            var a = document.createElement("script");
+            var b = document.getElementsByTagName("script")[0];
+            a.src = document.location.protocol + "//dnn506yrbagrg.cloudfront.net/pages/scripts/0021/9354.js?" + Math.floor(new Date().getTime() / 3600000);
+            a.async = true; a.type = "text/javascript"; b.parentNode.insertBefore(a, b)
+        }, 1);
+    </script>
+
+    <script type="text/javascript">
+        var _mfq = _mfq || [];
+        (function () {
+            var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true;
+            mf.src = "../../cdn.mouseflow.com/projects/523389ca-de88-4777-9355-d122e39e9da1.js";
+            document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+    </script>
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../../www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-50341565-1', 'icliniccare.com');
+        ga('send', 'pageview');
+
+    </script>
+    <script src="../Scripts/jquery.easing.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $banner = $('.stickybanner'), $window = $(window);
+            var $topDefault = parseFloat($banner.css('bottom'), 10);
+            $window.on('scroll', function () {
+                var $top = $(this).scrollTop();
+                $banner.stop().animate({ bottom: -($top - $topDefault) }, 1000, 'easeOutBack');
+            });
+
+            var $wiBanner = $banner.outerWidth() * 2;
+            zindex($('#independancewrapper').outerWidth());
+            $window.on('resize', function () {
+                zindex($('#independancewrapper').outerWidth());
+            });
+            function zindex(maxWidth) {
+                if ($window.width() <= maxWidth + $wiBanner) {
+                    $banner.addClass('stickyzindex');
+                } else {
+                    $banner.removeClass('stickyzindex');
+                }
+            }
+        });
+</script>
+    <script src="../Scripts/general.js" type="text/javascript"></script>
+    <link href="../Content/loginpopup.css" rel="stylesheet" />
+</head>
+    <body>
+         <div id="independancewrapper">
+     
+    </div>
+    
+   <div id="stickybanner_right" class="stickybanner"><a target="_blank" href="../packages/obesity-comprehensive-profile-tests660a.html?utm_source=sticky&amp;utm_medium=iClinic&amp;utm_campaign=sticky%20banner">banner right</a></div>
+        <!--POPUP starts here-->
+        <div class="loginpopup">
+            <div class="loginform">
+                <a href="#" class="close">Close</a>
+                <div id="heading" style="font-size: 18px; float: left; width: 250px; border-bottom: #CCC 1px solid; padding-bottom: 7px; color: #327ad4; padding-bottom: 15px; margin: 12px 0px 0px 0px;">Login</div>
+                <div>
+                    <br />
+                    <label id="messageidnew" style="color: #e62929; font-size: 12px; float: left; margin-top: 10px;"></label>
+                    <br />
+                    <input type="text" class=" textbox" name="email" id="emailIdconsumer" class="shadowfield" placeholder="Enter Email ID" onblur="checkemail(this.value,'loginLoad','messageidnew');" style="width: 230px !important;">
+                    <label>
+                        <img id="loginLoad" src="../images/loading.gif" alt="loading" style="display: none; height: 15px; width: 15px" />
+                    </label>
+                </div>
+                <br />
+                <div>
+                    <input type="password" class=" textbox" name="password" id="passwordconsumer" placeholder="Enter Password" class="shadowfield" onblur="if(this.value=='') this.value='password';" onfocus="if(this.value=='password') this.value='';   " style="width: 230px !important;">
+                </div>
+                <br />
+                <div>
+                    <a href="../Login/ForgotPassword.html" style="text-decoration: none;" hreflang="en-us">Forgot your password?</a>
+                    <div style="margin-top: 5px;">
+                        <input class="loginbutton" id="Continue" style="float: right; margin-right: 30px; font-family: Tahoma" type="submit" value="Log in" onclick="ConsumerLoginClick()" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin: 0 auto;">
+            <div id="header" tyle="margin: 0 auto;width:100%">
+                <div itemscope itemtype="http://schema.org/Organization">
+                    <a itemprop="url" href="../index.html" style="float: left; margin-left: 50px;" hreflang="en-us">
+                        <img src="../images/logo.jpg" itemprop="logo" alt="Online Doctor Consultation" title="Online Doctor Consultation" class="logo" />
+                    </a>
+
+                    <span class="tagLine" style="float: left;">Care today, just a click away</span>
+                        <div id="topLinks" style="float: right; font-size: 12px; margin-top: 55px; margin-right: 20px; width: 875px;">
+                            <ul>
+                                <li class="first">
+                                    <a href="../why-iclinic.html" hreflang="en-us">Why iClinic</a></li>
+                                <li>
+                                    <a href="../corporate-healthcare.html" hreflang="en-us">Corporate Services</a></li>
+                                <li><a href="Doctors.html" hreflang="en-us">Are you a Doctor</a></li>
+                                
+                                <li><a href="Videos.html" hreflang="en-us">View Demo Videos</a></li>
+                                
+                                <li><a href="Latest-News.html" hreflang="en-us">Latest News</a></li>
+                                <li><a href="../blog.html" hreflang="en-us">Blog</a></li>
+                                
+                                <li><a href="about-us.html" hreflang="en-us">About Us</a></li>
+                                <li><a href="#" id="loginclick">Login</a></li>
+                            </ul>
+                        </div>
+                    <div class="clear"></div>
+                    <div style="width: 100%; background: url(../images/navBg.jpg) 0 0 repeat-x;margin:0 auto">
+
+                        <div style="width:95%;margin:0 auto;">
+                            <ul id="nav">
+                                <li>
+                                    <a href="../index.html" class="leftCorner" hreflang="en-us">
+                                        <img alt="iCliniccare" title="iCliniccare" src="../images/home-icon.png" class="homeImage" style="margin-left: 11px;" />
+                                    </a>
+                                </li>
+                                <li onmouseover="tooltipsfocus('7')" onmouseout="tooltipsblur('7')">
+                                    <a href="ConsultDoctor.html">Consult a Doctor Now</a>
+                                    <div id="tooltip7" class="tool-tip" style="display: none">
+                                        <img src="../images/tool-tip-arrow.png" width="20" height="20" alt="Consult a Doctor Now">
+                                        Ask a Doctor for free, 24/7 Online Doctor,  Written Medical Advice, Video call with specialist - Consultation Services.
+                                    </div>
+                                </li>
+                                <li onmouseover="tooltipsfocus('5')" onmouseout="tooltipsblur('5')">
+                                    <a href="../health-pack.html" hreflang="en-us">Health Pack</a>
+                                    <div id="tooltip5" class="tool-tip" style="display: none">
+                                        <img src="../images/tool-tip-arrow.png" width="20" height="20" alt="online health services">
+                                        Access to life style advisor, health risk assessment and get daily health tips in your inbox.
+                                    </div>
+                                </li>
+
+                                <li onmouseover="tooltipsfocus('13')" onmouseout="tooltipsblur('13')">
+                                    <a href="../order-lab-tests-online.html" hreflang="en-us">Order Lab Test</a>
+                                    <div id="tooltip13" class="tool-tip" style="display: none">
+                                        <img src="../images/tool-tip-arrow.png" width="20" height="20" alt="Order Lab Test">
+                                        Get 20% Discount on Lab Tests by Diagno Labs.
+                                    </div>
+                                </li>
+                         
+
+                                <li onmouseover="tooltipsfocus('1')" onmouseout="tooltipsblur('1')">
+                                    <a href="../patient-forum.html" hreflang="en-us" style="text-align:center;">Patient Forum</a>
+                                    <div id="tooltip1" class="tool-tip" style="display: none">
+                                        <img src="../images/tool-tip-arrow.png" width="20" height="20" alt="Patient Forum">
+                                        Interact with patients with similar ailments and get useful advice on treatments and medicines.
+                                    </div>
+                                </li>
+                                <li onmouseover="tooltipsfocus('2')" onmouseout="tooltipsblur('2')">
+                                    <a href="../symptom-checker.html" hreflang="en-us"  style="text-align:center;">Symptom Checker</a>
+                                    <div id="tooltip2" class="tool-tip">
+                                        <img src="../images/tool-tip-arrow.png" width="20" height="20" alt="Symptom Checker">
+                                        Analyse your symptoms, diagnose your ailments and get a detailed report.
+                                    </div>
+                                </li>
+
+
+
+                                
+                                
+                  
+                                <li onmouseover="tooltipsfocus('6')" onmouseout="tooltipsblur('6')">
+                                    <a href="contact-us.html" class="right_menu_radius" hreflang="en-us">Contact us</a>
+
+                                    <div id="tooltip6" class="tool-tip" style="display: none">
+                                        <img src="../images/tool-tip-arrow.png" width="20" height="20" alt="contact doctor online">
+                                        If you have any query or suggestions contact us now.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+     
+        <div style="margin:0 auto;width: 982px;" id="breadcrumb">    
+
+        <a href="../index.html" title="Home">Home</a>
+         &gt; 
+
+    FAQ
+</div>
+        
+
+
+        
+        
+
+
+<!-- check Online Support -->
+<script type="text/javascript">
+    function checkSupportUserStatus() {
+        $.ajax({
+            type: "POST",
+            url: '/Community/GetSupportUserStatus',
+            data: "{}",
+            contentType: "application/json",
+            success: function (data) {
+                if (data == "Online") {
+                    $('#onlinesupport').show();
+                    $('#offlinesupport').hide();
+                } else if (data = "Offline") {
+                    $('#offlinesupport').show();
+                    $('#onlinesupport').hide();
+                }
+            }
+        });
+    }
+    $(document).ready(function () {
+        checkSupportUserStatus();
+    });
+</script>
+<div class="Section1" style="width: 960px; text-align: left; margin: 0 auto; padding: 5px; height: auto; text-align: justify;">
+    <h3>FREQUENTLY ASKED QUESTIONS:-</h3>
+    <br />
+    <p><b>•	What is the purpose of iClinic Health care? </b></p>
+    <br />
+    <p>iClinic will enable a global transformation in primary healthcare by facilitating medical practitioners and patients to remotely connect, interact and interchange relevant health information to allow diagnosis, treatment and recovery</p>
+    <br />
+    <p><b>•	What are the major benefits of associating with iClinic Health care system?</b></p>
+    <br />
+    <p>We will be glad to assist you with any of your healthcare needs. You can connect with our qualified doctors 24x7, schedule a video call or obtain written opinion on clinical conditions from our reputed specialists, self-diagnose your symptoms using our symptoms checker application, learn from experiences of fellow patients and even contribute/share your experiences with others by joining our online patient forum, and if you are a doctor willing to serve the online community, you are welcome to connect by simply registering with us.</p>
+
+    <br />
+    <p><b>•	How to use iClinic Symptom Checker for self-diagnosis?</b></p>
+    <br />
+    <p>
+        You simply need to select your age group, tell us your gender, select affected body part from the avatar, and choose the symptom(s) to best describe your condition. Our symptom-checker provides you with the list of possible ailments that you may have, and how to go about your situation. This is the quickest way to self-diagnose your ailment that is just a click away. 
+    </p>
+    <br />
+    <p><b>• 	What are the key benefits of associating with the online patient forum?</b></p>
+    <br />
+    <p>
+        We have dozens of articles written by patients having ‘slightly rare’ diseases like Rheumatoid Arthritis, Eczema, TIA, TKR, Sarcoidosis, Cancer, Parkinson’s etc. and plenty of articles by doctors. You can read these articles, learn from patient experiences, get lifestyle do’s and don’ts, ask the patients questions, and can even form an online patient group / forum to interact and seek advices from fellow patients.
+    </p>
+    <br />
+    <p><b>•	    I have a horrible experience with a disease. So, how can I be a part of iClinic's patient forum if I wish to contribute and share my experiences?</b></p>
+    <br />
+    <p>
+        Share your experiences with illnesses and patients for the benefit of millions of people who suffer from these ailments. You may register as an ailment expert or directly post a new topic. You are welcome to contribute and share your experiences for FREE on our online patient portal where you can read articles, comment, and even post your article by simply registering with us.
+    </p>
+    <br />
+    <p><b>•	    How can I search for a particular ailment and read all related articles?</b></p>
+    <br />
+    <p>
+        Simply click on the patient forum tab and just on the top right-hand side, you will see a search box. Enter the ailment that you want to read/review, and it will populate all the related articles based on your search criteria. Isn't it simple?
+    </p>
+    <br />
+    <p><b>What are the services that I get once I register with iClinic?</b></p>
+    <br />
+    <p>
+        o	If you are a patient, you can connect with any of our specialists at anytime during the day or night, 24x7, obtain online consultations, book an online appointment, share your medical records, and even pickup online prescriptions, which means complete health care just a click away. 
+        o	If you are a doctor, you can strengthen our core team of quality specialists by simply registering with us and start rendering your quality health care services to the iClinic's ever-growing online patient community. 
+    </p>
+    <br />
+    <p><b>•    What is the concept of remote consultation and remote diagnostics?</b></p>
+    <br />
+    <p>
+        With the advancement of technology, iClinic has introduced this concept of remote consultations and remote diagnostics to facilitate patient care and expedite the process of treatment for the patients with the help of online tools such as online chat, remote desktop sharing, video conferencing, real-time exchange of information/medical reports, and other such advanced diagnostic tools which in turn enable a specialist to even diagnose you while sitting remotely.  
+    </p>
+    <br />
+    <p><b>•	What are the key benefits from a remote consultation?</b></p>
+    <br />
+    <p>
+        You can seek expert medical opinion within minutes of logging into the iClinic portal and/or choose your desired timeframe to connect with a specialist and fix an online appointment. The sole purpose of iClinic services is to provide you with quality care that you deserve without having to move too far, which is otherwise not only expensive but tiring too especially if you are suffering from any such ailment. 
+    </p>
+    <br />
+    <p><b>•	What all do I need to interact with an iClinic specialist?</b></p>
+    <br />
+    <p>
+        You simply need to register with us by providing your name and email address. As we respect your confidentiality, any information thus provided to us will be kept strictly confidential, and will not be disclosed to anyone unless consented formally by you.
+    </p>
+    <br />
+    <p><b>•	How can I locate a specialist in my city?</b></p>
+    <br />
+    <p>
+        Please visit our list of specialists, available from the home page, “specialist information. All relevant details of our specialists are available in this section.
+    </p>
+    <br />
+    <p><b>•	How can I book an appointment with a specialist?</b></p>
+    <br />
+    <p>
+        Please click on “Consult a Doctor Now” > Then on the Video call with Specialist tab. You simply need to register with us by providing your name and email address and select the speciality. Thereafter you will be able to choose one of our specialists and select your preferred time of consult. We will get back to you within 24 hours with the details of your appointment. Alternately you can seek a Written opinion from one of our specialists by clicking on that tab. We will send you a Written Opinion from an identified specialist within 48 hours.
+    </p>
+    <br />
+    <p><b>•	Do iClinic platform even support international consults?</b></p>
+    <br />
+    <p>
+        Yes, you can even choose to connect with our empaneled doctors/specialists from anywhere in the world. 
+    </p>
+    <br />
+    <p><b>•	I am an international patient looking for information regarding my medical travel plans to India? How can I search for that information on the iClinic platform?</b></p>
+    <br />
+    <p>
+        If you are seeking medical treatment in India, iClinic Healthcare system even provides insights about the best healthcare facilities in India, book your appointments with the specialists in major Metro Cities in India, manage your travel and hospitality care needs, and put forward the best possible quotation for your travel to India to make it a memorable affair. You can be assured to get the best possible care that you deserve at the best price. Please visit our “Hospital Information” section on the Home page and read about our various empanelled hospitals. You may also fill a simple form for International Travel – in the same section to enable us to help hyou coordinate and get you the best deal.
+    </p>
+    <br />
+    <p><b>•	What are my options for consulting a doctor/specialist? </b></p>
+    <br />
+    <p>
+        We have three “Consult a Doctor” services. 1. 24/7 Doctor on line. 2. Video Call with Specialist 3.  Written Medical Advice
+    </p>
+    <br />
+    <p><b>•	How much do I need to pay to consult the online doctor at any time during the day?</b></p>
+    <br />
+    <p>
+        Consultation charges ₹ 200 for 15 minutes.  <a href="Videos.html">Watch our Demo Videos</a>
+    </p>
+    <br />
+    <p><b>•	Are there any extra charges for consulting a doctor at night?</b></p>
+    <br />
+    <p>
+        There will be absolutely no extra charges for contacting us at night? 
+    </p>
+    <br />
+    <p><b>•	How can I make an appointment with a specialist for a video call? Can I be able to share my reports online? Can I be able to obtain an online prescription from the doctor?</b></p>
+    <br />
+    <p>
+        Book an appointment with any of our dozens of specialists and consult them in detail from your home, office or anywhere. Upload your reports, get a consultation summary, all data will be saved for future consult. It's simple - just enter your name and email ID and choose the speciality and the doctor. Under each doctor a set of available time slots are mentioned which you may choose from.  
+    </p>
+    <br />
+    <p><b>•	What are the consultation charges for the video consultation?</b></p>
+    <br />
+    <p>
+        Consultation charges ₹ 600. <a href="Videos.html">Watch our Demo Videos</a>
+    </p>
+    <br />
+    <p><b>•	Can I be able to obtain a written opinion from a specialist? What are the charges for obtaining the written opinion on my condition?</b></p>
+    <br />
+    <p>
+        Excellent for seeking opinions and advice from specialists without the hassle of appointments and travel. Upload your reports, ask relevant questions and you will get a professionally written opinion from a specialist within 48 Hours. It's simple - just enter your name and email ID and choose the speciality and then write your query. 
+    </p>
+    <br />
+    <p><b>•	What are the applicable charges for obtaining a written opinion?</b></p>
+    <br />
+    <p>
+        Consultation charges ₹ 400. <a href="Videos.html">Watch our Demo Videos</a>
+    </p>
+    <br />
+    <p><b>•	How do I schedule tests and out-patient procedures?</b></p>
+    <br />
+    <p>
+        iClinic Healthcare provides services to give you access to an Online Doctor and to specialists for consultation. We do not handle physical tests and consultations. </a>
+    </p>
+    <br />
+    <p><b>•	What are the Emergency numbers?</b></p>
+    <br />
+    <p>
+        Our online Chat help facility is available to help you with issues. In case of extreme issues you may call +919643256093   
+        <br />
+        <br />
+        <p><b>•	Who can I call for assistance in the iClinic during odd hours or holidays?</b></p>
+    <br />
+    <p>
+        Our online Chat help facility is available to help you with issues. In case of extreme issues you may call +919643256093  
+    </p>
+    <br />
+    <p><b>•	What are the services for international patients?</b></p>
+    <br />
+    <p>
+        iClinic Health Care is a trusted name for patients looking to travel to India for getting the most advanced healthcare treatment facilities. We will be glad to assist you with any information that you seek before you actually travel to India for availing the best care that you deserve. With our online portal, you can learn about your travel destination in India, book an appointment with your concerned specialist, make arrangements for your medical travel to India, learn about the state-of-the-art healthcare facilities, and all that is just a click away.   
+    </p>
+    <br />
+    <p>
+        <b>•	What are the services for corporate clients?
+
+        </b>
+    </p>
+    <br />
+    <p>
+        •	Doctor Online 24x7 Web or Video chat with general practitioner.
+    </p>
+    <p>
+        •	 Written Medical Advice – Send reports and receive opinions and advices
+    </p>
+    <p>
+        •	Video Call with Specialist through appointment from any location.
+    </p>
+    <p>
+        •	Health Monitor Section with Health Risk Assessment.
+    </p>
+    <p>
+        •	Check your BMI and BMR with our BMI, BMR Calculators.
+    </p>
+    <p>
+        •	Life style advisor with Dietician services and De-addiction advisor.
+    </p>
+    <p>
+        •	Stress management, Medicine advisor services with Life style advisor.
+    </p>
+    <p>
+        •	Patient Forum - Read articles by patients and Interact with them.
+    </p>
+    <p>
+        •	Online Help - Chat with our online advisor, Seek guidance and help.
+    </p>
+    <p>
+        •	Symptom Checker - Analyze yourself – Find over 1000's of ailments.
+    </p>
+    <p>
+        •	Get Allopathic, homeopathic and ayurvedic inputs with Symptom Checker.
+    </p>
+    <br />
+
+
+    <p><b>•	I am a doctor who is looking to become a part of iClinic team in very near future? What will be the core benefits for me?</b></p>
+    <br />
+    <p>
+        You can interact with patients through video chat, get additional income with assured and timely payments, extend your experience, reputation and influence globally, showcase your skills and knowledge by contributing articles, and witness your online practice growing with ever increasing revenues.  
+    </p>
+    <br />
+    <p><b>•	Who do I contact with billing questions or to get copies of my payment receipt? </b></p>
+    <br />
+    <p>
+        Please send an email to support@icliniccare.com and we shall solve your query asap.
+    </p>
+    <br />
+
+
+    <p><b>•	Where can I make my inquiries?</b></p>
+    <br />
+    <p>
+        You can connect with our live support that is available online 24x7, which will be glad to assist you with any of your queries to help you serve better. Or please send an email to support@icliniccare.com and we shall solve your query asap. 
+    </p>
+    <br />
+    <p><b>•	Where can I give my feedback or complaint?</b></p>
+    <br />
+    <p>
+        Please send an email to support@icliniccare.com and we shall solve your issue asap.
+    </p>
+    <br />
+    <p><b>•	How can I apply for a job?</b></p>
+    <br />
+    <p>
+        Please send an email to admin@icliniccare.com and we shall revert to you.
+    </p>
+    <br />
+    <p><b>• Which browser and version should I use for video call with specialist service?</b></p>
+    <br />
+    <p>
+        Kindly use Google Chrome 26+ or Mozilla Firefox 30+ for video call with specialist service.
+    </p>
+    <br />
+    <p><b>• From where I can download the Google Chrome and Mozilla Firefox?</b></p>
+    <br />
+    <p>
+        You can download the browsers from following URL’s:<br />
+        <a href="https://www.google.com/intl/en_in/chrome/browser/" rel="nofollow" target="blank">https://www.google.com/intl/en_in/chrome/browser/></a>
+        <br />
+        <a href="http://www.mozilla.org/en-US/firefox/new/"  rel="nofollow" target="blank">http://www.mozilla.org/en-US/firefox/new/</a>
+    </p>
+    <br />
+    <p><b>• How can I book an appointment with specialist for video call?</b></p>
+    <br />
+    <p>
+        Open   <a href="../index.html" target="blank">www.icliniccare.com</a> > Click on the ‘Consult a doctor now’ > Select ‘Video call with a specialist’ service > a pop-up window will be displayed and select the ‘Book an appointment’ button on it> Fill-up the details like Name, Email Id, Mobile No and Select Speciality for which you need a consult > Select the available time slot > Enter more information on payment page and press the ‘Pay Now’ button > make the payment using payment gateway > After successful payment, you’ll be redirected to Step 2 form of video call with specialist section > Upload your reports and enter the past medical and other details.
+        <br />
+        For Indian users our payment gateway is CC-Avenue and for US, UK and other countries our payment gateway is PayPal.
+
+    </p>
+    <br />
+    <p><b>• How can I start the Video call after an appointment is fixed by iclinic at www.icliniccare.com website?</b></p>
+    <br />
+    <p>
+        Open www.icliniccare.com > Click on the ‘Consult a doctor now’ > Select ‘Video call with a specialist’ service > a pop-up window will be displayed and Fill-up your email id and password > Click on the ‘Preschedule Video Consultation’ and enter your appointment code (you will receive appointment code on your email id after an appointment is being fixed by iClinic end.) > Press the ‘Sign-in’ button > You will be redirected to video chat screen > ‘Click on the Start Consultation’ button > Click on the ‘Allow’ button on top most of Google Chrome to connect your camera and microphone for video call and Click on the ‘Share your device’ button on top left side of Mozilla Firefox to connect your camera and microphone.
+    </p>
+    <br />
+    <p><b>• I can not get the ‘Allow’ button on Google Chrome and ‘Share selected device’ button on Mozilla Firefox?</b></p>
+    <br />
+    <p>
+        To get ‘Allow’ and ‘Share selected device’ options on Chrome and Firefox browsers, you are required to follow below steps:<br />
+        <br />
+        <b>For Google Chrome:</b>
+        <br />
+        <br />
+        On top right side of browser’s address bar there is a camera icon, where you can find the red cross symbol > Click on that camera icon > Click on the ‘Manage media settings’ > a ‘Content setting’ window will be displayed, now scroll down the window > You find the ‘Media’ option where you have to select the attached microphone and camera (If ‘Do not allow sites to access your camera and microphone’ option is selected’ then click on the ‘Ask when a site requires access to your camera and microphone (recommended)’ option to enable it) > Press the ‘Done’ button > Restart your browser and click on the ‘Start Consultation’ button again.
+    <br />
+        <br />
+        <b>For Mozilla Firefox:</b>
+        <br />
+        <br />
+        If you cannot get the ‘Shared selected device’ option on Firefox then follow the below steps:
+        <br />
+        Go to ‘Control Panel’ > Select ‘Flash Player’ > Open ‘Flash Player Settings Manager’ > Click on the ‘Camera and Mic’ tab > Click on the ‘Camera and Microphone Settings by Site’ > Click ‘Add’ button and add www.icliniccare.com > Select the ‘Allow’ option in drop down and press the ‘Add’ button > Reload the video chat page and click on the ‘Start Consultation’ button.
+
+    </p>
+    <br />
+    <p><b>• I am getting the ‘Unable to connect to network’ error after clicking on ‘Start Consultation’ button during video call?</b></p>
+    <br />
+    <p>
+        You need to click on the ‘Refresh’ button on screen, if the problem still persists then you require to clear your browser’s cache. You can follow below steps to clear browser’s cache:
+        <br />
+
+        <b>For Google Chrome:</b>
+        Click on the ‘Customize and Control Google Chrome’ tab which is on the top right most of the browser > Select the ‘Settings’ option > Open a settings page and scroll down the page > Click on the ‘Show advance settings’ link > Select the ‘Clear browsing data’ option under the ‘Privacy’ section > a pop-up window will be displayed and check the following options (Browsing History, Download History, Cookies and other site plug-in data, Cached images and files) and press the ‘Clear browsing data’ button > Close the Chrome browser and restart your laptop/desktop.
+        <br />
+        After restarting your system you can log-in again at www.icliniccare.com website and continue with Video Call with Specialist service.<br />
+        For Mozilla Firefox: Click on the ‘Open Menu’ tab which is on the top right most of the browser > Select the ‘Options’ > a pop-up window will be displayed and then select the ‘Privacy’ tab > Click on the ‘remove individual cookies’ option > Click on the ‘Remove All Cookies’ button and press the Ok button > Close the Firefox browser and restart your laptop/desktop.
+        <br />
+        After restarting your system you can log-in again at www.icliniccare.com website and continue with Video Call with Specialist service.
+        <br />
+
+    </p>
+    <br />
+    <p><b>• I am getting the ‘You don’t have the minimum requirements to run this application’. Please upgrade to the latest version of Flash’ error?</b></p>
+    <br />
+    <p>If you are using Internet Explorer or Safari browser for video call then switch to Google Chrome or Mozilla Firefox for the same. If you are getting this error on Chrome or Firefox then download the latest version of Flash player and update your system. To download the Flash, kindly go to the below URL: <a href="http://get.adobe.com/flashplayer/" rel="nofollow" target="blank">http://get.adobe.com/flashplayer/</a> </p>
+</div>
+
+
+        <div class="clear"></div>
+
+        <div id="footer">   
+            <div class="layout">
+                <div class="footerLinks">
+                    <a href="../index.html" hreflang="en-us">Home</a>  /  
+                    <a href="../ChatWithDoctor.html" hreflang="en-us">24/7 Online Doctor</a> /
+                    <a href="#dialog" name="modal" hreflang="en-us">Video Call with Specialist</a> /
+                    <a href=../written-medical-advice.html hreflang="en-us">Written Medical Advice</a>
+
+                    <div class="footerLinks2">
+                        <a href="../why-iclinic.html" hreflang="en-us">Why iClinic</a> | 
+                        <a href="../patient-forum.html" hreflang="en-us">Patient Forum</a> | 
+                        <a href="../symptom-checker.html" hreflang="en-us">Symptom Checker</a> |       
+                        
+                        <a href="CoreBenefits.html" hreflang="en-us">Core Benefits</a>  |   
+                        <a href="about-us.html" hreflang="en-us">About Us</a>    |
+                        <a href="contact-us.html" hreflang="en-us">Contact Us</a>    |
+                        <a href="../international-consultation.html" hreflang="en-us">International Consultations</a>    |
+                        <a href="javascript:void(0)" onclick="ICRedirect('Hospital');" hreflang="en-us">Indian Hospitals and Services</a>
+                        <!-- <a href="#">FAQ's</a>-->
+                    </div>
+                </div>
+                <div class="socialMedia">
+                    <p>Follow us :</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/iclinichealthcare" target="_blank" hreflang="en-us" rel="nofollow">
+                                <img src="../images/facebook.jpg" alt="iclinic facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/icliniccare" target="_blank" hreflang="en-us" rel="nofollow">
+                                <img src="../images/twitter.jpg" alt="iclinic twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/+iclinichpl/posts" target="_blank" hreflang="en-us">
+                                <img src="../images/gplus.jpg" alt="iclinic gplus" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottomLinks">
+                    <img src="../images/seal.png" width="396" height="37" alt="" />
+                    <div class="footLinks">
+                        <a href="Disclaimer.html" hreflang="en-us">Disclaimer</a> |
+                        <a href="FAQ.html" hreflang="en-us">FAQ</a> |
+                        <a href="Privacy-Policy.html" hreflang="en-us">Privacy Policy</a> | 
+                        <a href="Terms-Conditions.html" hreflang="en-us">Terms & Conditions</a> | 
+                        <a href="Refund-and-Cancellation-Policy.html" hreflang="en-us">Refund and Cancellation Policy</a> | 
+                        <a href="Sitemap.html" hreflang="en-us">Sitemap</a>
+
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="copyright">
+            <div class="layout">
+
+                <p style="text-align: center; font-family: Tahoma;">
+                    &copy; 2013- 2016 iClinic HealthCare, All Rights Reserved
+                </p>
+            </div>
+        </div>
+                <div id="boxes">
+                    <!--Main Login Pop-up start-->
+                    <div id="dialog" class="window" style="margin-top: -100px;">
+                        <div class="login-popup" style="height: 500px;">
+                            <h1>
+                                <a href="JavaScript:void(0);" class="close" hreflang="en-us" style="margin-bottom: 275px">
+                                    <img src="../images/close-btn.png" width="29" height="29" alt="close" title="close" />
+                                </a>
+                                <img src="../images/user.png" width="16" height="15" />&nbsp;User Login
+                            </h1>
+                            <div class="form">
+
+
+
+                                <div class="login-radio">
+                                    <span style="width: 270px; margin-left: 0px; margin-top: 5px; color: black;">If you are here for pre scheduled video consultation, please click below box and enter appointment code provided in your email.</span>
+
+                                    <br />
+                                    <input type="hidden" id="prehidden" value="0" />
+                                    <input name="Grouplogin" id="videoconsult" type="button" value="Pre Scheduled Video Consultation" style="width: 260px; height: 44px; font-size: 14px;" class="wdemobutton" onclick="checkchangebutton();" />
+
+                                </div>
+                                <span>Enter your Email ID</span>
+                                <label id="messageid" style="color: #e62929; font-size: 12px;"></label>
+                                <div style="width: 267px; margin-bottom: -15px;">
+                                    <input id="emailId" name="UserName" type="text" class="input" value="Email Id"
+                                           onblur="if (this.value == '') this.value = 'Email Id';checkemail(this.value, 'loadingid', 'messageid'); " onfocus=" if (this.value == 'Email Id') this.value = ''; " onkeypress=" return ValidateEmail(event) " />
+                                    <label>
+                                        <img id="loadingid" src="../images/loading.gif" alt="loading" style="display: none; height: 15px; width: 15px" />
+                                    </label>
+                                </div>
+                                <br />
+
+                                <span>Enter your password</span>
+                                <input name="Password" type="password" value="pwd" class="input" id="password"
+                                       onblur=" if (this.value == '') this.value = 'pwd'; " onfocus=" if (this.value == 'pwd') this.value = ''; " />
+                                <br />
+
+                                <input id="appointmentcode" name="AppointmentCode" type="text" value="Appointment Code" class="input" disabled="disabled"
+                                       onkeypress=" return ValidateAppointmentCode(event) " onblur=" if (this.value == '') this.value = 'Appointment Code'; " onfocus=" if (this.value == 'Appointment Code') this.value = ''; " onkeypress=" return ValidateAppoinmentCode(event)" />
+                                <input type="submit" class="login-button" value="Sign in" onclick="LoginbtnClick()" />
+
+                                <div class="login-radio" style="text-align: center; margin-top: 5px">
+                                    <a href="../Login/ForgotPassword.html" hreflang="en-us" style="text-decoration: none;">Forgotten your password?</a>
+                                </div>
+                                <p>For office use only</p>
+                                <p>
+
+                                    <input id="locationconsult" name="Grouplogin" type="checkbox" value="" onclick="checkchangecheckbox();" />
+                                    <span style="width: 800px;">Conference Consultation
+                                        <input id="locationcode" name="LocationCode" type="text" value="Location Code" class="input" disabled="disabled"
+                                               onblur="if (this.value == '') this.value = 'Location Code'; " onfocus=" if (this.value == 'Location Code') this.value='';" />
+                                    </span>
+
+                                </p>
+
+                            </div>
+                            <div class="login-box2">
+                                
+                                <br />
+                                <div class="login-radio">
+                                    <span style="text-align: center; width: 230px; margin-top: -33px; color: black;">Select this button if you are here to book an appointment with our specialist
+                                    </span>
+                                    <br />
+                                    <br />
+                                    <input name="Groupredirect" type="button" value="Book an Appointment with specialist" style="width: 260px; height: 44px; font-size: 14px;" class="wdemobutton" onclick="ICRedirect('book');" />
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Main Login Pop up End-->
+                </div>
+
+
+
+        <!--Pop up Start-->
+        <div id="mask"></div>
+        <div id="maskChat"></div>
+        <!--Popup End-->
+
+        <!--Coupon Code Pop up Start-->
+        <div id="c_overlay" style="display: none;">
+            <div class='c_popup'>
+                <div class='c_cnt223' style="-webkit-box-shadow: -21px -6px 30px 0px rgba(51, 50, 50, 1); -moz-box-shadow: -21px -6px 30px 0px rgba(51, 50, 50, 1); box-shadow: -21px -6px 30px 0px rgba(51, 50, 50, 1);">
+                    <div class="c_doctor_img" id="coupon_doctorimage">
+                        <img src="../images/coupan_leftimage.png" alt="Doctor Image" />
+                    </div>
+                    <img src='../images/coupon_close.png' alt='quit' class='x' id='x' />
+                    <div class="c_coupon_popup">
+                        <div class="c_top_heading">
+                            Please fill your details below and we will send a 50% discount Coupon Code in your email
+                        </div>
+                        <div class="c_fill_detail">
+                            Over 100 Specialist Doctors available 24/7 
+                        </div>
+                        <div class="c_input">
+                            Name :    &nbsp; &nbsp;&nbsp;
+                            <input type="text" name="Name" id="Coupon_Name" style="margin-left: 33px;" onkeypress="return LettersWithSpaceOnly(event)" class="c_shadowfield" value="Enter Your Name" onblur="if(this.value=='') this.value='Enter Your Name';" onfocus="if(this.value=='Enter Your Name') this.value='';" />
+                        </div>
+                        <div class="c_input">
+                            Mobile No  :  
+                            <input type="text" name="  Mobile No" id="Coupon_Mobile" class="c_shadowfield" style="margin-left: 27px;" value="Enter Your  Mobile No" maxlength="15" onkeypress="return isNumberKey(event)" onblur="if(this.value=='') this.value='Enter Your  Mobile No';" onfocus="if(this.value=='Enter Your  Mobile No') this.value='';" />
+                        </div>
+                        <div class="c_input">
+                            Email Id  :   &nbsp;&nbsp;<input type="text" name=" Email Id" id="Coupon_Email" maxlength="255" onkeypress="return ValidateEmail(event)" class="c_shadowfield" value="Enter Your Email Id" onblur="if(this.value=='') this.value='Enter Your Email Id';" onfocus="if(this.value=='Enter Your Email Id') this.value='';" />
+                            <label>
+                                <img id="Cloadingid" src="../images/loading.gif" alt="loading" style="display: none; height: 15px; width: 15px" />
+                            </label>
+                        </div>
+                        <div class="c_input">
+                            <div class="c_term_condition">
+                                <input type="checkbox" id="condition_check" />
+                                I accept iClinic's 
+                                <a href="Terms-Conditions.html" target="_blank" hreflang="en-us">Terms and Conditions</a>
+                            </div>
+                        </div>
+                        <div class="c_input_forget">
+                            <input type="button" class="c_login" value="Submit" onclick="GenerateFreeCoupons(0)" style="height: 46PX;" />
+                        </div>
+                        <div class="c_input_join">
+                            You will soon get a coupon code with Instructions
+                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Coupon Code Pop up End-->
+    </body>
+
+<script type="text/javascript" src="../Scripts/jquery.msgBox.js"></script>
+
+<!--Coupon Code Script Start-->
+<script type='text/javascript'>
+    function coupanpopup() {
+        $("#c_overlay").fadeIn(200);
+        positionPopup();
+    }
+
+    $('.x').click(function () {
+        $("#c_overlay").fadeOut(500);
+    });
+
+    //Popup for PatientInfo
+    //position the popup at the center of the page
+    function positionPopup() {
+        if (!$("#c_overlay").is(':visible')) {
+            return;
+        }
+        $("#c_overlay").css({
+            left: ($(window).width() - $('#c_overlay').width()) / 2,
+            top: ($(window).width() - $('#c_overlay').width()) / 7,
+            position: 'absolute'
+        });
+    }
+
+    //maintain the popup at center of the page when browser resized
+    $(window).bind('resize', positionPopup);
+
+    // Data member for Register Aliment Expert
+    var CName = "";
+    var Cmobile = "";
+    var Cemail = "";
+
+    // Community Section - Register Aliment Expert Validation
+    function CouponCodePopUpValidation() {
+        CName = document.getElementById("Coupon_Name").value;
+        CName = trim(CName);
+        if (CName == null || CName == "" || CName == "Enter Your Name") {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill in your Name.",
+                type: "alert"
+            });
+            //document.getElementById("Coupon_Name").focus();
+            $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+            return false;
+        }
+
+        Cmobile = document.getElementById("Coupon_Mobile").value;
+        if (Cmobile == null || Cmobile == "" || Cmobile == "Enter Your  Mobile No") {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill in your Mobile Number.",
+                type: "alert"
+            });
+            $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+            //document.getElementById("Coupon_Mobile").focus();
+            return false;
+        }
+
+        if (Cmobile < 10) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill in correct Mobile Number.",
+                type: "alert"
+            });
+            $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+            //document.getElementById("Coupon_Mobile").focus();
+            return false;
+        }
+
+        Cemail = document.getElementById("Coupon_Email").value;
+        if ((Cemail == null) || (Cemail == "") || (Cemail == "Enter Your Email Id")) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill in your E-mail Address.",
+                type: "alert"
+            });
+            $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+            //document.getElementById("Coupon_Email").focus();
+            return false;
+        }
+        if (echeck(Cemail) == false) {
+            $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+            //document.getElementById("Coupon_Email").focus();
+            return false;
+        }
+
+        if (!document.getElementById("condition_check").checked) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please accept term & conditions",
+                type: "alert"
+            });
+            $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+            return false;
+        }
+        return true;
+    }
+
+    function echeck(str) {
+        var at = "@";
+        var dot = ".";
+        var lat = str.indexOf(at);
+        var lstr = str.length;
+        var ldot = str.indexOf(dot);
+        if (str.indexOf(at) == -1) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill valid E-mail ID",
+                type: "alert"
+            });
+            return false;
+        }
+
+        if (str.indexOf(at) == -1 || str.indexOf(at) == 0 || str.indexOf(at) == lstr) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill valid E-mail ID",
+                type: "alert"
+            });
+            return false;
+        }
+
+        if (str.indexOf(dot) == -1 || str.indexOf(dot) == 0 || str.indexOf(dot) == lstr) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill valid E-mail ID",
+                type: "alert"
+            });
+            return false;
+        }
+
+        if (str.indexOf(at, (lat + 1)) != -1) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill valid E-mail ID",
+                type: "alert"
+            });
+            return false;
+        }
+
+        if (str.substring(lat - 1, lat) == dot || str.substring(lat + 1, lat + 2) == dot) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill valid E-mail ID",
+                type: "alert"
+            });
+            return false;
+        }
+
+        if (str.indexOf(dot, (lat + 2)) == -1) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill valid E-mail ID",
+                type: "alert"
+            });
+            return false;
+        }
+
+        if (str.indexOf(" ") != -1) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill valid E-mail ID",
+                type: "alert"
+            });
+            return false;
+        }
+
+        return true;
+    }
+
+    //Function to trim extra spaces
+    function trim(str) {
+        var newstr;
+        newstr = str.replace(/^\s*/, "").replace(/\s*$/, "");
+        newstr = newstr.replace(/\s\s+/g, " ");
+        return newstr;
+    }
+
+    //Generate FreeCoupons 100%
+    function GenerateFreeCoupons(type) {
+        $("#SaveCouponCode").removeAttr("onclick");
+        var isvaluevalid = CouponCodePopUpValidation();
+        if (isvaluevalid) {
+            var CouponCodeObject = {
+                Name: CName,
+                Mobile: Cmobile,
+                Email: Cemail,
+                Type: type
+            };
+            var CouponCodeJSON = JSON.stringify(CouponCodeObject);
+            $.ajax({
+                cache: false,
+                type: 'POST',
+                url: "/Home/SavePatientFirstVisitViaCouponCode",
+                data: CouponCodeJSON,
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    if (data.status == "2") {
+                        $.msgBox({
+                            title: "iClinic",
+                            content: "Email Id is Invalid, Please fill proper Email Id",
+                            type: "info"
+                        });
+                        $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+                    }
+                    else if (data.status == "0") {
+                        $.msgBox({
+                            title: "iClinic",
+                            content: "Email Id already exist, please try with another Email Id",
+                            type: "info"
+                        });
+                        $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+                    }
+                    else if (data.status == "1") {
+                        $.msgBox({
+                            title: "iClinic",
+                            content: "Successfully sent Coupon code to your email Id",
+                            type: "success"
+                        });
+                        setTimeout(function () {
+                            window.location.href = "../Home.html";
+                        }, 3000);
+                    } else {
+                        $.msgBox({
+                            title: "iClinic",
+                            content: "Unable to Process your request. Please try again.",
+                            type: "error"
+                        });
+                        $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+                    }
+                }
+            });
+        }
+    }
+
+</script>
+<!--Coupon Code Script Start-->
+
+
+<!-- Mirrored from www.icliniccare.com/Home/FAQ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Feb 2016 12:33:15 GMT -->
+</html>

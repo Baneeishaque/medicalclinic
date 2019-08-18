@@ -1,0 +1,340 @@
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.wrapper_test_labform {
+    width: 715px;
+    height: 440px;
+    padding: 0px;
+    background-color: #ffffff;
+    float: right;
+}
+
+.wrapper_radiologytest_labform {
+    width: 615px;
+    height: 440px;
+    padding: 0px;
+    background-color: #ffffff;
+    float: right;
+}
+
+.test_labform_plan_box_cover {
+    width: 100%;
+    height: 550px;
+    margin: 50px auto 0px;
+    padding: 0px 0px 0px 0px;
+    background-color: #fff;
+    -moz-box-shadow: 0 0 2px #888;
+    -webkit-box-shadow: 0 0 2px#888;
+    box-shadow: 0px 0px 10px #999999;
+    background-image: url(../images/dignolabtest.jpg);
+    background-repeat: no-repeat;
+}
+
+.test_radiologyform_plan_box_cover {
+    width: 100%;
+    height: 550px;
+    margin: 50px auto 0px;
+    padding: 0px 0px 0px 0px;
+    background-color: #fff;
+    -moz-box-shadow: 0 0 2px #888;
+    -webkit-box-shadow: 0 0 2px#888;
+    box-shadow: 0px 0px 10px #999999;
+    background-image: url(../images/radiology.jpg);
+    background-repeat: no-repeat;
+}
+
+.test_labform_plan_box_1 {
+    width: 248px;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    border: 0px solid #CCC;
+    float: left;
+}
+
+.test_labform_plan_box_2 {
+    width: 682px;
+    height: auto;
+    float: right;
+    margin: 11px 0px 0px 0px;
+    background-color: #FFF;
+    padding: 0px 0px 0px 0px;
+    border: 1px solid #CCC;
+    float: left;
+    -moz-box-shadow: 0 0 2px #888;
+    -webkit-box-shadow: 0 0 2px#888;
+    box-shadow: 0 0 2px #888;
+}
+
+.box_2_top_heading_test_labform {
+    width: 650px;
+    margin-top: 20px;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 0px;
+    border: none !important;
+    background-color: #ff4d4d;
+}
+
+.box_2_top_heading_radiologytest_labform {
+    width: 555px;
+    margin-top: 20px;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 0px;
+    border: none !important;
+    background-color: #ff4d4d;
+}
+
+.field_name {
+    float: left;
+}
+
+.viewallOffers {
+    width: 600px;
+    padding: 20px 0px 20px 0px;
+    margin: 0 auto;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0px;
+    border: none !important;
+    background-color: #c8060e;
+}
+
+.buttonSubmit {
+    width: 300px;
+    padding: 15px;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: bold;
+    border: none !important;
+    margin-top: -20px;
+    margin-right: 24px;
+    background: #2873d2;
+    border-bottom: 5px solid #034596 !important;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .buttonSubmit:hover {
+        width: 300px;
+        padding: 15px;
+        color: #FFF;
+        font-size: 24px;
+        font-weight: bold;
+        border: none !important;
+        margin-top: -20px;
+        margin-right: 24px;
+        background: #c8060e;
+        border-bottom: 5px solid #c8060e !important;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+.radiobuttonSubmit {
+    width: 240px;
+    padding: 15px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0px;
+    border: none !important;
+    margin-top: -20px;
+    background-color: #4063D4;
+}
+
+    .radiobuttonSubmit:hover {
+        background-color: #c8060e;
+    }
+/*.buttonSubmit:hover {
+                border-radius: 5px;
+                    border-bottom: 5px solid #c8060e !important;
+        background-color:#c8060e;
+    }*/
+
+.shadowfield_test_lab {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 0px;
+    border: 1px solid #484747;
+    font-size: 13px;
+    text-align: left;
+    float: left;
+    font-family: Tahoma, Geneva, sans-serif !important;
+    font-weight: normal;
+    background: #FFF;
+    color: #7c7c7c;
+    line-height: 1.4;
+    outline: none;
+    transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    border: 1px #CCC solid;
+    box-shadow: 0 1px rgba(34, 25, 25, 0.2) inset, 0 1px #fff;
+}
+
+    .shadowfield_test_lab:focus {
+        border-color: #930;
+        background: #fff;
+        color: #5d5d5d;
+        box-shadow: inset 0 1px rgba(10, 96, 204, 0.2), 0 1px rgba(10, 96, 204, 0.6), 0 0 7px rgba(10, 96, 204, 0.5);
+        -moz-box-shadow: inset 0 1px rgba(10, 96, 204, 0.2), 0 1px rgba(10, 96, 204, 0.6), 0 0 7px rgba(10, 96, 204, 0.5);
+        -webkit-box-shadow: inset 0 1px rgba(10, 96, 204, 0.2), 0 1px rgba(10, 96, 204, 0.6), 0 0 7px rgba(10, 96, 204, 0.5);
+    }
+
+.field_name_capcha {
+    float: left;
+    width: 100%;
+}
+
+
+
+.middle_content_normal {
+    width: 95%;
+    height: auto;
+    text-align: justify;
+    margin: 20px 0px 10px 0px;
+    padding: 0px;
+    float: left;
+    font-size: 12px;
+}
+
+.form_leftside {
+    width: 300px;
+    height: 40px;
+    background-color: #fff;
+    padding: 0px;
+    float: left;
+}
+
+.form_rightside {
+    width: 300px;
+    height: 40px;
+    background-color: #fff;
+    margin: 0px 0px 0px 25px;
+    padding: 0px;
+    float: right;
+}
+
+.name_field {
+    width: 115px;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    font-size: 15px;
+    color: #000;
+}
+
+.field_name {
+    float: left;
+    width: 100%;
+    margin: 8px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
+}
+
+.required {
+    color: red;
+}
+
+.input_field {
+    width: 200px;
+    height: 40px;
+    margin: 12px 0px 0px 0px;
+    padding: 0px;
+    float: left;
+}
+
+.shadowfield_form_invoice {
+    width: 510px;
+    font-size: 13px;
+    height: 45px;
+    margin-left: 30px;
+    color: #666;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #C2C2C2;
+    -moz-box-shadow: 1px 1px 4px #C2C2C2;
+    -webkit-box-shadow: 1px 1px 4px #C2C2C2;
+    padding: 7px;
+    outline: none;
+}
+
+.shadowfield_radiologyform_invoice {
+    width: 420px;
+    font-size: 13px;
+    height: 45px;
+    margin-left: 30px;
+    color: #666;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #C2C2C2;
+    -moz-box-shadow: 1px 1px 4px #C2C2C2;
+    -webkit-box-shadow: 1px 1px 4px #C2C2C2;
+    padding: 7px;
+    outline: none;
+}
+
+.shadowfield_form_invoice:focus {
+    border-color: #930;
+    background: #fff;
+    color: #999999;
+    box-shadow: inset 0 1px rgba(10, 96, 204, 0.2), 0 1px rgba(10, 96, 204, 0.6), 0 0 7px rgba(10, 96, 204, 0.5);
+    -moz-box-shadow: inset 0 1px rgba(10, 96, 204, 0.2), 0 1px rgba(10, 96, 204, 0.6), 0 0 7px rgba(10, 96, 204, 0.5);
+    -webkit-box-shadow: inset 0 1px rgba(10, 96, 204, 0.2), 0 1px rgba(10, 96, 204, 0.6), 0 0 7px rgba(10, 96, 204, 0.5);
+}
+
+.shadowfield_form_invoice_capcha {
+    width: 195px;
+    height: 40px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    padding: 7px;
+    outline: none;
+}
+
+    .shadowfield_form_invoice_capcha:focus {
+        border-color: #930;
+        background: #fff;
+        color: #999999;
+        box-shadow: inset 0 1px rgba(10, 96, 204, 0.2), 0 1px rgba(10, 96, 204, 0.6), 0 0 7px rgba(10, 96, 204, 0.5);
+        -moz-box-shadow: inset 0 1px rgba(10, 96, 204, 0.2), 0 1px rgba(10, 96, 204, 0.6), 0 0 7px rgba(10, 96, 204, 0.5);
+        -webkit-box-shadow: inset 0 1px rgba(10, 96, 204, 0.2), 0 1px rgba(10, 96, 204, 0.6), 0 0 7px rgba(10, 96, 204, 0.5);
+    }

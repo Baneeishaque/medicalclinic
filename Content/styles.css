@@ -1,0 +1,168 @@
+﻿/* stylesheet contains style for vertical tabbed content area */
+a img
+{
+    border: none;
+}
+
+.wrapper
+{
+    width: 960px;
+    margin: 0px auto;
+    padding-top: 20px;
+    min-height: 600px;
+}
+
+    .wrapper h1, .wrapper h4, .wrapper p, .wrapper pre, .wrapper ul, .wrapper li
+    {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+    .wrapper v-nav
+    {
+        outline: 0;
+        text-decoration: none;
+        -webkit-transition-property: background color;
+        -moz-transition-property: background color;
+        -o-transition-property: background color;
+        -ms-transition-property: background color;
+        transition-property: background color;
+        -webkit-transition-duration: 0.12s;
+        -moz-transition-duration: 0.12s;
+        -o-transition-duration: 0.12s;
+        -ms-transition-duration: 0.12s;
+        transition-duration: 0.12s;
+        -webkit-transition-timing-function: ease-out;
+        -moz-transition-timing-function: ease-out;
+        -o-transition-timing-function: ease-out;
+        -ms-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+#v-nav
+{
+    height: 100%;
+    margin: auto;
+    color: #333;
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Arial, Tahoma, sans-serif;
+    position: relative;
+}
+
+    #v-nav > ul
+    {
+        float: left;
+        width: 312px;
+        display: block;
+        position: relative;
+        top: 0;
+        border-right-width: 0;
+        margin: auto 0 !important;
+        padding: 0;
+    }
+
+        #v-nav > ul > li
+        {
+            width: 296px;
+            list-style-type: none;
+            display: block;
+            font-size: 1.15em;
+            position: relative;
+            border-right-width: 0;
+            border-bottom: 1px solid #DDD;
+            margin: auto;
+            height: 40px;
+            padding: 10px 15px !important;
+            background-color: #005aca;
+            cursor: pointer;
+            color: white;
+            font-family: Tahoma;
+        }
+
+            #v-nav > ul > li.current
+            {
+                color: white;
+                border-right: none;
+                height: 45px;
+                z-index: 10;
+                font-weight: bold;
+                color: white;
+                position: relative;
+                font-family: Tahoma;
+            }
+
+            #v-nav > ul > li.first
+            {
+                height: 85px;
+                border-bottom: 1px solid #DDD;
+                border-top-left-radius: 12px;
+                border-top-right-radius: 3px;
+                background: #e62929 !important;
+                cursor: text;
+                font-weight: bold;
+                font-size: 19px;
+                font-family: Tahoma;
+            }
+
+            #v-nav > ul > li.last
+            {
+                border-bottom: none;
+                border-bottom-left-radius: 12px;
+                border-bottom-right-radius: 3px;
+                font-family: Tahoma;
+            }
+
+    #v-nav > div.tab-content
+    {
+        margin-left: 330px;
+        border: 1px solid #ddd;
+        background-color: #FFF;
+        min-height: 400px;
+        position: relative;
+      
+        padding: 12px;
+        moz-box-shadow: inset 0 0 35px 5px #fafbfd;
+        -webkit-box-shadow: inset 0 0 35px 5px #fafbfd;
+        box-shadow: inset 0 0 35px 5px #fafbfd;
+        display: none;
+        padding: 5px;
+    }
+
+        #v-nav > div.tab-content > h4
+        {
+            font-size: 1.2em;
+            color: Black;
+            text-shadow: 0px 1px 1px #F2F1F0;
+            border-bottom: 1px dotted #EEEDED;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+.contact-btn
+{
+    font-size: 20px;
+    cursor: pointer;
+    font-family: Tahoma;
+}
+
+    .contact-btn a
+    {
+        width: 110px;
+        margin: 0px 10px;
+        cursor: pointer;
+        padding: 5px 10px;
+        color: #fff;
+        padding: 5px 10px;
+        background: #005aca;
+        text-decoration: none;
+    }
+
+        .contact-btn a:hover
+        {
+            cursor: pointer;
+            padding: 5px 10px;
+            background: #e62929;
+            color: #fff;
+        }

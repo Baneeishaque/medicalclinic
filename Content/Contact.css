@@ -1,0 +1,156 @@
+﻿
+.admin-login-btn a {text-decoration:none; background:#e93d4d; color:#fff; padding:10px 20px; display:block; text-align:center;
+background:#e93d4d; color:#fff;
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e93d4d), to(#eb5e61));
+	background-image: -webkit-linear-gradient(top, #e93d4d, #eb5e61);
+	background-image: -moz-linear-gradient(top, #e93d4d, #eb5e61);
+	background-image: -ms-linear-gradient(top, #e93d4d, #eb5e61);
+	background-image: -o-linear-gradient(top, #e93d4d, #eb5e61);}
+	
+.admin-login-btn  a:hover { background:#e93d4d; color:#fff; padding:10px 20px; display:block; text-align:center;
+background:#258fcc;
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#258fcc), to(#147cb7));
+	background-image: -webkit-linear-gradient(top, #258fcc, #147cb7);
+	background-image: -moz-linear-gradient(top, #258fcc, #147cb7);
+	background-image: -ms-linear-gradient(top, #258fcc, #147cb7);
+	background-image: -o-linear-gradient(top, #258fcc, #147cb7);}
+
+.header { margin:0px auto;}
+.header-nav { text-align:right;}
+.header-nav a{ width:70px; margin:0px 10px; padding:5px 10px;color:#069; text-decoration:none;}
+.header-nav a:hover { border-radius:50px; padding:5px 10px; background:#f14646; color:#fff;}
+
+a img {
+ border: none;
+}
+
+.content-form span
+{
+    color:#e62929;
+}
+
+.top-content-box3 {padding:10px; background:url(../images/page-bg.gif);}
+
+.page-heading {background:#e7e6eb url(../images/table-head-bg.png) repeat-x;  padding:15px;  border-radius:7px; border:1px solid #d2d2d2; font-size:20px; margin-bottom:10px
+   } 
+   
+   
+.page-heading-small {background:#e7e6eb url(../images/table-head-bg.png) repeat-x; width:940px; padding:15px; margin:10px auto; border-radius:7px; border:1px solid #d2d2d2; font-size:20px;
+   }   
+
+	.page-heading div { font-size:13px; color:#666;}
+	
+	.page-heading-btn { width:15%; font-size:13px;float:right;
+
+}
+
+.page-heading-btn a {border-radius:90px;  background:#e93d4d; color:#fff; padding:5px 20px; display:block; text-align:center;
+background:#e93d4d; color:#fff; text-decoration:none;
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e93d4d), to(#eb5e61));
+	background-image: -webkit-linear-gradient(top, #e93d4d, #eb5e61);
+	background-image: -moz-linear-gradient(top, #e93d4d, #eb5e61);
+	background-image: -ms-linear-gradient(top, #e93d4d, #eb5e61);
+	background-image: -o-linear-gradient(top, #e93d4d, #eb5e61);}
+	
+.page-heading-btn  a:hover {border-radius:90px; background:#e93d4d; color:#fff; padding:5px 20px; display:block; text-align:center;
+background:#258fcc;
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#258fcc), to(#147cb7));
+	background-image: -webkit-linear-gradient(top, #258fcc, #147cb7);
+	background-image: -moz-linear-gradient(top, #258fcc, #147cb7);
+	background-image: -ms-linear-gradient(top, #258fcc, #147cb7);
+	background-image: -o-linear-gradient(top, #258fcc, #147cb7);}
+
+.content-table{
+	background:#fff url(../images/table-head-bg.png) repeat-x;
+	border-radius:7px; border:1px solid #d2d2d2; margin-bottom:15px;
+	}
+.content-table td {text-align:center; vertical-align:middle; height:51px; border-right:1px solid #d2d2d2;}
+.content-table td.row {background:#dfeef6;}
+.action-btn {padding:2px 6px; border-radius:100px; color:#fff; text-decoration:none; background:#333;}
+
+
+
+.container { width:970px; margin:0px auto; display:block}
+.columns { width:475px; padding-right:10px; float:left;}
+.clear { clear:both; display:block;}
+
+
+.content-table-sml{
+	background:#fff url(../ErrorPage/HttpError404.html) repeat-x;
+	border-radius:7px; border:1px solid #d2d2d2; margin-bottom:15px;
+	}
+.content-table-sml td {text-align:center; vertical-align:middle; height:39px; border-right:1px solid #d2d2d2;}
+.content-table-sml td.row {background:#dfeef6;}
+
+.stats-table-sml {	border-radius:7px; border:1px solid #d2d2d2; margin-bottom:15px; background:#fff;}
+.stats-table-sml div {text-align:center; vertical-align:middle; height:80px; padding-top:37px; border-right:1px solid #d2d2d2; width:235px; float:left; font-size:17px; border-right:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5;}
+.stats-table-sml strong {font-size:30px;}
+
+.stats-table-sml div a {text-decoration:none; color:#333;}
+.stats-table-sml div a:hover {text-decoration:none; color:#0066cc;}
+
+.overlay { background:url(../ErrorPage/HttpError404.html); height:100%; width:100%; position:absolute; z-index:5;}
+
+.blue-btn { font-size:13px;cursor:pointer;}
+.blue-btn a{ width:70px; margin:0px 10px;cursor:pointer; padding:5px 10px;color:#fff;  padding:5px 10px; background:#238fcd; text-decoration:none;}
+.blue-btn a:hover { cursor:pointer; padding:5px 10px; background:#d33e40; color:#fff;}
+	
+
+.red-btn { font-size:13px;}
+.red-btn a{ width:70px; margin:0px 10px;cursor:pointer; padding:5px 10px;color:#fff; padding:5px 10px; background:#d33e40; text-decoration:none;}
+.red-btn a:hover {cursor:pointer; padding:5px 10px; background:#238fcd; color:#fff;}
+
+.red-btn-big { font-size:20px;}
+.red-btn-big input{ width:130px; margin:0px 10px; padding:10px 30px;color:#fff; background:#d33e40; text-decoration:none;}
+.red-btn-big input:hover { padding:10px 30px; background:#238fcd; color:#fff;}
+
+
+.listbox {font-size:14px; padding:5px;}
+
+.normal-text-fields {border:1px solid #ccc;width:217px;font-size:14px; padding:5px;}
+
+.txtPhone {
+    border:1px solid #ccc;font-size:14px;width: 127px; padding:5px;
+}
+
+.normalDropDown {border:1px solid #ccc;width:225px;font-size:14px; padding:5px;}
+
+.drpPhone {border:1px solid #ccc;font-size:14px; padding:5px;}
+
+.content-form { margin:0px auto; padding:10px; border:1px solid #d2d2d2; border-radius:7px; background:#fff;}
+
+.content-form-heading {color:#e43f45; font-size:18px; border-bottom:1px solid #e43f45; margin-bottom:10px; margin-top:20px;}
+
+
+
+
+.info, .success, .warning, .error, .validation {
+  border: 1px solid;
+  margin: 10px 0px;
+  padding:15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+    text-align: center;
+}
+.info {
+  color: #00529B;
+  background-color: #BDE5F8;
+  background-image: url('../images/info.png');
+}
+.success {
+  color: #4F8A10;
+  background-color: #DFF2BF;
+  background-image:url('../images/success.png');
+}
+.warning {
+  color: #9F6000;
+  background-color: #FEEFB3;
+  background-image: url('../images/warning.png');
+}
+.error {
+  color: #D8000C;
+  background-color: #FFBABA;
+  background-image: url('../images/error1.png');
+}
+
+

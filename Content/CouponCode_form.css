@@ -1,0 +1,491 @@
+#c_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    filter: alpha(opacity=70);
+    -moz-opacity: 1.0;
+    -khtml-opacity: 1.0;
+    opacity: 1.0;
+    z-index: 9998 !important;
+}
+
+#doctorProfile_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    filter: alpha(opacity=70);
+    -moz-opacity: 1.0;
+    -khtml-opacity: 1.0;
+    opacity: 1.0;
+    z-index: 9998 !important;
+}
+
+#Nigeria_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    filter: alpha(opacity=70);
+    -moz-opacity: 1.0;
+    -khtml-opacity: 1.0;
+    opacity: 1.0;
+    z-index: 9998 !important;
+}
+
+#USSDQuery_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    filter: alpha(opacity=70);
+    -moz-opacity: 1.0;
+    -khtml-opacity: 1.0;
+    opacity: 1.0;
+    z-index: 9998 !important;
+}
+
+.doctorProfile_cnt223 a {
+    text-decoration: none;
+}
+
+.Nigeria_cnt223 a {
+    text-decoration: none;
+}
+
+.USSDQuery_cnt223 a {
+    text-decoration: none;
+}
+
+.c_cnt223 a {
+    text-decoration: none;
+}
+
+.doctorProfile_popup {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 9999;
+    font-size: 13px;
+}
+
+.Nigeria_popup {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 9999;
+    font-size: 13px;
+}
+
+.USSDQuery_popup {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 9999;
+    font-size: 13px;
+}
+
+.c_popup {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 9999;
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.c_cnt223 {
+    min-width: 730px;
+width: 680px;
+min-height: 334px;
+    margin: 100px auto;
+    background: none repeat scroll 0% 0% white;
+    position: relative;
+    padding: 15px;
+    border-radius: 0px;
+    box-shadow: 0px 2px 5px #000;
+    border: 5px solid #03F;
+    z-index: 9999;
+}
+
+.Nigeria_cnt223 {
+    min-width: 680px;
+    width: 680px;
+    min-height: 305px;
+    margin: 100px auto;
+    background: none repeat scroll 0% 0% white;
+    position: relative;
+    padding: 15px;
+    border-radius: 0px;
+    box-shadow: 0px 2px 5px #000;
+    border: 5px solid #03F;
+    z-index: 9999;
+}
+
+.USSDQuery_cnt223 {
+    min-width: 680px;
+    width: 680px;
+    min-height: 305px;
+    margin: 100px auto;
+    background: none repeat scroll 0% 0% white;
+    position: relative;
+    padding: 15px;
+    border-radius: 0px;
+    box-shadow: 0px 2px 5px #000;
+    border: 5px solid #03F;
+    z-index: 9999;
+}
+
+.doctorProfile_cnt223 {
+    min-width: 620px;
+    width: 617px;
+    min-height: 305px;
+    margin: 100px 0px 0px 323px;
+    background: none repeat scroll 0% 0% white;
+    position: relative;
+    padding: 15px;
+    border-radius: 0px;
+    box-shadow: 0px 2px 5px #000;
+    border: 5px solid #03F;
+    z-index: 9999;
+    overflow: scroll;
+}
+
+.c_doctor_img {
+    min-width: 200px;
+    width: 200px;
+    min-height: 300px;
+    margin: 0px auto;
+    position: relative;
+    padding: 0px;
+    float: left !important;
+}
+
+.doctorProfile_doctor_img {
+    min-width: 200px;
+    width: 200px;
+    min-height: 300px;
+    margin: 0px auto;
+    position: relative;
+    padding: 0px;
+    float: left !important;
+}
+
+.c_cnt223 p {
+    clear: both;
+    color: #000;
+    text-align: justify;
+}
+
+.Nigeria_cnt223 p {
+    clear: both;
+    color: #000;
+    text-align: justify;
+}
+
+.USSDQuery_cnt223 p {
+    clear: both;
+    color: #000;
+    text-align: justify;
+}
+
+.doctorProfile_cnt223 p {
+    clear: both;
+    color: #000;
+    text-align: justify;
+}
+
+.c_cnt223 p a {
+    color: #000;
+    font-weight: bold;
+}
+
+.Nigeria_cnt223 p a {
+    color: #000;
+    font-weight: bold;
+}
+
+.doctorProfile_cnt223 p a {
+    color: #000;
+    font-weight: bold;
+}
+
+.c_cnt223 .x {
+    float: right;
+    position: relative;
+    top: -30px;
+    width: 34px;
+    right: -30px;
+}
+
+.doctorProfile_cnt223 .Y {
+    float: right;
+    position: relative;
+    top: -30px;
+    width: 34px;
+    right: -30px;
+}
+
+.Nigeria_cnt223 .X {
+    float: right;
+    position: relative;
+    top: -30px;
+    width: 34px;
+    right: -30px;
+}
+
+.USSDQuery_cnt223 .X {
+    float: right;
+    position: relative;
+    top: -30px;
+    width: 34px;
+    right: -30px;
+}
+
+.c_cnt223 .x:hover {
+    cursor: pointer;
+}
+
+.Nigeria_cnt223 .x:hover {
+    cursor: pointer;
+}
+
+.USSDQuery_cnt223 .x:hover {
+    cursor: pointer;
+}
+
+.doctorProfile_cnt223 .Y:hover {
+    cursor: pointer;
+}
+
+.doctorProfile_coupon_popup {
+    height: 300px;
+    position: relative;
+    width: 380px;
+    padding: 0px;
+    margin: -320px 0px 0px 260px;
+    float: left !important;
+}
+
+.c_coupon_popup {
+    height: 300px;
+    position: relative;
+    width: 380px;
+    padding: 0px;
+    margin: -307px 0px 0px 260px;
+    float: left !important;
+}
+
+.Nigeria_coupon_popup {
+    height: 300px;
+    position: relative;
+    width: 380px;
+    padding: 0px;
+    margin: -320px 0px 0px 260px;
+    float: left !important;
+}
+
+.USSDQuery_Response_popup {
+    height: 300px;
+    position: relative;
+    width: 380px;
+    padding: 0px;
+    margin: -320px 0px 0px 260px;
+    float: left !important;
+}
+
+.c_top_heading {
+    width: 480px;
+    height: 40px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.c_coupon_popup p {
+    font-size: 13px;
+    font-weight: normal;
+    text-align: justify;
+    color: #000;
+    margin: 0px 0px 0px 0px;
+}
+
+.c_coupon_popup span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.c_fill_detail {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ec0505;
+    padding-top: 10px;
+}
+
+.c_term_condition {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+.c_input {
+    display: block;
+    margin-bottom: 9px;
+    width: 450px;
+    margin: 10px 0px 0px 0px;
+    font-size: 14px;
+}
+
+.c_input_forget {
+    display: block;
+    margin-bottom: 9px;
+    width: 450px;
+    margin: 0px 0px 0px 0px;
+}
+
+.c_input_join {
+    display: block;
+    margin-bottom: 9px;
+    width: 450px;
+    margin: 10px 0px 0px 0px;
+    color: #ec0505;
+}
+
+.c_login {
+    background-color: #2673d2;
+    width: 250px;
+    height: 30px;
+    display: inline-block;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 0px 10px 4px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none !important;
+    border: none;
+    height: 30px;
+    margin: 10px 0px 0px 150px;
+    cursor: pointer;
+}
+
+    .c_login:hover {
+        background-color: #ec0505;
+    }
+
+.c_login {
+    color: #FFF;
+}
+
+    .c_login:active {
+        position: relative;
+        top: 1px;
+        color: #FFF;
+    }
+
+
+
+
+input.freecoupon_button {
+    width: 221px;
+    height: 45px;
+    text-align: center;
+    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+    padding: 0px 0px 0px 0px; /*add some padding to the inside of the button*/
+    /*the colour of the button*/
+    background-color: #2673d2;
+    /*style the text*/
+    color: #FFF;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: Tahoma, Geneva, sans-serif !important;
+    border: none !important;
+}
+    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+    input.freecoupon_button:hover, input#gobutton:focus {
+        background: #e10000 ; /*make the background a little darker*/
+        /*reduce the drop shadow size to give a pushed button effect*/
+    }
+
+.c_input .c_shadowfield {
+    position: relative;
+    width: 300px;
+    font-size: 13px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: normal;
+    background: #FFF;
+    margin: 0px 0px 0px 30px;
+    color: #7c7c7c;
+    line-height: 1.4;
+    padding: 6px 2px;
+    outline: none;
+    transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    border: 1px #CCC solid;
+    box-shadow: 0 1px rgba(34, 25, 25, 0.2) inset, 0 1px #fff;
+}
+
+    .c_input .c_shadowfield:focus {
+        border-color: #930;
+        background: #fff;
+        color: #5d5d5d;
+        box-shadow: inset 0 1px rgba(10, 96, 204, 0.2), 0 1px rgba(10, 96, 204, 0.6), 0 0 7px rgba(10, 96, 204, 0.5);
+        -moz-box-shadow: inset 0 1px rgba(10, 96, 204, 0.2), 0 1px rgba(10, 96, 204, 0.6), 0 0 7px rgba(10, 96, 204, 0.5);
+        -webkit-box-shadow: inset 0 1px rgba(10, 96, 204, 0.2), 0 1px rgba(10, 96, 204, 0.6), 0 0 7px rgba(10, 96, 204, 0.5);
+    }
+
+    .c_cnt2231 {
+min-width: 680px;
+width: 939px;
+min-height: 305px;
+margin: 15px auto;
+background: none repeat scroll 0% 0% white;
+position: relative;
+padding: 15px;
+border-radius: 0px;
+box-shadow: 0px 2px 5px #000;
+border: 5px solid #03F;
+z-index: 9999;
+}
+    .c_coupon_popup1 {
+height: 300px;
+position: relative;
+width: 560px;
+padding: 0px;
+margin: 0px 0px 0px 123px;
+float: left !important;
+}
+    .c_top_heading1 {
+width: 800px;
+height: 40px;
+font-family: Tahoma, Geneva, sans-serif;
+font-weight: bold;
+font-size: 14px;
+}
+   .c_input_100 {
+display: block;
+margin-bottom: 9px;
+width: 600px;
+margin: 10px 0px 0px 0px;
+font-size: 14px;
+}
+   .c_input_100 .c_shadowfield {
+position: relative;
+width: 452px;
+font-size: 13px;
+font-family: "Helvetica Neue", Arial, sans-serif;
+font-weight: normal;
+background: #FFF;
+margin: 0px 0px 0px 30px;
+color: #7c7c7c;
+line-height: 1.4;
+padding: 6px 2px;
+outline: none;
+transition: all 0.2s ease-in-out 0s;
+-webkit-transition: all 0.2s ease-in-out 0s;
+-moz-transition: all 0.2s ease-in-out 0s;
+border: 1px #CCC solid;
+box-shadow: 0 1px rgba(34, 25, 25, 0.2) inset, 0 1px #fff;
+}

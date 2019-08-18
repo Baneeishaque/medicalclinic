@@ -1,0 +1,2521 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html prefix="og:http://ogp.me/ns#" itemscope itemtype="http://schema.org/Product" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from www.icliniccare.com/symptom-checker by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Feb 2016 12:32:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="favicon.ico" rel="shortcut icon" hreflang="en-us" type="image/x-icon" />
+    <meta name="google-site-verification" content="HNZ4ajCc_qbQ9uU2xqm3bNeNnz52GcgZT2k2EDgL16E" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8" />
+    <meta name="msvalidate.01" content="0115DEE5670E9B0C5999DD7007854BBB" />
+
+    <title>Symptom Checker | Online | Self Diagnosis | medical clinic Healthcare</title>
+    <link href="Content/cssbc8c.css?v=InJltDZ8bHen1D1USNEWkUld_x2v8aCeoa3XA2OLqN81" rel="stylesheet"/>
+
+    <script src="bundles/modernizr70f4?v=eoxdJieroS4aKFRd6Ig4jp_oRSgXQeeG6hbHlkvv-EY1"></script>
+
+    <script src="bundles/jquery53b1?v=Mr8z7cwRVicid8NnJliEmOE7FU6vgy1m3T3KGKT0ZA01"></script>
+
+    <link rel="author" href="https://plus.google.com/+icliniccareonlinedoctor" />
+    
+<script type="text/javascript" src="Scripts/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.jcarousel.js"></script>
+    <script src="Scripts/XSSValidate.js" type="text/javascript"></script>
+    <link href="content/CouponCode_form.css" hreflang="en-us" type="text/css" rel="stylesheet" />
+    <!--[if IE ]>
+            <style type="text/css">
+                #searchtext{padding:0 4px !important;}   
+            </style>
+    <![endif]-->
+    <script type='text/javascript'>
+
+        //Check checkbox change of appointmentcode's checkbox
+        function redirectToVideoChat() {
+            window.location.href = 'doctor-video-call.html';
+        }
+        function appointmentcheckchange() {
+            if (document.getElementById('prehidden').value == 0) {
+                document.getElementById('consultappointmentcode').removeAttribute("disabled");
+                document.getElementById('videoconsult').style.backgroundColor = "#ec0505";
+                document.getElementById('prehidden').value = 1;
+            } else {
+                document.getElementById('prehidden').value = 0;
+                document.getElementById('videoconsult').style.backgroundColor = "#005aca";
+                document.getElementById('consultappointmentcode').setAttribute("disabled", "disabled");
+            }
+        }
+        function LoginForCorporate(url, credentials) {
+            var messageobj = document.getElementById('messageid');
+            messageobj.style.display = "";
+            $.ajax({
+                type: "Post",
+                url: url,
+                data: credentials,
+                contentType: "application/json; charset=utf-8",
+                success: function (msg) {
+                    if (msg.Message == "" || msg.Message == null) {
+                        if (msg.appointmentCode == "" || msg.appointmentCode == null) {
+                            if (msg.area == 'null' || msg.area == "" || msg.area == null) {
+                                window.location.href = "http://" + window.location.host + "/" + msg.controllername;
+                            } else {
+                                if (msg.viewname == "" || msg.viewname == null) {
+                                    window.location.href = "http://" + window.location.host + "/" + msg.area + "/" + msg.controllername;
+                                } else {
+                                    window.location.href = "http://" + window.location.host + "/" + msg.area + "/" + msg.controllername + "/" + msg.viewname;
+                                }
+                            }
+                        } else {
+                            window.location.href = "http://" + window.location.host + "/" + msg.area + "/" + msg.controllername + "/" + msg.viewname + "/" + msg.appointmentCode;
+                        }
+                    } else {
+                        messageobj.innerHTML = msg.Message;
+                    }
+                },
+                error: function (msg) {
+                    messageobj.innerHTML = "Please fill in proper values";
+                }
+            });
+        }
+        function LoginToVideoChat() {
+
+            var appointmentCode = document.getElementById('consultappointmentcode').value;
+
+            if (appointmentCode != "Appointment Code" && appointmentCode != null && appointmentCode != "") {
+                var appointmentCredentials = {
+                    appointmentCode: appointmentCode
+                };
+                var appointmentCodeJson = JSON.stringify(appointmentCredentials);
+                var url = '/iClinicCenters/Home/StartVideoChat';
+                LoginForCorporate(url, appointmentCodeJson);
+            } else {
+                jQuery.msgBox({
+                    title: "iClinic",
+                    content: "Please enter appointmentCode !",
+                    type: "info"
+                });
+            }
+        }
+    
+    </script>
+    
+    
+    <meta name="description" content="Check your online medical symptoms checker, self diagnosis, symptom checker diagnosis, health symptom checker, medical self diagnosis online and get advice on what could be the cause"/>
+    <meta name="keywords" content="online symptom checker, self diagnosis online, symptom checker online, symptom checker diagnosis, medical symptoms checker, medical symptom checker, medical self diagnosis, health symptom checker"/>
+    <meta name="robot" content="index,follow">
+    <meta lang="en"/>
+    <meta property="og:title" content="Online Medical Symptoms Checker, Self Diagnosis Online"/>
+    <meta property="og:description"  content="Check your online medical symptoms checker, self diagnosis, symptom checker diagnosis, health symptom checker, medical self diagnosis online and get advice on what could be the cause"/>
+    <meta property="og:site_name" content="iClinic Care"/>
+    <meta property="og:type" content="Health Care"/>
+    <meta property="og:url" content="https://www.icliniccare.com/symptom-checker"/>
+    <link rel="alternate" href="symptom-checker.html" hreflang="en-us"/>
+    <meta name="revisit-after" content="7">
+    <meta itemprop="name" content="iClinic Healthcare" />
+    <meta itemprop="description" content="Check your online medical symptoms checker, self-diagnosis, symptom checker diagnosis, health symptom checker, medical self-diagnosis online and get advice on what could be the cause." />
+    <meta itemprop="image" content="https://www.icliniccare.com/images/logo.jpg" />
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //checkSupportUserStatus();
+            //document.getElementById("docemailId").focus();
+            $(document).bind('keypress', pressed);
+        });
+        function pressed(e) {
+            if (e.keyCode === 13) {
+                LoginbtnClick();
+            }
+        }
+    </script>
+    <!--Start of Zopim Live Chat Script-->
+
+    <script type="text/javascript">
+        // Popup window code
+        function newPopup2(url) {
+            popupWindow2 = window.open(
+                url, 'popUpWindow2', 'height=403,width=296,left=10,top=10,resizable=no,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+        }
+    </script>
+
+    <script type="text/javascript">
+        window.$zopim || (function (d, s) {
+            var z = $zopim = function (c) { z._.push(c) }, $ = z.s =
+                d.createElement(s), e = d.getElementsByTagName(s)[0]; z.set = function (o) {
+                    z.set.
+                        _.push(o)
+                }; z._ = []; z.set._ = []; $.async = !0; $.setAttribute('charset', 'utf-8');
+            $.src = 'http://v2.zopim.com/?1z8u8gYrzoZpXC8ThHnOdDLUnmOuzkZX'; z.t = +new Date; $.
+                type = 'text/javascript'; e.parentNode.insertBefore($, e)
+        })(document, 'script');
+    </script>
+    <!--End of Zopim Live Chat Script-->
+
+    <script type="text/javascript">
+        setTimeout(function () {
+            var a = document.createElement("script");
+            var b = document.getElementsByTagName("script")[0];
+            a.src = document.location.protocol + "//dnn506yrbagrg.cloudfront.net/pages/scripts/0021/9354.js?" + Math.floor(new Date().getTime() / 3600000);
+            a.async = true; a.type = "text/javascript"; b.parentNode.insertBefore(a, b)
+        }, 1);
+    </script>
+
+    <script type="text/javascript">
+        var _mfq = _mfq || [];
+        (function () {
+            var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true;
+            mf.src = "../cdn.mouseflow.com/projects/523389ca-de88-4777-9355-d122e39e9da1.js";
+            document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+    </script>
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-50341565-1', 'icliniccare.com');
+        ga('send', 'pageview');
+
+    </script>
+    <script src="Scripts/jquery.easing.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $banner = $('.stickybanner'), $window = $(window);
+            var $topDefault = parseFloat($banner.css('bottom'), 10);
+            $window.on('scroll', function () {
+                var $top = $(this).scrollTop();
+                $banner.stop().animate({ bottom: -($top - $topDefault) }, 1000, 'easeOutBack');
+            });
+
+            var $wiBanner = $banner.outerWidth() * 2;
+            zindex($('#independancewrapper').outerWidth());
+            $window.on('resize', function () {
+                zindex($('#independancewrapper').outerWidth());
+            });
+            function zindex(maxWidth) {
+                if ($window.width() <= maxWidth + $wiBanner) {
+                    $banner.addClass('stickyzindex');
+                } else {
+                    $banner.removeClass('stickyzindex');
+                }
+            }
+        });
+</script>
+    <script src="Scripts/general.js" type="text/javascript"></script>
+    <link href="Content/loginpopup.css" rel="stylesheet" />
+</head>
+    <body>
+         <div id="independancewrapper">
+     
+    </div>
+    
+   <div id="stickybanner_right" class="stickybanner"><a target="_blank" href="packages/obesity-comprehensive-profile-tests660a.html?utm_source=sticky&amp;utm_medium=iClinic&amp;utm_campaign=sticky%20banner">banner right</a></div>
+        <!--POPUP starts here-->
+        <div class="loginpopup">
+            <div class="loginform">
+                <a href="#" class="close">Close</a>
+                <div id="heading" style="font-size: 18px; float: left; width: 250px; border-bottom: #CCC 1px solid; padding-bottom: 7px; color: #327ad4; padding-bottom: 15px; margin: 12px 0px 0px 0px;">Login</div>
+                <div>
+                    <br />
+                    <label id="messageidnew" style="color: #e62929; font-size: 12px; float: left; margin-top: 10px;"></label>
+                    <br />
+                    <input type="text" class=" textbox" name="email" id="emailIdconsumer" class="shadowfield" placeholder="Enter Email ID" onblur="checkemail(this.value,'loginLoad','messageidnew');" style="width: 230px !important;">
+                    <label>
+                        <img id="loginLoad" src="images/loading.gif" alt="loading" style="display: none; height: 15px; width: 15px" />
+                    </label>
+                </div>
+                <br />
+                <div>
+                    <input type="password" class=" textbox" name="password" id="passwordconsumer" placeholder="Enter Password" class="shadowfield" onblur="if(this.value=='') this.value='password';" onfocus="if(this.value=='password') this.value='';   " style="width: 230px !important;">
+                </div>
+                <br />
+                <div>
+                    <a href="Login/ForgotPassword.html" style="text-decoration: none;" hreflang="en-us">Forgot your password?</a>
+                    <div style="margin-top: 5px;">
+                        <input class="loginbutton" id="Continue" style="float: right; margin-right: 30px; font-family: Tahoma" type="submit" value="Log in" onclick="ConsumerLoginClick()" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin: 0 auto;">
+            <div id="header" tyle="margin: 0 auto;width:100%">
+                <div itemscope itemtype="http://schema.org/Organization">
+                    <a itemprop="url" href="index.html" style="float: left; margin-left: 50px;" hreflang="en-us">
+                        <img src="images/logo.jpg" itemprop="logo" alt="Online Doctor Consultation" title="Online Doctor Consultation" class="logo" />
+                    </a>
+
+                    <span class="tagLine" style="float: left;">Care today, just a click away</span>
+                        <div id="topLinks" style="float: right; font-size: 12px; margin-top: 55px; margin-right: 20px; width: 875px;">
+                            <ul>
+                                <li class="first"> <a href="why-iclinic.html" hreflang="en-us">Why iClinic</a></li>
+                                <li><a href="Home/Doctors.html" hreflang="en-us">Are you a Doctor</a></li>
+                                <li><a href="#" id="loginclick">Login</a></li>
+                                </ul>
+                  </div>
+                    <div class="clear"></div>
+                    <div style="width: 100%; background: url(images/navBg.jpg) 0 0 repeat-x;margin:0 auto">
+
+                        <div style="width:95%;margin:0 auto;">
+                            <ul id="nav">
+                                <li><a href="index.php" class="leftCorner" hreflang="en-us"><img alt="iCliniccare" title="iCliniccare" src="images/home-icon.png" class="homeImage" style="margin-left: 11px;" /></a></li>
+                                <li onmouseover="tooltipsfocus('7')" onmouseout="tooltipsblur('7')"> <a href="Home/ConsultDoctor.html">Consult a Doctor Now</a>
+                                    <div id="tooltip7" class="tool-tip" style="display: none"> <img src="images/tool-tip-arrow.png" width="20" height="20" alt="Consult a Doctor Now"> Ask a Doctor for free, 24/7 Online Doctor,  Written Medical Advice, Video call with specialist - Consultation Services. </div>
+                                </li>
+                                <li onmouseover="tooltipsfocus('1')" onmouseout="tooltipsblur('1')"> <a href="patient-forum.html" hreflang="en-us" style="text-align:center;">Patient Forum</a>
+                                    <div id="tooltip1" class="tool-tip" style="display: none"> <img src="images/tool-tip-arrow.png" width="20" height="20" alt="Patient Forum"> Interact with patients with similar ailments and get useful advice on treatments and medicines. </div>
+                                </li>
+                                <li onmouseover="tooltipsfocus('2')" onmouseout="tooltipsblur('2')"> <a href="symptom-checker.html" hreflang="en-us"  style="text-align:center;">Symptom Checker</a>
+                                    <div id="tooltip2" class="tool-tip"> <img src="images/tool-tip-arrow.png" width="20" height="20" alt="Symptom Checker"> Analyse your symptoms, diagnose your ailments and get a detailed report. </div>
+                                </li>
+                                <li onmouseover="tooltipsfocus('6')" onmouseout="tooltipsblur('6')"> <a href="home/contact-us.html" class="right_menu_radius" hreflang="en-us">Contact us</a>
+                                    <div id="tooltip6" class="tool-tip" style="display: none"> <img src="images/tool-tip-arrow.png" width="20" height="20" alt="contact doctor online"> If you have any query or suggestions contact us now. </div>
+                                </li>
+                                <li onmouseover="tooltipsfocus('5')" onmouseout="tooltipsblur('5')"> <a href="home/about-us.html" hreflang="en-us">About Us</a>
+                                    <div id="tooltip5" class="tool-tip" style="display: none"> <img src="images/tool-tip-arrow.png" width="20" height="20" alt="online health services"> About team ssm </div>
+                                </li>
+                                <li></li>
+                                </ul>
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+     
+        <div style="margin:0 auto;width: 982px;" id="breadcrumb">    
+
+        <a href="index.html" title="Home">Home</a>
+         &gt; 
+
+    Symptoms Checker
+</div>
+        
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+<div class="symptopm" style="min-height: 350px;">
+
+    <div class="symptopm_left">
+        <h1>iClinic Symptom Checker</h1>
+        <div class="clear2"></div>
+        <div class="symptopm_left_tour_btn"><a href="#">Take Tour</a></div>
+        <div id="bodypartlist" style="margin-top: 10px; display: none"></div>
+        
+         <!-- 2D Male and Female Avatar images and area section with its coordinates -->
+        <div id="2DObjectMale" style="display:none;background-color: white;">
+            <div id="front_body_div" >
+                <img id="front_body" src="images/SelfDiagnose/Male/Avatar1.png" class="mapper" usemap="#front" width="338" height="481" border="0" alt="" />
+            </div>
+
+            <div id="back_body_div"style="display: none">
+                <img id="back_body" src="images/SelfDiagnose/Male/Avatar12.png" class="mapper" usemap="#back" border="0" alt="" width="338" height="481" />
+            </div>
+
+            <div id="head_div" style="height:481px;display:none">
+                <img  src="images/SelfDiagnose/3DMale/headnew.jpg" class="mapper" usemap="#head_front" border="0" alt="" width="338"  height="377" />
+            </div>
+
+            <div id="head_back_div"  style="display: none;height:481px">
+                <img  src="images/SelfDiagnose/3DMale/head_back.jpg" class="mapper" usemap="#head_back" border="0" alt="" width="338" height="377" />
+            </div>
+
+            <div id="hand_front" style="display: none;height:441px">
+                <img  src="images/SelfDiagnose/3DMale/hand_front.jpg" class="mapper" usemap="#hand_front" border="0" alt="" width="338" height="481" />
+            </div>
+
+            <div id="hand_back"  style="display: none;height:481px">
+                <img  src="images/SelfDiagnose/3DMale/hand_back.jpg" class="mapper" usemap="#hand_back" border="0" alt="" width="338"  height="481"/>
+            </div>
+            
+            <div id="leg_front" style="display: none;height:441px">
+                <img  src="images/SelfDiagnose/3DMale/legs_front.jpg" class="mapper" usemap="#leg_front" border="0" alt="" width="338"  height="481"/>
+            </div>
+            
+            <div id="leg_back"  style="display: none;height:481px">
+                <img  src="images/SelfDiagnose/3DMale/legs_back.jpg" class="mapper" usemap="#leg_back" border="0" alt="" width="338"  height="481"/>
+            </div>
+            
+            <div id="abdomen_front" style="display: none;height:441px">
+                <img  src="images/SelfDiagnose/3DMale/abdominal.jpg" class="mapper" usemap="#abdomen_front" border="0" alt="" width="338"  height="481"/>
+            </div>
+            
+            <div id="abdomen_back"  style="display: none;height:481px">
+                <img  src="images/SelfDiagnose/3DMale/abdominal_back.jpg" class="mapper" usemap="#abdomen_back" border="0" alt="" width="338"  height="481"/>
+            </div>
+            
+            <div id="neck_front" style="display: none;height:441px">
+                <img  src="images/SelfDiagnose/3DMale/neck_front.jpg" class="mapper" usemap="#neck_front" border="0" alt="" width="338"  height="481"/>
+            </div>
+            
+            <div id="neck_back"  style="display: none;height:481px">
+                <img  src="images/SelfDiagnose/3DMale/neck_back.jpg" class="mapper" usemap="#neck_back" border="0" alt="" width="338"  height="481"/>
+            </div>
+
+            <div id="chest_front" style="display: none;height:441px">
+                <img  src="images/SelfDiagnose/3DMale/chest.jpg" class="mapper" usemap="#chest_front" border="0" alt="" width="338"  height="481" />
+            </div>
+            
+            <div id="chest_back"  style="display: none;height:481px">
+                <img  src="images/SelfDiagnose/3DMale/abdominal_back.jpg" class="mapper" usemap="#chest_back" border="0" alt="" width="338"  height="481"/>
+            </div>
+            
+            <div id="pelvis_front" style="display: none;height:441px">
+                <img  src="images/SelfDiagnose/3DMale/pelvis--front.jpg" class="mapper" usemap="#pelvis_front" border="0" alt="" width="338"  height="481"/>
+            </div>
+            
+            <div id="pelvis_back"  style="display: none;height:481px">
+                <img  src="images/SelfDiagnose/3DMale/pelvis--back.jpg" class="mapper" usemap="#pelvis_back" border="0" alt="" width="338"  height="481" />
+            </div>
+
+            <map name="front" id="front">
+                <area id = "Head" class="noborder" title="Head" alt="Head" href="javascript:void(0)" onclick="javascript:frontbody_head_click(this);" shape="poly" coords="186,44, 186,46, 186,47, 187,48, 187,50, 186,53, 185,55, 185,58, 186,58, 189,55, 190,55, 190,54, 191,58, 190,60, 189,64, 187,68, 185,69, 185,70, 184,71, 183,73, 183,75, 182,77, 182,79, 177,79, 176,79, 177,80, 176,80, 174,80, 166,81,164,81, 162,81, 160,80, 158,80, 157,79, 157,79, 156,77, 156,76, 156,75, 155,74, 155,73, 155,74, 155,72, 153,71, 152,69, 151,68, 150,64, 148,59, 148,57, 148,56, 148,55, 148,54, 149,54, 150,55, 152,58, 152,44, 153,40, 154,38, 155,36, 158,33,160,32, 162,31, 164,31,  172,31, 174,31, 175,31, 176,31, 177,31, 178,32, 180,34, 181,36, 183,37, 184,38, 184,38, 184,38, 184,39, 185,43, 185,42">
+                <area id = "LeftLeg" class="noborder" title="Leg" alt="Leg" onclick="javascript:frontbody_leg_click(this);" href="javascript:void(0);" shape="poly" coords="166,251,135,211,132,230,129,246,130,282,132,310,134,335,130,349,131,365,137,396,136,426,126,442,125,445,126,451,130,451,144,452,150,447,151,436,153,420,152,407,151,393,155,367,158,348,154,330,162,294,165,269,167,252"/>
+                <area id = "RightLeg" class="noborder" title="Leg" alt="Leg" onclick="javascript:frontbody_leg_click(this);" href="javascript:void(0);" shape="poly" coords="172,249,202,210,209,245,208,280,204,316,203,336,207,346,206,364,200,404,201,423,213,444,214,450,203,451,192,452,188,446,186,433,185,415,186,411,180,345,183,330,175,291,172,252,173,251">
+                <area id = "LeftHand" class="noborder" title="Hand" alt="Hand" onclick="javascript:frontbody_hand_click(this);" href="javascript:void(0);" shape="poly" coords="132,106,125,108,118,114,116,120,116,150,100,200,96,225,96,230,96,266,97,267,98,268,99,268,100,266,101,265,103,264,103,248,103,246,104,244,104,243,109,235,111,236,112,237,112,237,113,237,114,238,115,238,117,237,117,235,105,225,118,201,121,193,125,181,131,162,132,135">
+                <area id = "RightHand" class="noborder" title="Hand" alt="Hand" onclick="javascript:frontbody_hand_click(this);" href="javascript:void(0)" shape="poly"   coords="216,112,221,120,221,134,221,145,224,163,232,186,241,221,242,266,240,270,236,264,234,246,232,239,229,237,223,239,221,235,231,228,231,221,218,198,212,178,205,158,205,131,205,106"/>
+                <area id = "Neck" class="noborder" title="Neck" alt="Neck" href="javascript:void(0)" shape="poly" onclick="javascript:frontbody_neck_click(this);" coords="137,105,165,106,170,109,173,106,201,105,185,96,183,90,180,83,170,85,157,84,154,91,146,99,137,106"/>
+                <area id = "Chest" class="noborder" title="Chest" alt="Chest" href="javascript:void(0)" onclick="javascript:frontbody_chest_click(this);" shape="poly" coords="137,106,133,129,135,152,146,148,168,142,202,152,203,128,201,106,178,107,169,110,155,107,138,107"/>
+                <area id = "Abdomen" class="noborder" title="Abdomen" alt="Abdomen" href="javascript:void(0)" onclick="javascript:frontbody_abdomen_click(this);" shape="poly" coords="186,198,170,201,138,196,139,182,135,162,144,156,169,151,192,157,203,163,198,181,200,196" />
+                <area id = "Pelvis" class="noborder" title="Pelvis" alt="Pelvis" href="javascript:void(0)" onclick="javascript:frontbody_pelvis_click(this);" shape="poly" coords="135,207,149,225,164,245,173,246,201,207,178,207,167,207,153,207"/>
+                <area id = "BackView" class="noborder" title="BackView"  alt="BackView" href="javascript:void(0)" shape="circle" onclick="javascript:frontbody_backview_click(this);" coords="285,410,32" />
+                <area id = "SkinFront" class="noborder" title = "SkinFront" alt="SkinFront" href="javascript:void(0)" shape="circle" onclick="map('2', 'Skin');" coords="57,410,32" />
+            </map>
+
+            <map id="back" name="back">
+                <area id = "FrontView" title="FrontView" class = "noborder"  alt="FrontView" href="javascript:void(0)" shape="circle" onclick="javascript:backbody_frontview_click(this);" coords="285,410,35" />
+                <area id = "SkinBack" title = "SkinBack" class = "noborder"  alt="SkinBack" href="javascript:void(0)" shape="circle" onclick="map('2', 'Skin');" coords="57,410,35" />
+                <area id = "BackHead" class = "noborder"  alt="Head" title="Head" href="javascript:void(0)" shape="poly" onclick="javascript:backbody_head_click(this);" coords="150,60,148,51,151,50,151,43,156,33,164,28,179,29,185,35,187,42,187,54,191,54,190,63,184,70,153,70"/>
+                <area id = "BackNeck" class = "noborder"  alt="Neck" title="Neck" href="javascript:void(0)" shape="poly" onclick="javascript:backbody_neck_click(this);" coords="169,70,183,70,182,81,187,87,153,87,157,82,154,77,153,70"/>
+                <area id = "BackPart"  class = "noborder"  alt="Back" title="Back" href="javascript:void(0)" shape="poly" onclick="javascript:backbody_backpart_click(this);" coords="157,181,200,181,205,155,208,137,197,93,144,93,137,126,135,140,136,161,140,181"/>
+                <area id = "Buttock"  class = "noborder"  alt="Buttock" title="Buttock" href="javascript:void(0)" shape="poly" onclick="javascript:backbody_buttock_click(this);" coords="137,196,202,196,208,238,200,247,188,249,177,248,172,246,169,247,163,250,151,250,139,244,130,236,135,205" />
+                <area id = "BackLefthand" class="noborder"  alt="Hand" title="Hand" href="javascript:void(0)" shape="poly" onclick="javascript:backbody_hand_click(this);" coords="138,97,137,124,134,154,124,183,115,205,105,224,117,236,115,239,110,236,106,239,104,246,103,262,99,269,95,267,96,267,95,226,99,202,109,169,116,145,116,137,116,114,121,105,131,100" />
+                <area id = "BackRightHand" class="noborder"  alt="Hand" title="Hand" href="javascript:void(0)" shape="poly" onclick="javascript:backbody_hand_click(this);" coords="206,98,208,131,208,144,207,156,216,176,217,188,233,222,228,230,218,235,217,237,221,239,224,236,229,238,232,244,232,264,239,268,245,266,244,233,244,222,233,172,224,140,225,120,219,108,216,105" />
+                <area id = "BackLeftleg" class="noborder"  alt="Leg" title="Leg" href="javascript:void(0)" shape="poly" onclick="javascript:backbody_leg_click(this);" coords="137,243,146,248,153,251,167,249,166,275,163,294,159,316,156,331,158,343,159,356,157,368,153,401,154,422,154,424,153,445,143,447,130,439,123,434,128,430,137,427,139,410,132,371,131,358,132,347,135,335,131,294,128,269,129,255,130,237"/>
+                <area id = "BackRightleg" class="noborder"  alt="Leg" title="Leg" href="javascript:void(0)" shape="poly" onclick="javascript:backbody_leg_click(this);" coords="178,249,193,249,200,247,208,241,210,264,210,284,207,317,205,330,210,350,210,371,205,395,203,413,203,427,208,432,200,444,191,445,186,435,183,430,187,424,188,415,189,398,183,356,183,346,184,331,173,274,172,263,172,258,172,248" />
+            </map>
+
+            <map name="head_front" id="HeadFront">
+                <area id="Nose" class="noborder" title="Nose" alt="Nose" onclick="map('9', 'Nose');" href="javascript:void(0);" shape="poly" coords=" 148,231, 147,231, 146,226, 146,224, 147,222, 148,220, 149,218, 150,214, 154,200, 156,190, 158,165, 159,164, 160,163, 161,163, 163,163, 165,163, 178,163, 179,164, 180,165, 186,208, 187,210, 192,224, 191,230, 190,231 ">
+                <area id="Lips" class = "noborder" title="Lips" href="javascript:void(0);" onclick="map('11', 'Lips');" alt="Lips" shape="poly" coords="206,261,197,254,184,248,166,246,150,249,135,256,128,263,129,273,135,278,149,281,160,281,186,281,195,280,205,277,209,269" />
+                <area id="LeftEye" class= "noborder" title="Eye" href="javascript:void(0);" onclick="map('58', 'Eyes');" alt="Eye" shape="circle" coords="126,173,25" />
+                <area id="RightEye" class= "noborder" title="Eye" href="javascript:void(0);" onclick="map('58', 'Eyes');" alt="Eye" shape="circle" coords="213,176,25" />
+                <area id="FaceLeft" class="noborder" title="Face"  href="javascript:void(0);" onclick="map('3', 'Face');" alt="Face" shape="poly" coords="118,277,121,262,128,252,142,246,142,204,125,206,108,204,87,191,85,210,86,221,87,234" />
+                <area id="FaceRight" class="noborder" title="Face"  href="javascript:void(0);" onclick="map('3', 'Face');" alt="Face" shape="poly" coords="253,220,252,236,217,278,216,263,209,251,197,245,197,204,215,207,230,205,253,190" />
+                <area id="FrontLeftEar" class="noborder" title="Ear"  href="javascript:void(0);" onclick="map('10', 'Ear');" alt="Ear" shape="poly" coords="79,208,73,200,66,195,63,196,60,202,61,212,65,226,72,246,74,252,78,261,82,267,87,265,79,209"/>
+                <area id="FrontRightEar" class="noborder" title="Ear"  href="javascript:void(0);" onclick="map('10', 'Ear');" alt="Ear" shape="poly" coords="259,208,266,200,271,195,276,197,277,204,276,214,273,224,268,238,264,253,256,266,250,266,256,229,258,218,259,209"/>
+                <area id="Scalp1" class="noborder" title="Scalp"  href="javascript:void(0);" onclick="map('21', 'Scalp');" alt="Scalp" shape="poly"  coords="80,146,84,127,98,102,118,84,139,72,155,68,173,66,192,70,206,76,218,83,233,95,244,108,252,124,255,137,257,145,245,141,218,137,211,136,130,136,99,142,82,146"/>
+                <area id="Jaw" class="noborder" title="Jaw"  href="javascript:void(0);" onclick="map('86', 'Jaw');" alt="Jaw" shape="poly" coords="84,244,113,283,142,287,167,287,195,287,220,284,253,244,242,295,236,305,227,314,208,322,132,322,110,314,96,296,91,282"/>
+                
+                <area id="ZoomOutFront" class="noborder" alt="Head Zoom Out" href="javascript:void(0);" shape="circle" coords="300,36,32" onclick="javascript:zoomOut();">
+            </map>
+
+            <map name="head_back" id="HeadBack">
+                <area id="BackSkalp" class="noborder" title="Scalp" alt="Scalp"  onclick="map('21', 'Scalp');" href="javascript:void(0);" shape="poly"  coords="98,265, 78,195, 75,166, 78,140, 89,113, 107,89, 126,74, 153,68, 177,67, 203,72, 227,81, 242,97, 253,119, 257,139, 258,165, 240,265, 99,264"/>
+                <area id="BackLeftEar" class="noborder" title="Ear" alt="Back Ear" onclick="map('10', 'Ear');" href="javascript:void(0);" shape="poly" coords="76,196,66,184,66,183,61,185,63,189,68,219,77,253,81,263,85,264,86,247,76,198,66,184"/>
+                <area id="BackRightEar" class="noborder" title="Ear" alt="Back Ear" onclick="map('10', 'Ear');" href="javascript:void(0);" shape="poly" coords="248,267,261,203,274,191,281,193,266,244,257,260,253,268"/>
+                <area id="Front" class="noborder" alt="Head Front" href="javascript:void(0);" shape="circle" coords="42,36,32" onclick="javascript:head_front_click(this);">
+                <area id="ZoomOutBack" class="noborder"  alt="Back Head Zoom Out" href="javascript:void(0);" shape="circle" coords="300,36,32" onclick="javascript:backhead_zoomout_click(this);">
+            </map>
+            
+            <map id="HandFront" name="hand_front">
+                <area id = "shoulder" class="noborder" title="Shoulder" alt="Shoulder" onclick="map('6', 'Shoulder');" href="javascript:void(0);" shape="poly" coords="199,41,193,49,191,56,193,86,201,101,153,97,155,79,158,69,164,60,174,51,199,41">        
+                <area id = "armpit" class="noborder" title="Arm Pit" alt="Arm Pit" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="202,101,185,101,181,111,182,119,188,127,203,127,204,116,203,103" />
+                <area id = "bicep" class="noborder" title="Upper Arm(Bicep)" alt="Upper Arm(Bicep)" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="153,97,185,100,181,107,180,114,182,121,187,126,190,130,189,137,188,146,186,152,183,161,175,183,147,176,153,151,157,134,154,110,154,99" />
+                <area id = "tricep" class="noborder" title="Upper Arm(Tricep)" alt="Upper Arm(Tricep)" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="189,135,189,145,184,161,175,183,193,192,203,166,202,128,189,127" />
+                <area id = "elbow" class="noborder" title="Elbow" alt="Elbow" onclick="map('93', 'Elbow');" href="javascript:void(0);" shape="poly" coords="148,176,169,182,181,186,192,193,181,218,168,216,148,208,137,201,148,176" />
+                <area id = "forearm" class="noborder" title="Forearm(Flexor)" alt="Forearm(Flexor)" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="137,202,148,209,168,217,181,219,177,239,166,263,140,306,134,315,105,302,117,260,126,229,132,211" />
+                <area id = "wrist" class="noborder" title="Wrist" alt="Wrist" onclick="map('72', 'Wrist Joints');" href="javascript:void(0);" shape="poly" coords="104,302,133,315,126,331,98,325,102,311" />
+                <area id = "palm" class="noborder" title="Palm" alt="Palm" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="135,359,130,353,122,352,117,355,116,362,118,373,122,380,126,367,134,359" />
+                <area id = "fingers1" class="noborder" title="Fingers" alt="Fingers" onclick="map('44', 'Fingers');" href="javascript:void(0);" shape="poly" coords="98,382,98,431,103,440,107,440,117,428,120,398,121,384,101,383" />
+                <area id = "fingers2"  class="noborder" title="Fingers" alt="Fingers" onclick="map('44', 'Fingers');" href="javascript:void(0);" shape="poly" coords="129,338,128,350,134,357,142,364,150,365,155,362,154,357,147,352,143,348,136,342" />
+                <area id = "Arm1" class="noborder" title="Arm" alt="Arm" onclick="bodynotavailable(this);" href="javascript:void(0);" shape="poly" coords="195,43, 190,57, 192,83, 199,101, 202,156, 202,166, 184,208, 178,236, 166,263, 132,319, 127,332, 132,342, 144,350, 155,357, 154,364, 146,365, 135,360, 131,362, 123,368, 119,420, 113,433, 107,439, 100,435, 98,407, 97,338, 97,328, 107,289, 128,221, 137,198, 153,150, 156,123, 153,108, 153,92, 155,75, 162,61, 175,50, 195,42"/>
+                
+                
+                <area id = "handzoomout"  class="noborder"  alt="Back Hand Zoom Out" href="javascript:void(0)" shape="circle" onclick="javascript:zoomOut();" coords="47,310,32" />         
+                
+            </map>
+            
+            <map id="HandBack" name="hand_back">
+                <area id="backshoulder" class="noborder" title="Shoulder" alt="Shoulder" onclick="map('6', 'Shoulder');" href="javascript:void(0);" shape="poly" coords="169,101,212,81,209,59,208,41,208,25,202,25,193,25,181,30,173,36,165,44,159,53,156,62,153,71,152,83,152,94,154,102,155,109">        
+                <area id="backtricep" class="noborder" title="Upper Arm(Tricep)" alt="Upper Arm(Tricep)" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="149,191,170,197,183,207,187,197,197,175,205,154,205,117,210,90,211,82,198,88,183,95,175,99,170,102,156,109,155,127,153,139,150,155,146,168,137,190" />
+                <area id="backelbow" class="noborder" title="Elbow" alt="Elbow" onclick="map('93', 'Elbow');" href="javascript:void(0);" shape="poly" coords="176,235,183,207,170,198,150,191,135,191,124,222,137,229,149,234,161,236" />
+                <area id="backforearm" class="noborder" title="Forearm(Flexor)" alt="Forearm(Flexor)" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="109,272,151,283,165,259,175,236,162,237,148,234,132,226,123,223,115,249" />
+                <area id="backwrist" class="noborder" title="Wrist" alt="Wrist" onclick="map('72', 'Wrist Joints');" href="javascript:void(0);" shape="poly" coords="95,335,125,335,127,324,151,284,109,272,101,301,96,325" />
+                <area id="backhand" class="noborder" title="Hand" alt="Hand" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="95,335,96,384,109,384,121,384,126,366,127,335,117,335,105,335" />
+                <area id="backfingers1" class="noborder" title="Fingers" alt="Fingers" onclick="map('44', 'Fingers');" href="javascript:void(0);" shape="poly" coords="96,384,103,384,121,384,118,428,115,430,112,433,108,441,102,441,97,438,96,406" />
+                <area id="backfingers2" class="noborder" title="Fingers" alt="Fingers" onclick="map('44', 'Fingers');" href="javascript:void(0);" shape="poly" coords="135,342,127,337,127,357,127,365,135,358,144,365,153,365,156,360,151,354,141,346" />
+                <area id="Arm2" class="noborder" style="display:none" title="Arm" alt="Arm" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords ="207,24,208,37,209,55,211,87,206,107,204,134,205,151,184,204,176,231,164,260,126,324,126,335,133,342,147,351,156,358,152,366,135,359,127,365,122,375,120,421,105,441,97,437,95,428,95,333,95,325,129,204,148,162,153,135,156,113,152,90,153,76,157,58,168,41,179,32,193,25"/>
+                
+                <area id = "backhandzoomout" class="noborder"  alt="Back Hand Zoom Out" href="javascript:void(0)" shape="circle" onclick="javascript:zoomOut();" coords="47,310,32" />
+                
+            </map>    
+            
+            <map id="LegFront" name="leg_front">
+                <area id="leftthigh" class="noborder" title="Thigh" alt="Thigh" onclick="map('68', 'Thigh');" href="javascript:void(0);" shape="poly" coords="111,40,112,35,132,61,148,81,159,97,164,104,164,126,161,152,153,192,150,206,134,202,114,202,108,205,105,205,104,190,101,172,99,157,98,141,98,123,98,106,101,88,108,54">
+                <area id="rightthigh" class="noborder" title="Thigh" alt="Thigh" onclick="map('68', 'Thigh');" href="javascript:void(0);" shape="poly" coords="197,71,211,54,217,45,224,35,228,46,229,52,231,63,233,74,238,97,239,115,239,135,237,160,234,184,232,198,230,207,218,204,201,205,189,211,187,202,185,193,182,183,179,172,178,158,175,143,174,130,173,119,173,109,173,103">
+
+                <area id="leftknee" class="noborder" title="Knee" alt="Knee" onclick="map('31', 'Knee');" href="javascript:void(0);" shape="poly" coords="131,202,150,206,145,225,147,236,135,241,118,241,107,236,108,226,105,207,116,201">
+                <area id="rightknee" class="noborder" title="Knee" alt="Knee" onclick="map('31', 'Knee');" href="javascript:void(0);" shape="poly" coords="192,225,189,211,204,205,217,205,231,208,229,222,229,239,221,241,202,242,189,240">
+
+                <area id="leftshin" class="noborder" title="Shin" alt="Shin" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="114,241,108,236,103,248,102,266,102,282,114,344,138,344,141,308,148,270,149,251,147,237,137,241">
+                <area id="rightshin" class="noborder" title="Shin" alt="Shin" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="195,307,191,286,188,269,188,261,188,253,189,247,189,241,204,243,230,240,235,253,235,266,235,277,233,290,230,299,228,313,224,332,224,339,223,346,198,346,199,333,198,325">
+
+                <area id="leftankle" class="noborder" title="Ankle" alt="Ankle" onclick="map('71', 'Ankles')" href="javascript:void(0);" shape="poly" coords="127,370,140,370,141,360,138,344,128,344,114,344,113,357,112,370">
+                <area id="rightankle" class="noborder" title="Ankle" alt="Ankle" onclick="map('71', 'Ankles')" href="javascript:void(0);" shape="poly" coords="196,361,198,354,197,350,198,346,208,346,222,346,224,361,224,372,196,372,196,366">
+
+                <area id="leftfoot" class="noborder" title="Feet" alt="Feet" onclick="map('7','Feet');" href="javascript:void(0);" shape="poly" coords="141,383,140,370,130,370,112,370,107,382,99,394,115,394,137,394">
+                <area id="rightfoot" class="noborder" title="Feet" alt="Feet" onclick="map('7','Feet');" href="javascript:void(0);" shape="poly" coords="209,372,225,372,228,378,240,396,223,398,199,399,199,391,196,387,196,372">
+
+                <area id="lefttoes" class="noborder" title="Toes" alt="Toes" onclick="map('43', 'Toes');" href="javascript:void(0);" shape="poly" coords="116,394,138,394,137,407,131,416,125,418,114,417,98,416,90,412,93,402,98,395">
+                <area id="righttoes" class="noborder" title="Toes" alt="Toes" onclick="map('43', 'Toes');" href="javascript:void(0);" shape="poly" coords="199,400,240,397,244,402,246,407,247,413,240,415,227,417,222,417,218,417,208,418,200,409">
+                
+                <area id="Leg1" class="noborder" title="Legs" alt="Leg" onclick="javascript:leg_entireleg_click(this);" href="javascript:void(0);" shape="poly" coords="112,35,147,81,164,103,165,116,156,181,147,214,145,227,149,249,148,265,140,314,138,345,141,360,141,386,138,394,137,409,128,418,113,416,96,416,88,411,89,408,96,396,107,382,113,367,113,339,110,315,101,270,102,253,108,233,98,140,99,98,106,63">
+                <area id="Leg10" class="noborder" title="Legs" alt="Leg" onclick="javascript:leg_entireleg_click(this);" href="javascript:void(0);" shape="poly" coords="225,35,172,103,174,128,179,169,187,204,192,223,189,239,188,261,193,298,198,330,196,356,196,368,195,383,198,393,200,409,208,417,245,414,248,408,240,396,228,377,224,371,224,360,222,351,226,321,235,278,234,253,230,242,229,227,236,170,239,114,235,81,230,58"> 
+				
+                
+                <area id="legzoomout" class="noborder" alt="Leg Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="40,388,32">
+                
+            </map>
+
+            <map id="LegBack" name="leg_back">
+                <area id="lefthamstring" class="noborder" title="Hamstring" alt="Hamstring" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="118,98,135,105,153,106,168,100,165,139,159,182,150,217,134,217,126,217,108,217,104,190,100,159,99,137,99,117,100,102,102,83">
+                <area id="righthamstring" class="noborder" title="Hamstring" alt="Hamstring" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="217,106,225,101,232,96,238,86,241,114,241,140,239,180,234,214,214,214,192,214,185,188,181,164,177,140,175,121,175,100,184,103,202,106">
+
+                <area id="backleftknee" class="noborder" title="Back of Knee" alt="Back of Knee" onclick="map('31', 'Knee');" href="javascript:void(0);" shape="poly" coords="108,217,109,227,111,238,107,248,131,248,151,248,147,231,150,217,138,217,121,217" />
+                <area id="backrightknee" class="noborder" title="Back of Knee" alt="Back of Knee" onclick="map('31', 'Knee');" href="javascript:void(0);" shape="poly" coords="234,214,233,232,237,248,194,248,195,232,192,214" />
+
+                <area id="leftcalf" class="noborder" title="Calf" alt="Calf" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="150,287,153,266,150,248,107,248,105,258,102,277,105,302,148,302" />
+                <area id="rightcalf" class="noborder" title="Calf" alt="Calf" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="241,284,238,304,216,304,200,304,197,297,193,268,194,248,238,248,242,264" />
+
+                <area id="backleftankle" class="noborder" title="Ankle" alt="Ankle" onclick="map('71', 'Ankles')" href="javascript:void(0);" shape="poly" coords="105,302,148,302,145,313,142,336,141,347,142,361,116,361,114,336,110,319" />
+                <area id="backrightankle" class="noborder" title="Ankle" alt="Ankle" onclick="map('71', 'Ankles')" href="javascript:void(0);" shape="poly" coords="199,304,237,304,235,316,230,339,228,361,203,361,204,340,202,320" />
+
+                <area id="leftsole" class="noborder" title="Sole" alt="Sole" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="114,379,116,389,119,408,132,411,144,407,146,395,142,380,145,371,143,361,117,361,115,369" />
+                <area id="rightsole" class="noborder" title="Sole" alt="Sole" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="203,361,200,372,202,404,209,408,222,407,229,398,229,382,229,361" />
+
+                <area id="backlefttoes" class="noborder" title="Toes" alt="Toes" onclick="map('43', 'Toes');" href="javascript:void(0);" shape="poly" coords="118,407,112,401,105,400,93,395,90,390,98,384,114,379" />
+                <area id="backrighttoes1" class="noborder" title="Toes" alt="Toes" onclick="map('43', 'Toes');" href="javascript:void(0);" shape="poly" coords="201,393,199,374,194,381,193,389" />
+                <area id="backrighttoes2" class="noborder" title="Toes" alt="Toes" onclick="map('43', 'Toes');" href="javascript:void(0);" shape="poly" coords="238,386,229,381,230,398" />
+
+                <area id="Leg2" class="noborder" title="Legs" alt="Legs" onclick="javascript:leg_entireleg_click(this);" href="javascript:void(0);" shape="poly" coords="114,96,138,106,153,105,169,101,165,141,159,186,150,217,148,232,154,268,146,319,142,336,141,358,146,370,143,383,145,397,143,407,129,411,107,401,91,392,101,384,108,382,116,375,117,375,115,346,109,316,104,292,103,271,106,256,110,244,109,231,110,231,107,204,104,190,101,167,100,147,98,121,100,102,103,83" />
+                <area id="Leg20" class="noborder" title="Legs" alt="Legs" onclick="javascript:leg_entireleg_click(this);" href="javascript:void(0);" shape="poly" coords="184,102,195,105,214,106,226,102,238,88,241,113,242,114,239,182,236,204,232,222,233,238,240,253,243,278,240,299,234,321,230,343,228,360,229,372,231,383,238,388,231,393,229,399,222,406,210,407,202,403,200,393,193,390,192,385,200,375,201,367,205,358,204,339,200,310,195,282,193,262,194,248,196,234,193,220,189,200,184,181,180,158,178,140,176,123,174,112,176,100" />
+
+                <area id="legfrontview" class="noborder" alt="Back Leg Front View" onclick="javascript:leg_frontview_click(this);" href="javascript:void(0)" shape="circle" coords="291,384,32" />
+                <area id="backlegzoomout" class="noborder" alt="Back Leg Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0)" shape="circle" coords="40,388,32" />
+                <area id="backlegfullbtn" class="noborder" alt="Select Back Leg" onclick="javascript:leg_entireleg_click(this);" href="javascript:void(0);" shape="circle" coords="168,442,36" />
+            </map>
+            
+            <map id="AbdomenFront" name="abdomen_front">
+                <area id="upperabdomen" class="noborder" title="Upper Abdomen" alt="Upper Abdomen" onclick="map('1', 'Abdomen');" href="javascript:void(0);" shape="poly" coords="160,81,147,77,124,85,102,94,41,213,34,251,34,253,61,249,98,245,115,244,134,244,147,244,168,244,191,244,225,247,266,251,264,230,259,210,252,196,192,93,176,86">        
+                <area id="lowerabdomen" class="noborder" title="Lower Abdomen" alt="Lower Abdomen" onclick="map('1', 'Abdomen');" href="javascript:void(0);" shape="poly" coords="267,251,253,249,226,247,192,244,169,244,148,244,135,244,115,244,99,245,62,249,35,253,33,264,31,283,69,302,90,307,219,307,269,283,269,271,267,261">
+                <area id="AbdomenFull" class="noborder" title="Abdomen" alt="Abdomen" onclick="map('1', 'Abdomen');" href="javascript:void(0);" shape="poly" coords="148,77,129,84,116,89,102,95,39,220,34,252,32,283,58,296,90,307,218,307,249,293,270,280,266,246,262,219,191,93,172,85" />
+
+                
+                <area id="abdomenzoomout"  class="noborder"  alt="Abdomen Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="50,396,32" />
+                
+            </map>
+            
+            <map id="AbdomenBack" name="abdomen_back">
+                <area id="back1" class="noborder" title="Back" alt="Back" onclick="map('47', 'Back');" href="javascript:void(0);" shape="poly" coords="68,81,140,81,140,329,35,329,26,267,24,229,26,204,31,159,53,81">        
+                <area id="back2" class="noborder" title="Back" alt="Back" onclick="map('47', 'Back');" href="javascript:void(0);" shape="poly" coords="195,81,264,81,287,150,292,183,295,206,294,240,283,287,274,329,181,329,181,81">        
+                <area id="upperspine" class="noborder" title="Upper Spine" alt="Upper Spine" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="140,81,181,81,181,208,140,208,140,130" />
+                <area id="lowerspine" class="noborder" title="Lower Spine" alt="Lower Spine" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="160,208,181,208,181,329,140,329,140,208" />        
+            
+                
+                <area id="backabdomenzoomout" class="noborder"  alt="Back Abdomen Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="88,390,32" />
+            </map>
+            
+            <map id="NeckFront" name="neck_front">
+                <area id="neck" class="noborder" title="Neck" alt="Neck" onclick="map('4', 'Neck');" href="javascript:void(0);" shape="poly" coords="1,323, 115,321, 143,333, 169,322, 295,322, 240,286, 230,279, 223,274, 216,263, 208,247, 208,242, 205,231, 205,219, 206,211, 187,213, 152,220, 92,214, 94,229, 91,240, 90,245, 87,253, 83,261, 77,271, 69,279, 1,323">        
+                
+                
+                <area id="neckzoomout"  class="noborder"  alt="Neck Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="64,388,32" />
+            </map>
+
+            <map id="NeckBack" name="neck_back">
+                <area id="backneck" class="noborder" title="Neck(Back)" alt="Neck(Back)" onclick="map('4', 'Neck');" href="javascript:void(0);" shape="poly" coords="104,175,104,199,96,222,85,238,74,247,58,257,40,268,28,276,16,283,2,290,27,290,299,290,298,285,285,276,269,265,251,254,235,242,223,227,210,199,210,161,165,161,138,161,119,161,104,161">
+
+                <area id="neckfrontview" class="noborder" alt="Back Neck Front View" onclick="javascript:neck_frontview_click(this);" href="javascript:void(0);" shape="circle" coords="234,380,34" />
+                <area id="backneckzoomout" class="noborder" alt="Back Neck Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="87,378,32" />
+            </map>
+            
+            <map id="ChestFront" name="chest_front">
+                <area id="chest1" class="noborder" title="Chest" alt="Chest" onclick="map('5', 'Chest');" href="javascript:void(0);" shape="poly" coords="28,93,17,177,19,190,21,200,27,212,41,236,133,236,133,223,133,106,123,93,31,93">
+                <area id="chest2" class="noborder" title="Chest" alt="Chest" onclick="map('5', 'Chest');" href="javascript:void(0);" shape="poly" coords="165,210,165,148,165,107,176,93,266,93,279,175,279,187,278,195,275,203,251,236,211,236,165,236">
+                <area id="sternum" class="noborder" title="Sternum" alt="Sternum" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="141,93,176,93,165,107,165,227,165,236,133,236,133,205,133,106,123,93">
+                <area id="lateralchest" class="noborder" title="Lateral Chest" alt="Lateral Chest" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="22,204,20,280,28,308,41,379,56,343,78,302,93,277,107,263,129,259,170,259,186,266,198,279,241,343,258,380,261,361,263,348,269,318,271,310,277,281,275,203,252,236,215,236,175,236,132,236,105,236,86,236,41,236,29,216">
+
+                
+                <area id="chestzoomout" class="noborder" alt="Chest Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="96,386,32" />
+            </map>
+            
+            <map id="ChestBack" name="chest_back">
+                <area id="chestback1" class="noborder" title="Back" alt="Back" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="50,80, 136,80, 136,293, 32,302, 26,266, 24,228, 26,203, 33,169, 49,81">        
+                <area id="chestback2" class="noborder" title="Back" alt="Back" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="183,79, 264,80, 290,157, 290,185, 295,203, 294,228, 292,251, 280,299, 183,294, 183,82" >        
+                <area id="chestupperspine" class="noborder" title="Upper Spine" alt="Upper Spine" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="142,82, 176,81, 171,207, 148,207, 142,86" />
+                <area id="chestlowerspine" class="noborder" title="Lower Spine" alt="Lower Spine" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="149,213, 171,213, 172,294, 150,294, 149,216" />        
+            
+                <area id="chestabdomenfrontview"   class="noborder"  alt="Chest Back-Back View" onclick="javascript:chest_frontview_click(this);" href="javascript:void(0);" shape="circle" coords="210,384,34" />
+                <area id="backchestabdomenzoomout"  class="noborder"  alt="Chest Back Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="88,390,32" />
+            </map>
+
+            <map id="PelvisFront" name="pelvis_front">
+                <area id="pelvis" class="noborder" title="Pelvis" alt="Pelvis" onclick="map('35', 'Pelvis');" href="javascript:void(0);" shape="poly" coords="98,189,106,197,114,205,125,210,137,212,149,213,165,211,175,208,183,203,191,197,195,191,214,205,204,219,197,227,192,234,188,242,181,247,173,251,166,252,157,255,140,253,131,252,122,250,108,242,106,237,100,228,94,221,88,212,82,204,98,190" />
+                <area id="hip1" class="noborder" title="Hip" alt="Hips" onclick="map('83','Hips');" href="javascript:void(0);" shape="poly" coords="41,179,55,207,59,224,61,244,58,266,50,289,43,304,37,318,30,327,16,341,16,322,20,285,28,238,34,209,38,190" />
+                <area id="hip2" class="noborder" title="Hip" alt="Hips" onclick="map('83','Hips');" href="javascript:void(0);" shape="poly" coords="259,184,247,210,243,229,242,249,244,277,249,300,261,321,273,333,282,340,279,292,272,247,260,185" />
+                <area id="genitals" class="noborder" title="Genitals" alt="Genitals" onclick="map('48','Genital');" href="javascript:void(0);" shape="poly" coords="169,253,177,250,185,243,176,265,168,289,169,299,130,300,127,289,114,254,108,242,122,251,138,254,155,255" />
+                <area id="groin1" class="noborder" title="Groin" alt="Groin" onclick="map('79', 'Groin');" href="javascript:void(0);" shape="poly" coords="248,182,235,187,224,195,214,205,209,212,200,224,191,237,183,248,176,265,172,279,170,285,168,292,170,299,179,294,187,289,198,278,211,266,222,251,233,237,243,218,249,202,249,192" />
+                <area id="groin2" class="noborder" title="Groin" alt="Groin" onclick="map('79', 'Groin');" href="javascript:void(0);" shape="poly" coords="114,293,101,286,89,275,76,261,65,242,59,221,55,202,53,190,54,180,63,186,76,199,84,208,93,221,103,233,110,248,116,261,122,277,127,289,129,300" />
+                
+                <area id="pelviszoomout" class="noborder" alt="Pelvis Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="69,377,32" />
+            </map>
+            
+            <map id="PelvisBack" name="pelvis_back">
+                <area id="backhip1"  class="noborder" title="Hip" alt="Hips" onclick="map('83','Hips');" href="javascript:void(0);"  shape="poly" coords="44,150,52,162,63,182,65,202,62,226,54,246,41,269,21,285,25,260,29,237,34,215,38,191,42,172" />  
+                <area id="backhip2"  class="noborder" title="Hip" alt="Hips" onclick="map('83','Hips');" href="javascript:void(0);"  shape="poly" coords="263,162,261,151,247,167,240,186,239,209,242,236,251,259,265,273,282,284,278,252,272,221,267,190" />  
+                <area id="buttock"  class="noborder" title="Buttock" alt="Buttock" onclick="map('37','Buttocks')" href="javascript:void(0);" shape="poly" coords="44,151,261,151,247,167,240,186,239,209,242,236,251,259,265,273,282,284,258,302,234,311,204,312,177,309,163,300,149,300,137,309,112,312,76,309,42,298,21,285,41,269,54,246,62,226,65,202,63,182,52,162" />  
+                
+                <area id="backchestpelviszoomout" class="noborder"  alt="Chest Pelvis Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="74,374,32" />
+            </map>
+
+        </div>
+
+        <div id="2DObjectFemale">
+            
+            <div id="ffront_body_div" style="display:none">
+                <img id="ffront_body" src="images/SelfDiagnose/Female/female_front_body.png" class="fmapper" usemap="#ffront" width="338" height="481" border="0" alt="" />
+            </div>
+
+            <div id="fback_body_div" style="display: none">
+                <img id="fback_body" src="images/SelfDiagnose/Female/female_back_body.png" class="fmapper" usemap="#fback" border="0" alt="" width="338" height="481" />
+            </div>
+
+            <div id="fhead_div" style="height:481px;display:none">
+                <img  src="images/SelfDiagnose/3DFemale/female_head_front.png" class="fmapper" usemap="#fhead_front" border="0" alt="" width="338" height="481" />
+            </div>
+
+            <div id="fhead_back_div"  style="display: none;height:481px">
+                <img  src="images/SelfDiagnose/3DFemale/female_head_back.png" class="fmapper" usemap="#fhead_back" border="0" alt="" width="338" height="481" />
+            </div>
+
+            <div id="fhand_front" style="display: none;height:441px">
+                <img  src="images/SelfDiagnose/3DFemale/female_hand_front.png" class="fmapper" usemap="#fhand_front" border="0" alt="" width="338" height="481" />
+            </div>
+
+            <div id="fhand_back"  style="display: none;height:481px">
+                <img  src="images/SelfDiagnose/3DFemale/female_hand_back.png" class="fmapper" usemap="#fhand_back" border="0" alt="" width="338"  height="481"/>
+            </div>
+            
+            <div id="fleg_front" style="display: none;height:441px">
+                <img  src="images/SelfDiagnose/3DFemale/female_leg_front.png" class="fmapper" usemap="#fleg_front" border="0" alt="" width="338"  height="481"/>
+            </div>
+            
+            <div id="fleg_back"  style="display: none;height:481px">
+                <img  src="images/SelfDiagnose/3DFemale/female_leg_back.png" class="fmapper" usemap="#fleg_back" border="0" alt="" width="338"  height="481"/>
+            </div>
+            
+            <div id="fabdomen_front" style="display: none;height:441px">
+                <img  src="images/SelfDiagnose/3DFemale/female_abdomen_front.png" class="fmapper" usemap="#fabdomen_front" border="0" alt="" width="338"  height="481"/>
+            </div>
+            
+            <div id="fabdomen_back"  style="display: none;height:481px">
+                <img  src="images/SelfDiagnose/3DFemale/female_chest_back.png" class="fmapper" usemap="#fabdomen_back" border="0" alt="" width="338"  height="481"/>
+            </div>
+            
+            <div id="fneck_front" style="display: none;height:441px">
+                <img  src="images/SelfDiagnose/3DFemale/female_head_front.png" class="fmapper" usemap="#fneck_front" border="0" alt="" width="338"  height="481"/>
+            </div>
+            
+            <div id="fneck_back"  style="display: none;height:481px">
+                <img  src="images/SelfDiagnose/3DFemale/female_head_back.png" class="fmapper" usemap="#fneck_back" border="0" alt="" width="338"  height="481"/>
+            </div>
+
+            <div id="fchest_front" style="display: none;height:441px">
+                <img  src="images/SelfDiagnose/3DFemale/female_chest_front.png" class="fmapper" usemap="#fchest_front" border="0" alt="" width="338"  height="481" />
+            </div>
+            
+            <div id="fchest_back"  style="display: none;height:481px">
+                <img  src="images/SelfDiagnose/3DFemale/female_chest_back.png" class="fmapper" usemap="#fchest_back" border="0" alt="" width="338"  height="481"/>
+            </div>
+            
+            <div id="fpelvis_front" style="display: none;height:441px">
+                <img  src="images/SelfDiagnose/3DFemale/female_pelvis_front.png" class="fmapper" usemap="#fpelvis_front" border="0" alt="" width="338"  height="481"/>
+            </div>
+            
+            <div id="fpelvis_back"  style="display: none;height:481px">
+                <img  src="images/SelfDiagnose/3DFemale/female_pelvis_back.png" class="fmapper" usemap="#fpelvis_back" border="0" alt="" width="338"  height="481" />
+            </div>
+
+            
+            <map name="ffront" id="ffront">
+                <area id = "fHead" class="fnoborder" title="Head" alt="Head" href="javascript:void(0)" onclick="javascript:ffrontbody_head_click(this);" shape="poly" coords="169,19,158,23,152,30,151,38,151,47,149,45,148,50,151,58,153,60,156,69,162,73,174,74,182,70,186,60,191,52,191,46,188,47,188,35,187,29,180,22">
+                <area id = "fLeftLeg" class="fnoborder" title="Leg" alt="Left Leg" onclick="javascript:ffrontbody_leg_click(this);" href="javascript:void(0);" shape="poly" coords="135,196,132,210,128,224,126,240,127,254,132,287,139,327,140,338,140,347,139,359,139,367,140,386,148,426,148,443,145,452,136,462,155,465,163,458,164,438,162,424,163,415,164,402,166,379,164,349,166,321,165,307,164,285,167,266,167,247"/>
+                <area id = "fRightLeg" class="fnoborder" title="Leg" alt="Right Leg" onclick="javascript:ffrontbody_leg_click(this);" href="javascript:void(0);" shape="poly" coords="173,245,172,255,174,282,174,320,174,340,175,347,176,358,173,365,173,377,174,391,176,430,175,441,175,458,182,465,198,463,201,461,196,457,190,444,189,436,199,385,200,359,199,341,201,323,203,313,211,263,213,250,213,237,210,219,204,196">
+                <area id = "fLeftHand" class="fnoborder" title="Hand" alt="Left Hand" onclick="javascript:ffrontbody_hand_click(this);" href="javascript:void(0);" shape="poly" coords="137,87,126,90,121,94,118,102,117,110,117,123,111,156,109,162,104,179,103,186,99,217,98,223,96,229,92,241,93,245,93,252,99,259,105,263,106,261,105,258,109,257,105,251,102,247,103,239,107,247,110,245,110,239,108,236,110,231,107,224,118,195,125,173,132,131">
+                <area id = "fRightHand" class="fnoborder" title="Hand" alt="Right Hand" onclick="javascript:ffrontbody_hand_click(this);" href="javascript:void(0)" shape="poly"   coords="204,123,210,148,211,156,212,163,213,172,219,188,223,201,231,220,231,227,230,232,231,235,229,241,228,244,230,247,234,242,235,238,237,245,233,251,229,255,233,258,235,264,241,258,246,252,246,244,247,241,246,237,242,224,239,204,238,191,236,182,234,172,230,162,226,144,223,130,223,119,223,111,222,104,220,98,218,94,212,89,200,87,203,106,203,113,204,122"/>
+                <area id = "fNeck" class="fnoborder" title="Neck" alt="Neck" href="javascript:void(0)" shape="poly" onclick="javascript:ffrontbody_neck_click(this);" coords="187,85,200,86,179,95,171,99,158,93,141,87,156,83,156,71,165,75,175,75,182,71,183,81"/>
+                <area id = "fChest" class="fnoborder" title="Chest" alt="Chest" href="javascript:void(0)" onclick="javascript:ffrontbody_chest_click(this);" shape="poly" coords="138,87,136,103,135,116,134,124,134,130,134,138,138,145,144,148,154,146,161,140,169,136,177,138,183,143,191,148,198,148,203,143,205,134,203,124,202,105,199,87,171,99"/>
+                <area id = "fAbdomen" class="fnoborder" title="Abdomen" alt="Abdomen" href="javascript:void(0)" onclick="javascript:ffrontbody_abdomen_click(this);" shape="poly" coords="137,150,161,150,180,150,202,150,198,179,203,196,136,196,141,181,140,166" />
+                <area id = "fPelvis" class="fnoborder" title="Pelvis" alt="Pelvis" href="javascript:void(0)" onclick="javascript:ffrontbody_pelvis_click(this);" shape="poly" coords="167,246,169,244,172,245,204,196,187,196,169,196,151,196,136,196"/>
+                <area id = "fBackView" class="fnoborder" alt="Front Back View" href="javascript:void(0)" shape="circle" onclick="javascript:ffrontbody_backview_click(this);" coords="285,410,32" />
+                <area id = "fSkinFront" class="fnoborder" alt="Select Skin" href="javascript:void(0)" shape="circle" onclick="map('2', 'Skin');" coords="57,410,32" />
+            </map>
+
+            <map id="fback" name="fback">
+                <area id = "fFrontView"  class = "fnoborder"  alt="Front View" href="javascript:void(0)" shape="circle" onclick="javascript:fbackbody_frontview_click(this);" coords="285,410,35" />
+                <area id = "fSkinBack"  class = "fnoborder"  alt="Select Back Skin" href="javascript:void(0)" shape="circle" onclick="map('2', 'Skin');" coords="57,410,35" />
+                <area id = "fBackHead" class = "fnoborder"  alt="Back Head" title="Head" href="javascript:void(0)" shape="poly" onclick="javascript:fbackbody_head_click(this);" coords="169,19,159,22,153,29,151,36,151,45,148,45,148,50,149,56,153,60,156,69,182,69,186,60,191,52,191,46,188,45,188,36,186,29,182,24,175,20"/>
+                <area id = "fBackNeck" class = "fnoborder"  alt="Back Neck" title="Neck" href="javascript:void(0)" shape="poly" onclick="javascript:fbackbody_neck_click(this);" coords="156,69,182,69,182,77,185,84,170,84,164,84,153,84,157,79"/>
+                <area id = "fBackPart"  class = "fnoborder"  alt="Back" title="Back" href="javascript:void(0)" shape="poly" onclick="javascript:fbackbody_backpart_click(this);" coords="151,84,135,109,133,124,133,130,133,135,138,152,141,180,138,189,134,198,204,198,199,186,198,173,203,142,205,134,205,126,204,110,187,84"/>
+                <area id = "fButtock"  class = "fnoborder"  alt="Buttock" title="Buttock" href="javascript:void(0)" shape="poly" onclick="javascript:fbackbody_buttock_click(this);" coords="134,198,131,209,130,218,127,230,126,241,131,246,137,251,147,254,157,255,165,251,169,244,173,250,179,252,184,254,192,254,199,252,206,249,213,243,211,230,209,215,207,204,206,202,203,198,169,198,137,198" />
+                <area id = "fBackLefthand" class="fnoborder"  alt="Hand" title="Hand" href="javascript:void(0)" shape="poly" onclick="javascript:fbackbody_hand_click(this);" coords="149,86,133,88,124,91,120,96,116,104,109,152,108,158,106,165,101,181,97,216,96,224,93,234,91,241,91,245,92,253,103,264,104,263,104,260,107,258,105,252,102,248,102,239,106,247,107,247,110,245,107,235,107,228,106,226,110,209,119,187,123,172,125,158,132,129,135,109" />
+                <area id = "fBackRightHand" class="fnoborder"  alt="Hand" title="Hand" href="javascript:void(0)" shape="poly" onclick="javascript:fbackbody_hand_click(this);" coords="188,86,210,88,216,92,221,99,223,108,225,124,226,131,229,153,230,158,236,174,238,184,241,218,243,224,244,230,246,238,248,242,247,249,245,255,240,260,235,264,235,260,232,256,232,254,237,249,238,240,233,247,230,246,233,235,232,224,227,204,219,184,215,168,209,138,205,125,205,110" />
+                <area id = "fBackLeftleg" class="fnoborder" alt="Leg" title="Leg" href="javascript:void(0)" shape="poly" onclick="javascript:fbackbody_leg_click(this);" coords="126,241,136,250,145,254,159,255,164,251,166,249,167,257,166,268,165,274,165,300,165,319,165,338,163,345,163,356,166,370,166,381,164,399,163,414,163,432,165,440,164,444,164,457,156,465,139,463,139,460,146,452,149,447,149,429,141,390,139,369,140,341,126,256"/>
+                <area id = "fBackRightleg" class="fnoborder" alt="Leg" title="Leg" href="javascript:void(0)" shape="poly" onclick="javascript:fbackbody_leg_click(this);" coords="172,250,180,253,190,254,197,254,204,251,213,244,213,255,210,267,203,311,200,325,199,335,199,348,200,359,199,377,198,386,197,396,190,430,190,446,193,453,200,459,200,463,188,464,184,465,176,458,176,443,174,442,175,438,176,438,176,413,172,375,174,361,175,355,175,343,173,325,174,286,172,264" />
+            </map>
+
+            <map name="fhead_front" id="fHeadFront">
+                <area id="fNose" class="fnoborder" title="Nose" alt="Nose" onclick="map('9', 'Nose');" href="javascript:void(0);" shape="poly" coords="171,204, 165,225, 163,236, 158,242, 156,251, 159,256, 173,258, 189,256, 191,251, 190,245, 186,237, 178,205, 175,204, 174,205" />
+                <area id="fLips" class="fnoborder" title="Lips" alt="Lips" href="javascript:void(0);" onclick="map('11', 'Lips');" shape="poly" coords="146,293,139,284,141,278,150,273,158,271,166,269,176,269,184,269,193,272,202,276,208,284,207,289,201,293,192,296,173,298,157,296" />
+                <area id="fLeftEye" class="fnoborder" title="Eye" alt="Eye" href="javascript:void(0);" onclick="map('58', 'Eyes');" shape="poly" coords="109,204,115,197,124,193,132,192,140,192,151,195,158,199,163,205,163,210,157,219,149,221,140,223,126,223,116,219,112,216,109,212,107,209" />
+                <area id="fRightEye" class="fnoborder" title="Eye" alt="Eye" href="javascript:void(0);" onclick="map('58', 'Eyes');" shape="poly" coords="184,204,189,199,195,195,205,192,213,192,223,194,230,197,236,202,240,209,236,215,225,222,208,225,204,225,199,224,192,220,187,217,183,211" />
+                <area id="fFaceLeft" class="fnoborder" title="Face" alt="Face" href="javascript:void(0);" onclick="map('3', 'Face');" shape="poly" coords="112,241,126,261,136,275,143,269,150,266,150,244,156,230,156,223,148,226,135,229,122,229,109,227,101,224" />
+                <area id="fFaceRight" class="fnoborder" title="Face" alt="Face" href="javascript:void(0);" onclick="map('3', 'Face');" shape="poly" coords="197,266,204,270,210,275,217,264,224,253,235,236,245,224,237,226,228,229,216,230,200,228,190,224,191,231,197,243" />
+                <area id="fFrontLeftEar" class="fnoborder" title="Ear" href="javascript:void(0);" onclick="map('10', 'Ear');" alt="Ear" shape="poly" coords="94,205,87,198,79,200,79,208,79,221,81,231,85,245,93,258,100,260,98,233,95,208" />
+                <area id="fFrontRightEar" class="fnoborder" title="Ear" href="javascript:void(0);" onclick="map('10', 'Ear');" alt="Ear" shape="poly" coords="251,216,253,207,260,199,266,199,269,207,267,223,264,238,260,248,253,258,247,261,247,248,250,226" />
+                <area id="fSkalp1" class="fnoborder" title="Scalp" href="javascript:void(0);" onclick="map('21', 'Scalp');" alt="Scalp" shape="poly" coords=" 93,171, 95,156, 96,148, 99,139, 104,125, 109,118, 117,109, 124,102, 131,97, 143,93, 151,91, 160,89, 168,88, 176,88, 187,89, 198,91, 210,95, 222,102, 231,109, 238,117, 243,127, 248,137, 251,149, 253,161, 254,173, 248,167, 236,160, 227,156, 216,152, 207,150, 193,148, 174,148, 161,148, 150,149, 129,152, 118,156, 109,160, 102,164, 96,171, 93,174" />
+                <area id="fJaw" class="fnoborder" title="Jaw" href="javascript:void(0);" onclick="map('86', 'Jaw');" alt="Jaw" shape="poly" coords="101,257,105,272,109,286,119,302,134,314,156,328,176,328,196,328,209,321,224,308,236,292,244,270,247,251,248,242,249,232,241,246,235,256,227,268,220,279,210,292,200,303,189,304,165,304,153,303,140,293,125,276,112,258,99,236" />
+                
+                <area id="fZoomOutFront" class="fnoborder" alt="Head Zoom Out" href="javascript:void(0);" shape="circle" coords="300,36,32" onclick="javascript:zoomOut();" />
+            </map>
+
+            <map name="fhead_back" id="fHeadBack">
+                <area id="fBackSkalp" class="fnoborder" title="Scalp" alt="Scalp"  onclick="map('21', 'Skalp');" href="javascript:void(0);" shape="poly"  coords="94,202, 93,188, 92,178, 93,168, 95,152, 97,143, 100,134, 104,127, 108,121, 112,113, 117,109, 125,102, 134,98, 140,95, 146,92, 154,91, 162,89, 174,87, 183,88, 189,90, 198,92, 207,94, 216,98, 225,104, 234,112, 241,124, 247,135, 251,149, 253,163, 255,177, 254,186, 253,198, 253,207, 251,216, 249,224, 247,235, 245,246, 243,255, 241,262, 239,271, 236,280, 234,288, 232,295, 229,298, 217,302, 198,304, 180,305, 148,305, 122,301, 117,299, 114,289, 111,279, 109,267, 106,258, 103,241, 101,231, 100,226, 99,218, 98,210, 96,205"/>
+                <area id="fBackLeftEar" class="fnoborder" title="Ear" alt="Ear" onclick="map('10', 'Ear');" href="javascript:void(0);" shape="poly" coords="94,206, 90,201, 88,198, 84,198, 81,198, 80,202, 78,205, 79,211, 79,219, 81,228, 82,234, 85,239, 87,246, 90,253, 95,258, 100,260, 102,258, 102,253, 101,244, 99,235, 97,228, 97,223, 96,215, 96,211, 95,209"/>
+                <area id="fBackRightEar" class="fnoborder" title="Ear" alt="Ear" onclick="map('10', 'Ear');" href="javascript:void(0);" shape="poly" coords="255,206, 254,209, 253,213, 252,217, 251,220, 250,226, 249,230, 247,237, 246,244, 245,251, 245,256, 248,259, 254,255, 258,251, 261,245, 262,241, 264,233, 266,225, 267,216, 268,208, 268,203, 267,200, 265,199, 262,199, 259,201, 257,204, 255,205"/>
+                <area id="fFront" class="fnoborder" alt="Head Back Front View" href="javascript:void(0);" shape="circle" coords="42,36,32" onclick="javascript:fhead_front_click(this);">
+                <area id="fZoomOutBack" class="fnoborder" alt="Head Back Zoom Out" href="javascript:void(0);" shape="circle" coords="300,36,32" onclick="javascript:fbackhead_zoomout_click(this);">
+            </map>
+
+            <map id="fHandFront" name="fhand_front">
+                <area id="fshoulder" class="fnoborder" title="Shoulder" alt="Shoulder" onclick="map('6', 'Shoulder');" href="javascript:void(0);" shape="poly" coords="226,21,218,22,207,25,193,35,184,46,176,64,175,82,175,94,175,105,174,118,196,121,212,121,214,111,217,101,222,87,227,72,231,60,236,46,236,30,236,20" />
+                <area id="farmpit" class="fnoborder" title="Arm Pit" alt="Arm Pit" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="227,72,228,67,239,82,235,99,230,114,226,123,212,122,215,109,220,91,224,80" />
+                <area id="fbicep" class="fnoborder" title="Upper Arm(Bicep)" alt="Upper Arm(Bicep)" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="174,118,187,120,198,122,205,122,216,122,213,138,210,152,207,164,204,174,201,187,198,196,192,193,185,189,172,189,159,191,161,180,164,163" />
+                <area id="ftricep" class="fnoborder" title="Upper Arm(Tricep)" alt="Upper Arm(Tricep)" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="218,161,228,124,216,123,215,134,202,186,199,196,208,204,212,179" />
+                <area id="felbow" class="fnoborder" title="Elbow" alt="Elbow" onclick="map('93', 'Elbow');" href="javascript:void(0);" shape="poly" coords="207,207,207,203,195,195,188,191,175,189,159,192,157,198,152,209,150,216,159,224,174,230,187,229,203,230,205,219,207,214" />
+                <area id="fforearm" class="fnoborder" title="Forearm(Flexor)" alt="Forearm(Flexor)" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="151,218,154,221,161,225,169,229,179,230,202,230,196,251,188,272,174,303,162,327,127,318,132,270,138,246,148,218" />
+                <area id="fwrist" class="fnoborder" title="Wrist" alt="Wrist" onclick="map('72', 'Wrist Joints');" href="javascript:void(0);" shape="poly" coords="157,338,161,327,126,318,121,351,149,357,152,348" />
+                <area id="fpalm" class="fnoborder" title="Palm" alt="Palm" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="127,384,121,386,118,389,113,394,122,409,132,413,133,397,131,388" />
+                <area id="ffingers1" class="fnoborder" title="Fingers" alt="Fingers" onclick="map('44', 'Fingers');" href="javascript:void(0);" shape="poly" coords="106,396,102,405,104,420,106,433,113,443,126,454,139,463,142,459,143,446,148,447,152,442,135,424,131,413,121,409,114,395,111,384" />
+                <area id="ffingers2" class="fnoborder" title="Fingers" alt="Fingers" onclick="map('44', 'Fingers');" href="javascript:void(0);" shape="poly" coords="132,388,140,411,146,420,153,420,157,414,150,393,152,382,149,371,141,379" />
+                
+                <area id="fhandzoomout" class="fnoborder" alt="Hand Zoom Out" href="javascript:void(0)" shape="circle" onclick="javascript:zoomOut();" coords="47,310,32" />
+            </map>
+
+            <map id="fHandBack" name="fhand_back">
+                <area id="fbackshoulder" class="fnoborder" title="Shoulder" alt="Shoulder" onclick="map('6', 'Shoulder');" href="javascript:void(0);" shape="poly" coords="246,30,245,26,246,30,247,38,246,46,245,58,241,74,238,82,233,91,230,107,226,117,214,107,205,100,193,95,184,91,175,87,178,75,182,61,188,50,196,41,211,33,225,30,238,27,243,26" />
+                <area id="fbacktricep" class="fnoborder" title="Upper Arm(Tricep)" alt="Upper Arm(Tricep)" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="226,122,220,114,213,108,205,102,200,99,191,95,188,94,182,91,178,90,174,89,174,92,160,166,158,174,157,187,152,201,149,207,153,209,160,206,166,205,174,206,182,210,190,218,194,223,198,227,201,211,201,194,205,183,209,170,213,162,221,138" />
+                <area id="fbackelbow" class="fnoborder" title="Elbow" alt="Elbow" onclick="map('93', 'Elbow');" href="javascript:void(0);" shape="poly" coords="198,229,194,224,185,214,182,212,175,207,167,206,160,207,155,207,149,208,145,216,143,222,142,227,153,235,161,242,173,245,182,245,193,243,196,233" />
+                <area id="fbackforearm" class="fnoborder" title="Forearm(Flexor)" alt="Forearm(Flexor)" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="138,235,140,228,151,235,161,243,176,247,192,245,191,250,186,262,179,281,159,325,124,318,128,289,130,270,135,245" />
+                <area id="fbackwrist" class="fnoborder" title="Wrist" alt="Wrist" onclick="map('72', 'Wrist Joints');" href="javascript:void(0);" shape="poly" coords="125,320,159,326,152,345,150,359,121,355,123,334" />
+                <area id="fbackhand" class="fnoborder" title="Hand" alt="Hand" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="152,361,135,358,120,358,110,395,124,398,133,401,138,393,146,391,158,386,158,373,154,365" />
+                <area id="fbackfingers1" class="fnoborder" title="Fingers" alt="Fingers" onclick="map('44', 'Fingers');" href="javascript:void(0);" shape="poly" coords="135,403,122,399,108,398,108,411,113,428,124,439,137,450,146,453,151,445,153,438,138,421,134,413" />
+                <area id="fbackfingers2" class="fnoborder" title="Fingers" alt="Fingers" onclick="map('44', 'Fingers');" href="javascript:void(0);" shape="poly" coords="155,412,164,413,168,405,160,387,146,394" />
+                <area id="fArm2" class="fnoborder" style="display: none" title="Arm" alt="Arm" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="242,27,215,31,198,38,183,58,172,95,166,130,159,160,158,179,153,198,143,219,133,248,127,284,125,320,121,354,115,378,111,388,107,398,113,427,125,440,146,453,149,444,153,439,152,435,149,430,142,424,135,419,135,414,134,408,134,402,135,396,142,390,147,397,151,406,157,412,162,412,167,408,165,401,162,392,159,384,158,381,158,375,154,367,150,355,149,348,161,319,174,290,186,259,197,226,199,212,200,198,203,184,211,162,222,130,230,104,245,53,246,30">
+                
+                <area id="fbackhandzoomout" class="fnoborder" alt="Back Hand Zoom Out" href="javascript:void(0)" shape="circle" onclick="javascript:zoomOut();" coords="47,310,32" />
+                
+            </map>
+               
+            <map id="fLegFront" name="fleg_front">
+                <area id="fleftthigh" class="fnoborder" title="Thigh" alt="Thigh" onclick="map('68', 'Thigh');" href="javascript:void(0);" shape="poly" coords="92,2,108,19,122,33,156,68,158,84,154,104,152,131,153,144,154,172,154,186,153,201,153,208,148,204,142,202,132,199,122,199,113,202,106,207,101,181,95,152,90,124,85,93,80,71,82,49,85,27,89,11" />
+                <area id="frightthigh" class="fnoborder" title="Thigh" alt="Thigh" onclick="map('68', 'Thigh');" href="javascript:void(0);" shape="poly" coords="169,67,169,67,214,20,232,3,240,40,243,66,239,97,230,137,223,171,217,203,207,201,195,199,186,200,171,207,171,206,170,194,170,165,172,144,171,118,169,102,167,85,169,72,168,70" />
+                <area id="fleftknee" class="fnoborder" title="Knee" alt="Knee" onclick="map('31', 'Knee');" href="javascript:void(0);" shape="poly" coords="112,205,118,201,129,200,144,204,154,210,151,222,150,232,135,238,118,239,107,233,106,209" />
+                <area id="frightknee" class="fnoborder" title="Knee" alt="Knee" onclick="map('31', 'Knee');" href="javascript:void(0);" shape="poly" coords="172,210,183,203,194,201,208,202,218,206,216,218,216,230,207,235,193,236,183,234,175,229" />
+                <area id="fleftshin" class="fnoborder" title="Shin" alt="Shin" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="149,235,151,246,154,257,155,272,153,296,149,330,147,357,122,359,118,343,115,326,110,304,106,286,106,270,104,250,105,242,106,234,112,238,126,241,136,239" />
+                <area id="frightshin" class="fnoborder" title="Shin" alt="Shin" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="174,235,174,230,180,234,189,237,199,238,210,235,214,232,216,229,218,261,216,290,209,318,204,341,201,358,174,357,174,340,172,328,170,307,168,287,166,271,169,257,173,235" />
+                <area id="fleftankle" class="fnoborder" title="Ankle" alt="Ankle" onclick="map('71', 'Ankles')" href="javascript:void(0);" shape="poly" coords="122,367,122,372,122,381,122,385,150,386,151,379,148,369,147,359,121,360" />
+                <area id="frightankle" class="fnoborder" title="Ankle" alt="Ankle" onclick="map('71', 'Ankles')" href="javascript:void(0);" shape="poly" coords="175,358,200,360,199,374,199,387,187,387,172,387,171,377,174,367" />
+                <area id="fleftfoot" class="fnoborder" title="Feet" alt="Feet" onclick="map('7','Feet');" href="javascript:void(0);" shape="poly" coords="122,387,122,389,116,402,141,405,147,410,150,406,150,396,150,387,137,387" />
+                <area id="frightfoot" class="fnoborder" title="Feet" alt="Feet" onclick="map('7','Feet');" href="javascript:void(0);" shape="poly" coords="172,388,199,388,204,396,207,402,188,402,178,403,177,413,172,406,173,397" />
+                <area id="flefttoes" class="fnoborder" title="Toes" alt="Toes" onclick="map('43', 'Toes');" href="javascript:void(0);" shape="poly" coords="114,403,138,406,147,411,143,413,138,418,132,420,121,418,109,417,103,415,106,410" />
+                <area id="frighttoes" class="fnoborder" title="Toes" alt="Toes" onclick="map('43', 'Toes');" href="javascript:void(0);" shape="poly" coords="180,414,179,404,208,403,218,412,219,416,216,419,207,417,203,419,197,417,192,419,186,420,183,417" />
+                <area id="fLeg1" class="fnoborder" title="Legfull" alt="Leg Full" onclick="javascript:fleg_entireleg_click(this);" href="javascript:void(0);" shape="poly" coords="92,2,87,19,85,29,82,41,81,57,81,72,86,107,91,133,96,156,99,177,103,193,105,203,106,211,107,219,107,228,105,237,105,255,105,275,107,299,111,313,116,335,122,365,123,374,123,385,120,393,112,404,105,410,103,414,107,418,113,419,119,419,126,419,134,420,140,417,141,414,145,412,149,411,150,398,149,393,149,387,151,383,150,375,147,368,146,359,147,349,147,338,149,326,150,315,151,303,154,280,154,271,153,261,149,243,149,230,151,217,153,210,153,199,154,185,153,171,151,153,151,131,151,116,155,103,155,83,157,73,155,70,105,15" />
+                <area id="fLeg10" class="fnoborder" title="Legfull" alt="Leg Full" onclick="javascript:fleg_entireleg_click(this);" href="javascript:void(0);" shape="poly" coords="231,0, 236,20, 241,41, 242,63, 242,76, 237,99, 231,123, 226,154, 221,183, 217,199, 216,211, 215,220, 215,228, 217,238, 217,256, 215,279, 212,303, 207,324, 202,342, 199,362, 199,379, 198,386, 202,392, 206,400, 212,405, 216,410, 218,415, 215,416, 203,418, 199,418, 196,417, 190,419, 183,418, 179,414, 174,412, 173,410, 170,403, 170,395, 173,388, 170,380, 173,370, 174,355, 173,339, 171,315, 169,293, 167,278, 167,267, 170,255, 174,239, 173,223, 169,213, 169,183, 169,164, 170,147, 171,119, 170,113, 168,104, 166,91, 167,79, 167,70, 230,0" />
+                
+                <area id="flegzoomout" class="fnoborder" alt="Leg Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="40,388,32" />
+                
+            </map>
+            
+            <map id="fLegBack" name="fleg_back">
+                <area id="flefthamstring" class="fnoborder" title="Hamstring" alt="Hamstring" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="99,74,108,79,122,85,137,88,152,85,165,79,166,89,166,105,162,122,161,135,162,161,164,177,164,190,164,201,163,210,157,208,147,206,135,206,125,209,117,212,115,200,113,188,109,166,104,146,100,124,96,103,92,84,92,66">        
+                <area id="frighthamstring" class="fnoborder" title="Hamstring" alt="Hamstring" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="185,84,196,86,208,86,221,83,238,76,251,64,250,81,239,143,234,165,232,179,230,190,226,211,214,205,204,203,194,204,186,207,179,211,178,193,179,173,181,145,179,117,176,98,177,78">        
+                
+                <area id="fbackleftknee" class="fnoborder" title="Back of Knee" alt="Back of Knee" onclick="map('31', 'Knee');" href="javascript:void(0);" shape="poly" coords="117,213,119,231,117,243,139,249,149,247,159,243,162,226,163,210,146,207,133,207" />
+                <area id="fbackrightknee" class="fnoborder" title="Back of Knee" alt="Back of Knee" onclick="map('31', 'Knee');" href="javascript:void(0);" shape="poly" coords="216,244,225,236,224,224,225,211,214,205,205,203,189,206,179,211,181,227,183,237,195,244" />
+                
+                <area id="fleftcalf" class="fnoborder" title="Calf" alt="Calf" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="117,241,116,242,127,247,140,250,146,249,154,246,160,243,160,250,166,270,166,285,163,306,161,331,159,345,131,345,126,326,123,311,120,296,117,278,117,254,116,245" />
+                <area id="frightcalf" class="fnoborder" title="Calf" alt="Calf" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="183,238,182,251,178,268,178,292,182,321,184,347,213,347,220,316,224,293,226,272,228,252,225,236,215,244,206,244,196,245,189,242" />
+                
+                <area id="fbackleftankle" class="fnoborder" title="Ankle" alt="Ankle" onclick="map('71', 'Ankles')" href="javascript:void(0);" shape="poly" coords = "133,358,135,372,159,372,159,345,131,345" />
+                <area id="fbackrightankle" class="fnoborder" title="Ankle" alt="Ankle" onclick="map('71', 'Ankles')" href="javascript:void(0);" shape="poly" coords = "185,355,185,360,185,373,197,373,209,373,213,347,184,347" />
+
+                <area id="fleftsole" class="fnoborder" title="Sole" alt="Sole" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords = "135,387,133,396,123,408,156,414,161,410,161,398,161,388,163,382,160,372,135,372" />
+                <area id="frightsole" class="fnoborder" title="Sole" alt="Sole" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords = "209,373,184,373,182,381,182,387,184,390,184,394,182,402,184,411,207,411,224,411,210,393" />
+                
+                <area id="fbacklefttoes" class="fnoborder" title="Toes" alt="Toes" onclick="map('43', 'Toes');" href="javascript:void(0);" shape="poly" coords="148,421,156,414,123,409,114,416,120,419" />
+                <area id="fbackrighttoes" class="fnoborder" title="Toes" alt="Toes" onclick="map('43', 'Toes');" href="javascript:void(0);" shape="poly" coords="198,420,214,419,226,419,229,416,225,412,185,412" />
+              
+               <area id="fLeg2" class="fnoborder" title="Backlegfull" alt="Leg Full" onclick="javascript:fleg_entireleg_click(this);" href="javascript:void(0);" shape="poly" coords="91,66,92,79,94,97,99,122,103,139,106,158,110,178,114,200,117,215,118,224,118,233,117,243,115,256,117,273,119,296,122,311,126,327,130,344,134,362,135,372,135,381,133,390,129,399,123,407,115,413,114,416,118,419,124,418,130,418,135,418,139,419,144,420,148,420,151,418,154,414,158,412,161,408,162,402,160,396,160,391,159,388,162,384,162,378,159,374,158,367,160,331,163,304,165,285,165,272,162,256,159,240,162,222,163,200,163,176,161,141,163,118,165,103,166,91,165,84,164,78,157,83,151,86,138,87,128,86,117,83,102,78,94,67" />
+                <area id="fLeg20" class="fnoborder" title="Backlegfull" alt="Leg Full" onclick="javascript:fleg_entireleg_click(this);" href="javascript:void(0);" shape="poly" coords="177,77, 176,85, 175,96, 177,106, 180,117, 181,130, 181,148, 179,169, 179,185, 179,208, 180,220, 183,230, 183,240, 181,254, 179,266, 178,277, 178,290, 180,306, 182,323, 182,334, 185,349, 184,365, 184,375, 181,379, 181,387, 184,391, 183,396, 183,403, 183,411, 186,413, 190,415, 194,420, 198,422, 202,421, 206,419, 211,419, 217,420, 222,419, 227,418, 229,415, 226,412, 218,406, 214,401, 209,389, 210,383, 209,373, 212,350, 216,334, 220,316, 224,296, 226,273, 227,258, 226,245, 224,234, 223,223, 228,199, 232,172, 239,140, 245,106, 249,85, 250,65, 238,75, 233,79, 227,82, 220,83, 208,85, 199,86, 189,85, 180,79" />
+
+                <area id="flegfrontview" class="fnoborder" alt="Back Leg Front View" onclick="javascript:fleg_frontview_click(this);" href="javascript:void(0)" shape="circle" coords="291,384,32" />
+                <area id="fbacklegzoomout" class="fnoborder" alt="Back Leg Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0)" shape="circle" coords="40,390,32" />
+                <area id="fbacklegfullbtn" class="fnoborder" alt="Select Back Leg" onclick="javascript:fleg_entireleg_click(this);" href="javascript:void(0);" shape="circle" coords="173,449,36" />
+            </map>
+            
+            <map id="fAbdomenFront" name="fabdomen_front">
+                 <area id="fupperabdomen" class="fnoborder" title="Upper Abdomen" alt="Upper Abdomen" onclick="map('1', 'Abdomen');" href="javascript:void(0);" shape="poly" coords="39,74,40,85,44,121,48,148,48,175,45,195,66,206,86,213,111,222,137,228,171,232,201,229,231,225,257,217,286,202,303,191,299,170,302,140,305,110,310,67,313,55,294,48,267,43,254,41,218,37,189,36,167,36,139,38,116,40,76,47,52,51,35,55,37,64">        
+                 <area id="flowerabdomen" class="fnoborder" title="Lower Abdomen" alt="Lower Abdomen" onclick="map('1', 'Abdomen');" href="javascript:void(0);" shape="poly" coords="44,194,45,196,60,204,79,211,94,217,109,222,133,228,148,230,164,232,179,232,198,230,217,228,240,223,259,217,274,209,286,203,295,197,303,192,307,203,315,219,322,236,329,254,334,271,337,285,268,307,206,317,143,317,58,301,11,283,18,260,25,239,31,225,39,206,43,198">  
+                 <area id="fAbdomenFull" class="fnoborder" title="Abdomen" alt="Full Abdomen" onclick="map('1', 'Abdomen');" href="javascript:void(0);" shape="poly" coords="33,52,38,87,43,118,46,148,47,175,43,194,34,216,27,232,13,274,11,282,61,302,103,310,140,317,171,317,208,317,250,311,276,304,298,298,319,291,336,285,331,259,320,232,310,212,306,202,302,191,297,170,300,141,304,110,309,67,310,54,293,48,266,43,253,41,217,37,188,36,166,36,138,38,115,40,75,47,51,51,37,54,36,55" />
+                 
+                
+                <area id="fabdomenzoomout" class="fnoborder"  alt="Abdomen Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="58,422,32" />
+                
+            </map>
+
+            <map id="fAbdomenBack" name="fabdomen_back">
+                <area id="fback1" class="fnoborder" title="Back" alt="Back" onclick="map('47', 'Back');" href="javascript:void(0);" shape="poly" coords="16,209,22,227,28,260,28,301,34,340,43,392,47,438,99,438,126,438,154,438,154,375,154,302,154,153,154,75,58,75,53,102,37,157" />
+                <area id="fback2" class="fnoborder" title="Back" alt="Back" onclick="map('47', 'Back');" href="javascript:void(0);" shape="poly" coords="198,392,198,438,236,438,299,438,308,362,313,332,319,305,321,282,321,266,324,244,326,229,329,213,311,149,302,98,299,75,198,75" />
+                <area id="fupperspine" class="fnoborder" title="Upper Spine" alt="Upper Spine" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="154,75,154,283,178,283,198,283,198,253,198,205,198,182,198,113,198,75,172,75" />
+                <area id="flowerspine" class="fnoborder" title="Lower Spine" alt="Lower Spine" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="154,283,198,283,198,438,154,438,154,286" />
+                
+                <area id="fbackabdomenzoomout" class="fnoborder" alt="Abdomen Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="50,35,32" />
+            </map>
+            
+            <map id="fNeckFront" name="fneck_front">
+                <area id="fneck" class="fnoborder" title="Neck" alt="Neck" onclick="map('4', 'Neck');" href="javascript:void(0);" shape="poly" coords="114,296, 131,314, 146,328, 164,331, 193,329, 209,321, 216,313, 231,299, 229,318, 228,338, 231,351, 235,360, 250,370, 265,373, 303,379, 206,410, 186,418, 174,431, 161,416, 37,380, 51,378, 66,376, 91,370, 104,365, 112,357, 117,346, 118,336, 114,300">        
+                
+                
+                <area id="fneckzoomout" class="fnoborder"  alt="Back Neck Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="300,36,32" />
+            </map>
+            
+            <map id="fNeckBack" name="fneck_back">
+                <area id="fbackneck" class="fnoborder" title="Neck(Back)" alt="Neck(Back)" onclick="map('4', 'Neck');" href="javascript:void(0);" shape="poly" coords="115,298, 117,316, 118,335, 117,346, 114,355, 110,362, 98,368, 83,372, 75,375, 42,379, 56,388, 94,399, 145,407, 172,408, 209,404, 234,399, 258,392, 291,378, 285,377, 273,374, 257,371, 247,368, 239,363, 235,358, 231,350, 229,340, 229,323, 231,304, 233,297, 198,295, 170,294, 143,295, 118,298">        
+               
+                <area id="fneckfrontview" class="fnoborder"  alt="Neck Front View" onclick="javascript:fneck_frontview_click(this);" href="javascript:void(0);" shape="circle" coords="42,36,32" />
+                <area id="fbackneckzoomout" class="fnoborder"  alt="Neck Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="300,36,32" />
+            </map>
+
+            <map id="fChestFront" name="fchest_front">
+                <area id="fchest1" class="fnoborder" title="Chest" alt="Chest" onclick="map('5', 'Chest');" href="javascript:void(0);" shape="poly" coords="25,125,33,162,32,176,28,192,24,211,20,228,22,259,30,309,89,309,111,301,125,291,135,274,142,263,149,250,149,157,149,125,116,125,69,125">
+                <area id="fchest2" class="fnoborder" title="Chest" alt="Chest" onclick="map('5', 'Chest');" href="javascript:void(0);" shape="poly" coords="213,267,227,293,245,306,276,310,318,310,323,283,328,251,329,215,321,178,319,154,324,125,307,125,297,125,281,125,258,125,247,125,231,125,217,125,201,125,201,206,201,246">
+                <area id="fsternum" class="fnoborder" title="Sternum" alt="Sternum" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="149,125,149,250,125,291,149,285,169,285,198,285,226,291,201,244,201,209,201,182,201,125,191,125,185,125,176,125,170,125,159,125">
+                <area id="flateralchest" class="fnoborder" title="Lateral Chest" alt="Lateral Chest" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="275,310,318,310,311,345,307,375,303,408,269,381,239,360,214,347,174,341,132,348,100,367,71,389,45,412,39,359,37,345,30,309,89,309,111,301,125,291,149,285,198,285,224,290,244,306">
+
+                
+                <area id="fchestzoomout" class="fnoborder" alt="Chest Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="113,424,34" />
+            </map>
+
+            
+            <map id="fChestBack" name="fchest_back">
+                <area id="fchestback1" class="fnoborder" title="Back" alt="Back" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="17,206,16,209,23,232,26,251,29,269,30,286,30,300,30,312,33,329,36,349,39,371,41,400,46,429,50,449,48,460,43,478,54,478,66,478,87,478,109,478,133,478,156,477,157,324,156,202,150,149,126,75,61,64,53,97,47,130,33,168,26,190,18,205">        
+                <area id="fchestback2" class="fnoborder" title="Back" alt="Back" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly"  coords="230,74,209,147,200,170,200,194,200,222,200,278,200,313,199,337,199,364,199,392,200,480,229,479,254,480,279,480,304,480,299,462,300,443,302,417,305,392,307,362,313,332,318,304,322,282,322,266,325,244,327,229,330,213,325,192,321,176,318,164,314,137,314,113,317,94,322,77,326,66,232,73" >        
+                <area id="fchestupperspine" class="fnoborder" title="Upper Spine" alt="Upper Spine" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="129,76,134,90,140,110,145,125,151,145,154,161,157,176,159,210,159,239,159,262,160,304,159,352,174,352,197,352,198,283,198,198,198,169,216,117,228,73,132,77" />
+                <area id="fchestlowerspine" class="fnoborder" title="Lower Spine" alt="Lower Spine" onclick="bodynotavailable(this)" href="javascript:void(0);" shape="poly" coords="159,354,197,354,198,477,158,478,159,357" />        
+            
+                <area id="fchestabdomenfrontview"  class="fnoborder"  alt="Back Chest Back View" onclick="javascript:fchest_frontview_click(this);" href="javascript:void(0);" shape="circle" coords="295,35,32" />
+                <area id="fbackchestabdomenzoomout"  class="fnoborder"  alt="Back Chest Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="50,35,32" />
+            </map>
+
+            <map id="fPelvisFront" name="fpelvis_front">
+                <area id="fpelvis" class="fnoborder" title="Pelvis" alt="Pelvis" onclick="map('35', 'Pelvis');" href="javascript:void(0);" shape="poly" coords="85,183,93,190,105,203,114,215,125,230,133,247,141,266,194,266,203,239,214,218,228,197,246,179,251,176,77,178" />
+                <area id="fhip1" class="fnoborder" title="Hip" alt="Hips" onclick="map('83','Hips');" href="javascript:void(0);" shape="poly" coords="52,114,58,146,57,178,50,222,41,253,23,286,0,309,5,258,12,212,17,185,26,143,33,117,40,95" />
+                <area id="fhip2" class="fnoborder" title="Hip" alt="Hips" onclick="map('83','Hips');" href="javascript:void(0);" shape="poly" coords="296,93,304,117,314,150,319,181,327,228,332,259,335,290,337,307,310,288,289,252,277,209,273,169,274,138,282,115,290,100" />
+                <area id="fgenitals" class="noborder" title="Genitals" alt="Genitals" onclick="map('48','Genital');" href="javascript:void(0);" shape="poly" coords="141,266,148,285,154,300,155,310,156,336,166,323,170,322,180,335,178,322,179,309,182,301,190,279,193,266,169,266,151,266" />
+                <area id="fgroin1" class="noborder" title="Groin" alt="Groin" onclick="map('79', 'Groin');" href="javascript:void(0);" shape="poly" coords="194,329,212,316,230,291,243,265,251,227,253,199,251,177,232,192,210,226,199,253,189,283,185,295,179,312,181,336" />
+                <area id="fgroin2" class="noborder" title="Groin" alt="Groin" onclick="map('79', 'Groin');" href="javascript:void(0);" shape="poly" coords="102,200,114,216,126,233,135,253,145,279,153,301,155,322,155,335,139,328,123,315,103,290,90,261,79,239,76,214,76,179,87,186" />
+                
+                <area id="fpelviszoomout" class="noborder" alt="Pelvis Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="79,387,32" />
+            </map>
+            
+            <map id="fPelvisBack" name="fpelvis_back">
+                <area id="fbackhip1"  class="fnoborder" title="Hip" alt="Hips" onclick="map('83','Hips');" href="javascript:void(0);"  shape="poly" coords="28,136,36,150,41,163,44,180,46,198,44,209,45,217,42,231,37,246,32,254,27,263,19,274,9,285,2,294,4,269,9,233,19,175,23,153" />  
+                <area id="fbackhip2"  class="fnoborder" title="Hip" alt="Hips" onclick="map('83','Hips');" href="javascript:void(0);"  shape="poly" coords="311,134,299,155,291,169,290,177,288,199,289,216,292,234,312,271,319,284,330,292,335,294,332,259,325,210,317,168" />  
+                <area id="fbuttock"  class="fnoborder" title="Buttock" alt="Buttock" onclick="map('37','Buttocks')" href="javascript:void(0);" shape="poly" coords="29,134,310,134,301,148,293,162,288,177,287,195,287,213,290,231,299,249,311,273,319,284,327,292,335,295,328,307,316,322,290,341,268,351,240,355,208,355,195,349,180,335,175,324,168,323,160,330,152,342,143,349,129,354,106,356,96,356,75,354,51,346,30,337,18,322,7,305,2,294,15,279,28,266,39,243,46,220,47,188,41,157" />  
+                
+                
+                <area id="fbackchestpelviszoomout" class="fnoborder"  alt="Back Pelvis Zoom Out" onclick="javascript:zoomOut();" href="javascript:void(0);" shape="circle" coords="78,416,32" />
+            </map>
+
+        </div>
+        <!-- -->
+
+        <!-- 3D Male and Female Avatar-->
+        <div id="3DMale" style="margin:20px auto 0;">
+            
+            <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="338" height="481" id="model1" align="middle">
+                <param name="allowScriptAccess" value="sameDomain" />
+                <param name="movie" value="ErrorPage/HttpError404.html" /><param name="menu" value="false" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><embed src="images/SelfDiagnose/3DMale/3DMale.swf" menu="false" quality="high" bgcolor="#ffffff" width="338" height="481" name="model1" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="https://www.macromedia.com/go/getflashplayer" />
+            </object>
+        </div>
+        
+        <div id="3DFemale"style="margin:20px auto 0; display: none" >
+            
+            <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="338" height="481" id="model2" align="middle">
+                <param name="allowScriptAccess" value="sameDomain" />
+                <param name="movie" value="ErrorPage/HttpError404.html" /><param name="menu" value="false" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><embed src="images/SelfDiagnose/3DFemale/3DFemale.swf" menu="false" quality="high" bgcolor="#ffffff" width="338" height="481" name="model2" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="https://www.macromedia.com/go/getflashplayer" />
+            </object>
+        </div>
+        <!-- -->
+    </div>
+
+    <div class="symptopm_right">
+        <!-- FILTER SYMPTOMS BY AGE AND GENDER -->
+        <div class="symptopm_right_info">
+          To know about possible health conditions and what causing them, you have to select following.<br />
+            <span>1. Select your Age &nbsp;&nbsp;&nbsp;&nbsp;2. Select Gender	&nbsp;&nbsp;&nbsp;&nbsp;3. Select Affected Body Part from Avatar		&nbsp;&nbsp;&nbsp;&nbsp;4. Pick Symptoms</span>
+        </div>
+
+        <div class="symptom_sort">
+          <div class="age">
+                Age Group 
+                <label for="select"></label>
+                <span id="agegrouplist">
+                <select name="select2">
+                  <option>-AgeGroup-</option>
+				  <option>10-20</option>
+				  <option>20-40</option>
+				  <option>40-60</option>
+                </select>
+          </span></div>
+
+            <div class="gender">
+                Gender 
+                <label for="select"></label>
+                <select name="select" id="genderlist" onchange="change_gender();" style="width: 80px; margin-left: 10px;">
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+            </div>
+            
+            <div class="search">
+                <div style="width: 30px;position: absolute;margin-top: 6px;">
+                    Search
+                </div>
+                <div style="width: 146px;float: left;position: absolute;margin-left: 48px;">
+                    <input id="searchDisease" name="" type="text" onkeyup="OnKeyUp(this,event);" class="txt">
+                </div>
+                <div style="width: 50px;float: right;margin-top: 5px;margin-left: 150px;position: absolute;">
+                    <a style="cursor: pointer;" onclick="search_disease()"><img style="width:32px;height:23px" src="images/search-icon.gif"></a>
+                </div>
+            </div>
+            
+            <div class="clear2"></div>
+
+        </div>
+        <!-- -->
+
+        <!-- LIST OF SYMPTOMS FOUND-->
+        <div id="symptomslist">
+            <h2 id="symptomListHeading"></h2>
+            <div class="symptopm_right_tags">
+                To know about possible health conditions, first select age group , gender and select affected Body Part from Avatar then pick symptoms. 
+            </div>
+            <br />
+            <h2 id="possibilityMsg" style="display:none">Possible Health Conditions based on your selected symptoms</h2>
+            <br />
+        </div>
+        <!-- -->
+
+        <div class="clear2"></div>
+
+        <!-- LOADING IMAGE -->
+        <div id="loadingImg" align="center" style="padding-top: 100px; display: none">
+            <div>
+                <img src="images/loadingself.gif" width="25" height="25" /></div>
+            <div style="padding-top: 30px">Please wait while we are searching possibities . . .</div>
+        </div>
+        <!-- -->
+
+        <div class="clear2"></div>
+
+        <!-- SEARCH RESULT MESSAGE -->
+        <div id="searchResultMsg" style="display:none">
+            <h2>Results
+            </h2>
+            <br />
+        </div>
+        <!-- -->
+
+        <div class="clear2"></div>
+
+        <!-- LIST OF DISEASES FOUND -->
+        <div id="slideResult" style="display:none">
+            <div class="symptopm_right_slide">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <strong>
+                    <a href="#" id="mycarousel-prev">
+                        <img src="images/slide-arrow.png" width="6" height="19" /></a>
+                </strong>
+            </div>
+            <div id="searchMidResult" style="float: left">
+                <ul id="mycarousel" class="jcarousel-skin-tango-reporters">
+                    <div class="symptopm_right_slide2">
+                        <div style="height: 116px; overflow: hidden">
+                            <strong></strong>
+                            <br>
+
+                            <br>
+                            <br>
+                        </div>
+                        <div class="symptopm_right_slide2_btn">
+                        </div>
+                    </div>
+                    <div class="symptopm_right_slide2">
+                        <div style="height: 116px; overflow: hidden">
+                            <strong></strong>
+                            <br>
+
+                            <br>
+                            <br>
+                        </div>
+                        <div class="symptopm_right_slide2_btn">
+                        </div>
+                    </div>
+                    <div class="symptopm_right_slide2">
+                        <div style="height: 116px; overflow: hidden">
+                            <strong></strong>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="symptopm_right_slide2_btn">
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div class="symptopm_right_slide">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <strong><a href="#" id="mycarousel-next">
+                    <img src="images/slide-arrow-r.png" width="6" height="19" /></a></strong>
+            </div>
+        </div>
+        <!-- -->
+
+        <div class="clear2"></div>
+
+        <!-- SAVE SEARCH-->
+  
+        <!-- -->
+    </div>
+
+</div>
+<br />
+<br />
+<div class="clear2"></div>
+
+<script>
+    function saveSearch(obj, evt) {
+        if (!evt) evt = window.event;
+        if (obj.id == "txtemail" && evt.keyCode == 13) {
+            func_save_search();
+        }
+    }
+</script>
+
+
+
+        <div class="clear"></div>
+
+        <div id="footer">   
+            <div class="layout">
+                <div class="footerLinks">
+                  <div class="footerLinks2">
+                    </div>
+              </div>
+                <div class="socialMedia">
+                    <p>Follow us :</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/iclinichealthcare" target="_blank" hreflang="en-us" rel="nofollow">
+                                <img src="images/facebook.jpg" alt="iclinic facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/icliniccare" target="_blank" hreflang="en-us" rel="nofollow">
+                                <img src="images/twitter.jpg" alt="iclinic twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com/+iclinichpl/posts" target="_blank" hreflang="en-us">
+                                <img src="images/gplus.jpg" alt="iclinic gplus" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottomLinks">
+                  <div class="footLinks"></div>
+              </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="copyright">
+            <div class="layout">
+
+                <p style="text-align: center; font-family: Tahoma;"><span style="text-align: center; font-family: arial;">Computer Branch 2013-16 </span></p>
+          </div>
+        </div>
+                <div id="boxes">
+                    <!--Main Login Pop-up start-->
+                    <div id="dialog" class="window" style="margin-top: -100px;">
+                      <div class="login-popup" style="height: 500px;">
+                          <h1>
+                              <a href="JavaScript:void(0);" class="close" hreflang="en-us" style="margin-bottom: 275px"></a>
+                              <img src="images/user.png" width="16" height="15" />
+                                <!--Coupon Code Pop up End-->
+    </h1>
+                        </div>
+                    </div>
+                    </div>
+
+
+
+        </body>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>-->
+    <link rel="stylesheet" href="Content/chosen.css">
+    <link href="Content/skin.css" rel="stylesheet" />
+
+    <script src="Scripts/chosen.jquery.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.watermarkinput.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.jcarousel.js"></script>
+    <script src="Scripts/cookies.js"></script>
+    <script type="text/javascript" src="Scripts/flash_detect_min.js"></script>
+    <link href="Content/SelfDiagnosis.css" rel="stylesheet" />
+    <script src="Scripts/SelfDiagnose/jquery.imagemapster.js"></script>
+    <script type="text/javascript">
+
+
+        function maprefresh(ref) {
+            //var id = $(ref).attr("id");
+            //$(window.keep).mapster('deselect');
+            //window.keep = "#" + id;
+            $('.xyz').removeClass("blue");
+            $("#slideResult,#saveSearch,#searchResultMsg").hide();
+            $('#symptomslist').hide();
+        }
+
+        function bodynotavailable(ref) {
+            var name = $(ref).attr("title");
+            $('#symptomListHeading').html(name + " Symptoms");
+            $('.symptopm_right_tags').html("<i>Sorry ! Symptoms are not available for selected " + name + "</i>");
+            $('#symptomslist').show(); $('#slideResult,#saveSearch,#searchResultMsg,#possibilityMsg').hide();
+            $.msgBox({ title: 'iClinic', content: 'No Symptoms Available !', type: 'info' });
+        }
+
+        var jsonData = [], stringIds = "", symptoms = "", possibility, keep = "";
+
+        function valuefromflash(Txt) {
+            //document.getElementById('htmlText').value = Txt;
+            Txt = Txt.replace(/^./, function (Txt) { return Txt.toUpperCase(); });
+            if (Txt == 'Reset') {
+                refresh();
+            } else if (Txt == "Upperabdomen") {
+                GetBodyPartIdByName('Upper Abdomen');
+            } else if (Txt == "Lowerabdomen") {
+                GetBodyPartIdByName('Lower Abdomen');
+            } else if (Txt == "Hip") {
+                GetBodyPartIdByName('Hips');
+            } else if (Txt == "Wrist") {
+                GetBodyPartIdByName('Wrist Joints');
+            } else if (Txt == "Ankle") {
+                GetBodyPartIdByName('Ankles');
+            }
+            else {
+                GetBodyPartIdByName(Txt);
+            }
+        }
+
+        function GetBodyPartIdByName(name) {
+            var ageid = document.getElementById("drpagegrouplist").value;
+            if (ageid != 0) {
+                $.ajax({
+                    type: "POST",
+                    url: "/SymptomsChecker/GetBodyPartIdByName",
+                    data: "{bodyPartName :'" + name + "'}",
+                    contentType: "application/json",
+                    success: function (data) {
+                        var jsonData = JSON.parse(data);
+                        if (jsonData != '') {
+                            map(jsonData[0].bodypart_id, jsonData[0].bodypart_name);
+                        } else {
+                            $('#symptomslist').show();
+                            $('#symptomListHeading').html(name + " Symptoms");
+                            $('.symptopm_right_tags').html("<i>Sorry ! Symptoms are not available for selected " + name + "</i>");
+                            $('#slideResult,#saveSearch,#searchResultMsg,#possibilityMsg').hide();
+                        }
+                    }
+                });
+            }
+            else {
+                $.msgBox({
+                    title: "iClinic",
+                    content: "Please select your Age-Group !",
+                    type: "info"
+                });
+            }
+        }
+        // Watermark text on email text box
+        jQuery(function ($) {
+            $("#txtemail").Watermark("Type Your Email Id", "#ccc");
+            $('#searchDisease').bind('keypress', function (evt) {
+                evt = (evt) ? evt : event;
+                var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode :
+                    ((evt.which) ? evt.which : 0));
+                if (charCode > 32 && (charCode < 65 || charCode > 90) &&
+                    (charCode < 97 || charCode > 122)) {
+                    return false;
+                }
+                return true;
+            });
+        });
+
+        // Document on load
+        jQuery(document).ready(function () {
+
+            fillAgeGroup(); // Fill age-group dropdown
+
+            bodypartFill(); // Fill body part
+            // Bind mapster for Male 2D Avatar
+            // Bind mapster for Male 2D Avatar
+            $('.mapper').mapster({
+                fillOpacity: 0.4, fillColor: "d42e16",
+                stroke: true, strokeColor: "d42e16",
+                strokeOpacity: 0.8, strokeWidth: 0,
+                singleSelect: true, mapKey: 'alt',
+                fill: true,
+                render_select: {
+                    fade: false
+                },
+                areas: [{
+                    key: 'Select Entire Back Arm',
+                    stroke: false,
+                    isSelectable: false,
+                    render_select: {
+                        fillOpacity: 1
+                    }
+                },
+                    {
+                        key: 'Select Entire Arm',
+                        stroke: false,
+                        isSelectable: false,
+                        render_select: {
+                            fillOpacity: 1
+                        }
+                    },
+                    {
+                        key: 'Select Back Leg',
+                        stroke: false,
+                        isSelectable: false,
+                        render_select: {
+                            fillOpacity: 1
+                        }
+                    },
+                    {
+                        key: 'Select Leg',
+                        stroke: false,
+                        isSelectable: false,
+                        render_select: {
+                            fillOpacity: 1
+                        }
+                    },
+                    {
+                        key: 'Select Abdomen',
+                        stroke: false,
+                        isSelectable: false,
+                        render_select: {
+                            fillOpacity: 1
+                        }
+                    }]
+            });
+
+            // Bind mapster for Female 2D Avatar
+            $('.fmapper').mapster({
+                fillOpacity: 0.4, fillColor: "d42e16",
+                stroke: true, strokeColor: "d42e16",
+                strokeOpacity: 0.8, strokeWidth: 0,
+                singleSelect: true, mapKey: 'alt',
+                fill: true,
+                areas: [{
+                    key: 'Select Entire Back Arm',
+                    stroke: false,
+                    isSelectable: false,
+                    render_select: {
+                        fillOpacity: 1
+                    }
+                },
+                    {
+                        key: 'Select Entire Arm',
+                        stroke: false,
+                        isSelectable: false,
+                        render_select: {
+                            fillOpacity: 1
+                        }
+                    },
+                    {
+                        key: 'Select Back Leg',
+                        stroke: false,
+                        isSelectable: false,
+                        render_select: {
+                            fillOpacity: 1
+                        }
+                    },
+                    {
+                        key: 'Select Leg',
+                        stroke: false,
+                        isSelectable: false,
+                        render_select: {
+                            fillOpacity: 1
+                        }
+                    },
+                    {
+                        key: 'Select Abdomen',
+                        stroke: false,
+                        isSelectable: false,
+                        render_select: {
+                            fillOpacity: 1
+                        }
+                    }]
+            });
+        });
+
+        // Get symptoms list for body part id and body part name.
+        function map(id, name) {
+            var bodyPartId = id, bodypart = name, ageId = document.getElementById("drpagegrouplist").value;
+            document.getElementById("bodyPart").value = id;
+            if (ageId != 0) {
+                $.ajax({
+                    type: "POST",
+                    url: "/SymptomsChecker/GetSymptomsByBodyPartId",
+                    data: "{bodyPartId : '" + bodyPartId + "'}",
+                    contentType: "application/json",
+                    success: function (data) {
+                        var jsonData = JSON.parse(data);
+                        if (jsonData.length > 0) {
+                            var centerHtml = "";
+                            for (var i = 0 ; i < jsonData.length ; i++) {
+                                centerHtml += "<input type='button' class='xyz' id='s" + jsonData[i].symptom_id + "' value='" + jsonData[i].symptom_name + " +' />&nbsp;";
+                            }
+                            $('#symptomListHeading').html(bodypart + " Symptoms");
+                            $('.symptopm_right_tags').html(centerHtml);
+                            $('#symptomslist').show();
+                            $('#slideResult,#saveSearch,#searchResultMsg,#possibilityMsg').hide();
+                            bindAnchors2D(bodyPartId, bodypart);
+                        }
+                        else {
+                            $('#symptomListHeading').html(bodypart + " Symptoms");
+                            $('.symptopm_right_tags').html("<i>Sorry ! Symptoms are not available for selected " + bodypart + "</i>");
+                            $('#symptomslist').show();
+                            $('#slideResult,#saveSearch,#searchResultMsg,#possibilityMsg').hide();
+                        }
+                    }
+                });
+            } else {
+                $.msgBox({
+                    title: "iClinic",
+                    content: "Please select your Age-Group !",
+                    type: "info"
+                });
+            }
+        }
+
+        // Fill age group dropdown from database
+        function fillAgeGroup() {
+            $.ajax({
+                type: "POST",
+                cache: false,
+                url: "/Admin/Symptoms/GetAgeGroups",
+                data: "{}",
+                contentType: "application/json",
+                success: function (result) {
+                    var jsonData = JSON.parse(result);
+                    var centerHtml = "<select id='drpagegrouplist' name='select'  onchange='change_agegroup();' style='width: 100px; margin-left: 10px;'><option value='0'> -Age Group- </option>";
+                    for (var i = 0 ; i < jsonData.length ; i++) {
+                        centerHtml += "<option value=\"" + jsonData[i].agegroup_id + "\">" + jsonData[i].agegroup_range + "</option>";
+                    }
+                    centerHtml += "</select>";
+                    document.getElementById("agegrouplist").innerHTML = "";
+                    document.getElementById("agegrouplist").innerHTML = centerHtml;
+                }
+            });
+        }
+
+        function refresh() {
+            $('.xyz').removeClass("blue");
+            $("#slideResult,#saveSearch,#searchResultMsg").hide();
+            $('#symptomslist').hide();
+            document.getElementById('bodyPart').value = 0;
+        }
+
+        function zoomOut() {
+            $('.xyz').removeClass("blue");
+            $("#slideResult,#saveSearch,#searchResultMsg").hide();
+            $('#symptomslist').hide();
+            document.getElementById('bodyPart').value = 0;
+            if ($('#genderlist option:selected').text() == "Male") {
+                $('#2DObjectMale').fadeOut(function () {
+                    $('#3DMale').fadeIn();
+                });
+            } else {
+                $('#2DObjectFemale').fadeOut(function () {
+                    $('#3DFemale').fadeIn();
+                });
+            }
+        }
+
+        // Fires event on enter key press of search query for diseases
+        function OnKeyUp(obj, evt) {
+            if (!evt) evt = window.event;
+            if (obj.id == "searchDisease" && evt.keyCode == 13) {
+                $('#' + obj.id).blur();
+                var objval = obj.value;
+                //if ($('#genderlist option:selected').text() == "Male") {
+                //    $('#3DMale').fadeOut(function () { $('#3DMale').fadeIn(); });
+                //} else {
+                //    $('#3DFemale').fadeOut(function () { $('#3DFemale').fadeIn(); });
+                //}
+
+                document.getElementById("bodyPart").value = 0;
+                var exists = false;
+                if (objval != "") {
+                    var ageId = document.getElementById("drpagegrouplist").value;
+                    if (ageId != 0) {
+
+                        var gender = document.getElementById("genderlist").value;
+                        $('#bodyPart option').each(function () {
+                            if (this.text.toLowerCase() == objval.toLowerCase()) {
+                                exists = true;
+                                document.getElementById("bodyPart").value = this.value;
+                                $("#bodyPart").trigger("onchange");
+                                $("#slideResult").hide();
+                                return true;
+                            }
+                        });
+                        if (!exists) {
+                            $('.noborder').mapster('deselect');
+                            fillDiagnoseResult(objval, ageId, gender);
+                            if ($('#genderlist option:selected').text() == "Male") {
+                                $('#2DObjectMale > div').fadeOut(function () {
+                                    $('#3DMale').fadeIn();
+                                });
+                            } else {
+                                $('#2DObjectFemale > div').fadeOut(function () {
+                                    $('#3DFemale').fadeIn();
+                                });
+                            }
+                        } else {
+                            if ($('#genderlist option:selected').text() == "Male") {
+                                $('#3DMale').fadeOut();
+                            } else {
+                                $('#3DFemale').fadeOut();
+                            }
+                        }
+                    } else {
+                        $.msgBox({
+                            title: "iClinic",
+                            content: "Please select your Age-Group !",
+                            type: "info"
+                        });
+                    }
+                } else {
+                    $.msgBox({
+                        title: "iClinic",
+                        content: "Enter some query to find possibities !",
+                        type: "info"
+                    });
+                }
+            }
+        }
+
+        // Search diseases on click of search query button
+        function search_disease() {
+            var objval = document.getElementById('searchDisease').value;
+            //if ($('#genderlist option:selected').text() == "Male") {
+            //    $('#3DMale').fadeOut(function () { $('#3DMale').fadeIn(); });
+            //} else {
+            //    $('#3DFemale').fadeOut(function () { $('#3DFemale').fadeIn(); });
+            //}
+            document.getElementById("bodyPart").value = 0;
+            var exists = false;
+            if (objval != "") {
+                var ageId = document.getElementById("drpagegrouplist").value;
+                if (ageId != 0) {
+                    var gender = document.getElementById("genderlist").value;
+                    $('#bodyPart option').each(function () {
+                        if (this.text.toLowerCase() == objval.toLowerCase()) {
+                            exists = true;
+                            document.getElementById("bodyPart").value = this.value;
+                            $("#bodyPart").trigger("onchange");
+                            $("#slideResult").hide();
+                            return true;
+                        }
+                    });
+                    if (!exists) {
+                        $('.noborder').mapster('deselect');
+                        fillDiagnoseResult(objval, ageId, gender);
+                        if ($('#genderlist option:selected').text() == "Male") {
+                            $('#2DObjectMale > div').fadeOut(function () {
+                                $('#3DMale').fadeIn();
+                            });
+                        } else {
+                            $('#2DObjectFemale > div').fadeOut(function () {
+                                $('#3DFemale').fadeIn();
+                            });
+                        }
+                    } else {
+                        if ($('#genderlist option:selected').text() == "Male") {
+                            $('#3DMale').fadeOut();
+                        } else {
+                            $('#3DFemale').fadeOut();
+                        }
+                    }
+
+                } else {
+                    $.msgBox({
+                        title: "iClinic",
+                        content: "Please select your Age-Group !",
+                        type: "info"
+                    });
+                }
+            } else {
+                $.msgBox({
+                    title: "iClinic",
+                    content: "Enter some query to find possibities !",
+                    type: "info"
+                });
+            }
+        }
+
+        // Fill Disease Slider after searching for self diagnose by search query
+        function fillDiagnoseResult(query, ageId, genderId) {
+            var gender = $("#genderlist option:selected").text();
+            var agegroup = $("#agegrouplist option:selected").text();
+            setCookie("agegroup", agegroup, 1);
+            setCookie("gender", gender, 1);
+            setCookie("query", query, 1);
+            setCookie("symptoms", "", -1);
+
+            $('#loadingImg').show();
+            $('#symptomslist').hide();
+            $.ajax({
+                type: "POST",
+                url: "/SymptomsChecker/GetSelfDiagnoseResultByQuery",
+                data: "{query:'" + query + "',ageId:'" + ageId + "',genderId:'" + genderId + "'}",
+                contentType: "application/json",
+                success: function (result) {
+                    jsonData = JSON.parse(result);
+                    $('#searchResultMsg').show();
+                    if (jsonData.length == 0) {
+                        $('#slideResult').hide();
+                        $('#saveSearch').show();
+                        $('#loadingImg').hide();
+                        $('#searchResultMsg h2').html("No Results found on your search “" + document.getElementById("searchDisease").value + "”");
+                    }
+                    else {
+                        $('#mycarousel').html("");
+                        jQuery('#mycarousel').jcarousel({
+                            scroll: 3,
+                            size: jsonData.length,
+                            initCallback: mycarousel_initCallback,
+                            itemLoadCallback: { onBeforeAnimation: mycarousel_itemLoadCallback },
+                            buttonNextHTML: null,
+                            buttonPrevHTML: null
+                        });
+
+                        setTimeout(function () {
+                            jQuery('#mycarousel').jcarousel('reset');
+                        }, 500);
+                        $('#searchResultMsg h2').html("Results based on your search “" + document.getElementById("searchDisease").value + "”");
+                        $('#loadingImg').hide();
+                        $('#slideResult').show();
+                        $('#saveSearch').show();
+                    }
+                }
+            });
+        }
+
+        // Fill Disease Slider after searching for self diagnose by symptoms click (from Avatar Click)
+        function fillPossibilities2D(stringIds, bodyPartId, bodypart) {
+            var ageId = document.getElementById("drpagegrouplist").value;
+            var genderId = document.getElementById("genderlist").value;
+
+            var gender = $("#genderlist option:selected").text();
+            var agegroup = $("#drpagegrouplist option:selected").text();
+            setCookie("agegroup", agegroup, 1);
+            setCookie("gender", gender, 1);
+            setCookie("bodypart", bodypart, 1);
+            if (possibility) possibility.abort();
+            $('#loadingImg').show();
+            possibility = $.ajax({
+                type: "POST",
+                url: "/SymptomsChecker/GetSelfDiagnosePossibility",
+                data: "{symptomIds:'" + stringIds + "',ageId:'" + ageId + "',genderId:'" + genderId + "',bodyPartId:'" + bodyPartId + "'}",
+                contentType: "application/json",
+                success: function (result) {
+                    jsonData = JSON.parse(result);
+                    $('#searchResultMsg').hide();
+                    $('#possibilityMsg').show();
+                    if (jsonData.length == 0) {
+                        $('#possibilityMsg').html("No possibility found based on your selected symptoms");
+                        $('#slideResult').hide();
+                    } else {
+                        $('#possibilityMsg').html("Possible Health Conditions based on your selected symptoms");
+                        $('#slideResult').show();
+                    }
+
+                    $('#searchResultMsg').hide();
+                    $('#saveSearch').hide();
+                    $('#mycarousel').html("");
+                    jQuery('#mycarousel').jcarousel({
+                        scroll: 3,
+                        size: jsonData.length,
+                        initCallback: mycarousel_initCallback,
+                        itemLoadCallback: { onBeforeAnimation: mycarousel_itemLoadCallback },
+                        buttonNextHTML: null,
+                        buttonPrevHTML: null
+                    });
+                    setTimeout(function () {
+                        jQuery('#mycarousel').jcarousel('reset');
+                    }, 500);
+                    $('#loadingImg').hide();
+                    $('#saveSearch').show();
+                }
+            });
+        }
+
+        // Fill Disease Slider after searching for self diagnose by symptoms click (on body part dropdown change)
+        function fillPossibilities(stringIds) {
+            var ageId = document.getElementById("drpagegrouplist").value;
+            var genderId = document.getElementById("genderlist").value;
+            var bodyPartId = document.getElementById("bodyPart").value;
+
+            var bodypart = $("#bodyPart option:selected").text();
+            var gender = $("#genderlist option:selected").text();
+            var agegroup = $("#drpagegrouplist option:selected").text();
+            setCookie("agegroup", agegroup, 1);
+            setCookie("gender", gender, 1);
+            setCookie("bodypart", bodypart, 1);
+
+            if (possibility) possibility.abort();
+            $('#loadingImg').show();
+            possibility = $.ajax({
+                type: "POST",
+                url: "/SymptomsChecker/GetSelfDiagnosePossibility",
+                data: "{symptomIds:'" + stringIds + "',ageId:'" + ageId + "',genderId:'" + genderId + "',bodyPartId:'" + bodyPartId + "'}",
+                contentType: "application/json",
+                success: function (result) {
+                    jsonData = JSON.parse(result);
+                    $('#searchResultMsg').hide();
+                    $('#possibilityMsg').show();
+                    if (jsonData.length == 0) {
+                        $('#possibilityMsg').html("No possibility found based on your selected symptoms");
+                        $('#slideResult').hide();
+                    } else {
+                        $('#possibilityMsg').html("Possible Health Conditions based on your selected symptoms");
+                        $('#slideResult').show();
+                    }
+
+                    $('#searchResultMsg').hide();
+                    $('#saveSearch').hide();
+                    $('#mycarousel').html("");
+                    jQuery('#mycarousel').jcarousel({
+                        scroll: 3,
+                        size: jsonData.length,
+                        initCallback: mycarousel_initCallback,
+                        itemLoadCallback: { onBeforeAnimation: mycarousel_itemLoadCallback },
+                        buttonNextHTML: null,
+                        buttonPrevHTML: null
+                    });
+                    setTimeout(function () {
+                        jQuery('#mycarousel').jcarousel('reset');
+                    }, 500);
+                    $('#loadingImg').hide();
+                    $('#saveSearch').show();
+                }
+            });
+        }
+
+        // Carousel Binding - Slider Jquery //
+        function mycarousel_initCallback(carousel) {
+            jQuery('.jcarousel-control a').bind('click', function () {
+                carousel.scroll(jQuery.jcarousel.intval(jQuery(this).text()));
+                return false;
+            });
+            jQuery('#mycarousel-next').bind('click', function () {
+                carousel.next();
+                return false;
+            });
+            jQuery('#mycarousel-prev').bind('click', function () {
+                carousel.prev();
+                return false;
+            });
+        }
+
+        function mycarousel_itemLoadCallback(carousel, state) {
+            for (var i = carousel.first; i <= carousel.last; i++) {
+                if (carousel.has(i)) {
+                    continue;
+                }
+                if (i > jsonData.length) {
+                    break;
+                }
+                carousel.add(i, mycarousel_getItemHTML(jsonData[i - 1]));
+            }
+        };
+
+        function mycarousel_getItemHTML(item) {
+            return "<div class='symptopm_right_slide2'><div style='height: 118px;overflow:hidden'><strong>" + item.name + "</strong><br/>" + item.speciality +
+                "<br /><br />" + item.definition +
+                "</div><div class='symptopm_right_slide2_btn'><a href='/symptom-checker/details/" + item.id + "'>Details Page</a></div></div>";
+
+            //return '<img src="' + item.url + '" width="75" height="75" alt="' + item.url + '" />';
+        };
+        //----------------//
+
+        // Fill body part dropdown from database
+        function bodypartFill() {
+            $.ajax({
+                type: "POST",
+                url: "/Admin/Symptoms/GetBodyParts",
+                data: "{}",
+                contentType: "application/json",
+                success: function (data) {
+                    var jsonData = JSON.parse(data);
+                    var centerHtml = "<select id='bodyPart'  onchange='change_bodyparts()' class='drp'><option value='0'>-By Body Part-</option>";
+                    for (var i = 0 ; i < jsonData.length ; i++) {
+                        centerHtml += "<option value='" + jsonData[i].bodypart_id + "'>" + jsonData[i].bodypart_name + "</option>";
+                    }
+                    centerHtml += "</select>";
+                    document.getElementById("bodypartlist").innerHTML = centerHtml;
+                }
+            });
+        }
+
+        // Bind Symptoms click to fill disease slider (for Avatar Click)
+        function bindAnchors2D(bodyPartId, bodypart) {
+            $('ErrorPage/HttpError404.html').click(function () {
+                symptoms = "";
+                stringIds = "";
+                var id = $(this).attr('id');
+                id = id.replace("s", "");
+                if ($('#s' + id).hasClass('blue')) {
+                    $('#s' + id).removeClass("blue");
+                } else {
+                    $('#s' + id).addClass("blue");
+                }
+                var list = document.querySelectorAll(".blue");
+                for (var i = 0; i < list.length; ++i) {
+                    var currNode = list[i];
+                    for (var j = 0; j < currNode.attributes.length; ++j) {
+                        var currAttr = currNode.attributes[j];
+                        if (currAttr.name == "id") {
+                            stringIds += currAttr.value.replace("s", "") + ",";
+                            var str = $('#' + currAttr.value).val();
+                            symptoms += str.substring(0, str.length - 2) + ",";
+                        }
+                    }
+                }
+                stringIds = stringIds.substring(0, stringIds.length - 1);
+                symptoms = symptoms.substring(0, symptoms.length - 1);
+                setCookie("symptoms", symptoms, 1);
+                setCookie("query", "", -1);
+
+                $('#slideResult').hide();
+                $('#saveSearch').hide();
+                $('#searchResultMsg').hide();
+                $('#possibilityMsg').hide();
+                $('#searchDisease').val("");
+                if (stringIds != "") {
+                    fillPossibilities2D(stringIds, bodyPartId, bodypart);
+                }
+            });
+        }
+
+        // Bind Symptoms click to fill disease slider (for body part dropdown)
+        function bindAnchors() {
+            $('ErrorPage/HttpError404.html').click(function () {
+                symptoms = "";
+                stringIds = "";
+                var id = $(this).attr('id');
+                id = id.replace("s", "");
+                if ($('#s' + id).hasClass('blue')) {
+                    $('#s' + id).removeClass("blue");
+                } else {
+                    $('#s' + id).addClass("blue");
+                }
+                var list = document.querySelectorAll(".blue");
+                for (var i = 0; i < list.length; ++i) {
+                    var currNode = list[i];
+                    for (var j = 0; j < currNode.attributes.length; ++j) {
+                        var currAttr = currNode.attributes[j];
+                        if (currAttr.name == "id") {
+                            stringIds += currAttr.value.replace("s", "") + ",";
+                            var str = $('#' + currAttr.value).val();
+                            symptoms += str.substring(0, str.length - 2) + ",";
+                        }
+                    }
+                }
+                stringIds = stringIds.substring(0, stringIds.length - 1);
+                symptoms = symptoms.substring(0, symptoms.length - 1);
+                setCookie("symptoms", symptoms, 1);
+                setCookie("query", "", -1);
+
+                $('#slideResult').hide();
+                $('#saveSearch').hide();
+                $('#searchResultMsg').hide();
+                $('#possibilityMsg').hide();
+                $('#searchDisease').val("");
+                if (stringIds != "") {
+                    fillPossibilities(stringIds);
+                }
+            });
+        }
+
+        // Validate emailId
+        function validateEmail(email) {
+            var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return filter.test(email);
+        }
+
+        // Save search research
+        function func_save_search() {
+            $('#submit_search').attr('disabled', 'disabled');
+            var email = $("#txtemail").val();
+            var ageGroupId = document.getElementById("drpagegrouplist").value;
+            var genderId = document.getElementById("genderlist").value;
+            if (email != null && email != "" && email.toUpperCase() != "TYPE YOUR EMAIL ID") {
+                if (validateEmail(email)) {
+                    if (ageGroupId != 0) {
+                        if ($("#symptomslist").is(':visible')) {
+                            var bodyPartId = document.getElementById("bodyPart").value;
+                            $.ajax({
+                                type: "POST",
+                                url: "/SymptomsChecker/SaveSearchByBodyPart",
+                                data: "{email : '" + email + "',ageId:'" + ageGroupId + "',genderId:'" + genderId + "',bodpartId:'" + bodyPartId + "',symptoms:'" + symptoms + "'}",
+                                contentType: "application/json",
+                                success: function (result) {
+                                    if (result.status == 1) {
+                                        $.msgBox({
+                                            title: "iClinic",
+                                            content: "We have sent you symptoms summary on your email address.",
+                                            type: "info"
+                                        });
+                                        document.getElementById("txtemail").value = "";
+                                    } else {
+                                        $.msgBox({
+                                            title: "iClinic",
+                                            content: "Oops! Search results could not be saved!",
+                                            type: "info"
+                                        });
+                                    }
+                                }
+                            });
+                        } else {
+                            var searchText = document.getElementById("searchDisease").value;
+                            $.ajax({
+                                type: "POST",
+                                url: "/SymptomsChecker/SaveSearchByQuery",
+                                data: "{email : '" + email + "',ageId:'" + ageGroupId + "',genderId:'" + genderId + "',query:'" + searchText + "'}",
+                                contentType: "application/json",
+                                success: function (result) {
+                                    if (result.status == 1) {
+                                        $.msgBox({
+                                            title: "iClinic",
+                                            content: "We have saved your search! Thanks!!",
+                                            type: "info"
+                                        });
+                                        document.getElementById("txtemail").value = "";
+                                        $('#submit_search').removeAttr("disabled");
+                                    } else {
+                                        $.msgBox({
+                                            title: "iClinic",
+                                            content: "Oops! Search results could not be saved!",
+                                            type: "info"
+                                        });
+                                    }
+                                }
+                            });
+                        }
+                    } else {
+                        $.msgBox({
+                            title: "iClinic",
+                            content: "Please select your Age-Group !",
+                            type: "info"
+                        });
+                    }
+                } else {
+                    $.msgBox({
+                        title: "iClinic",
+                        content: "Please enter valid email Id !",
+                        type: "info"
+                    });
+                }
+            } else {
+                $.msgBox({
+                    title: "iClinic",
+                    content: "Please enter email Id !",
+                    type: "info"
+                });
+            }
+        }
+
+        // Refresh components and settings on change age-group dropdown
+        function change_agegroup() {
+            var ageId = document.getElementById("drpagegrouplist").value;
+            $('.xyz').removeClass("blue");
+            $("#slideResult").hide(); $("#saveSearch").hide(); $("#searchResultMsg").hide();
+            $("#possibilityMsg").hide();
+            if (ageId != 0) {
+                $("#bodypartlist").show();
+                $('#content').hide();
+                //  $("#searchResultMsg").show(); $("#searchResultMsg h2").html("Results");
+                // jQuery.fn.axZm.openFullScreen(ajaxZoom.path, ajaxZoom.parameter, ajaxZoom.opt, 'content');
+            }
+            else {
+                $('#content').show();
+                document.getElementById("bodyPart").value = 0;
+                $("#bodypartlist").hide();
+                $('#content').show();
+                $("#searchResultMsg").hide();
+                $("#slideResult").hide(); $("#symptomslist").hide();
+                $("#saveSearch").hide();
+            }
+        }
+
+        // Refresh components and settings on change gender dropdown
+        function change_gender() {
+            if ($('#drpagegrouplist option:selected').val() == 0) {
+                $('#content').show();
+                $('#content img').show();
+                $('#genderlist option:selected').val = 0;
+
+                if ($('#genderlist option:selected').text() == "Male") {
+                    $('#2DObjectFemale').hide();
+                    $('#3DFemale').fadeOut(function () { $('#3DMale').fadeIn(); });
+                }
+                else {
+                    $('#2DObjectMale').hide();
+                    $('#3DMale').fadeOut(function () { $('#3DFemale').fadeIn(); });
+                }
+            }
+            else {
+                if ($('#genderlist option:selected').text() == "Male") {
+                    $('#2DObjectFemale').hide();
+                    $('#3DFemale').fadeOut(function () { $('#3DMale').fadeIn(); });
+                    document.getElementById("bodyPart").value = 0;
+                }
+                else {
+                    $('#2DObjectMale').hide();
+                    $('#3DMale').fadeOut(function () { $('#3DFemale').fadeIn(); });
+                    document.getElementById("bodyPart").value = 0;
+                }
+            }
+            refresh();
+        }
+
+        // Fill Symptoms list on change of body part dropdown
+        function change_bodyparts() {
+            var bodyPartId = document.getElementById("bodyPart").value;
+            var bodypart = $("#bodyPart option:selected").text();
+            document.getElementById("searchDisease").value = "";
+            $(window.keep).mapster('deselect');
+            maprefresh();
+            if (bodyPartId != 0) {
+                $.ajax({
+                    type: "POST",
+                    url: "/SymptomsChecker/GetSymptomsByBodyPartId",
+                    data: "{bodyPartId : '" + bodyPartId + "'}",
+                    contentType: "application/json",
+                    success: function (data) {
+                        var jsonData = JSON.parse(data);
+                        var centerHtml = "";
+                        for (var i = 0; i < jsonData.length; i++) {
+                            centerHtml += "<input type='button' class='xyz' id='s" + jsonData[i].symptom_id + "' value='" + jsonData[i].symptom_name + " +' />&nbsp;";
+                        }
+                        $('#symptomListHeading').html(bodypart + " Symptoms");
+                        if (centerHtml == "") {
+                            centerHtml = "<i>Sorry ! Symptoms are not available for selected " + bodypart + "</i>";
+                        }
+                        $('.symptopm_right_tags').html(centerHtml);
+                        $('#symptomslist').show();
+                        $('#slideResult,#saveSearch,#searchResultMsg,#possibilityMsg').hide();
+                        bindAnchors();
+                        var gender = document.getElementById("genderlist").value;
+                        if (gender == "1") {
+                            bind2dMaleAvatar(bodypart);
+                        }
+                        else {
+                            bind2dFemaleAvatar(bodypart);
+                        }
+                    }
+                });
+            }
+            else {
+                $('#2DObjectMale > div').hide();
+                $('#2DObjectFemale > div').hide();
+                if ($('#genderlist option:selected').text() == "Male") {
+                    //$('#front_body_div').show();
+                    //$('#ffront_body_div').hide();
+                    $('#ffront_body_div').fadeOut(function () {
+                        $('#3DMale').fadeIn();
+                    });
+                }
+                else {
+                    //$('#front_body_div').hide();
+                    //$('#ffront_body_div').show();
+                    $('#ffront_body_div').fadeOut(function () {
+                        $('#3DFemale').fadeIn();
+                    });
+                }
+            }
+        }
+
+        // Section areas settings for male avatar
+        function bind2dMaleAvatar(name) {
+            if (window.keep != "")
+                $(window.keep).mapster('deselect');
+            $('#2DObjectMale > div').hide();
+            $('#2DObjectFemale > div').hide();
+            $('#2DObjectMale').show();
+            $('#3DMale').hide();
+            $('#3DFemale').hide();
+            name = name.toLowerCase();
+            if (name == 'abdomen') {
+                $('#abdomen_front').fadeIn();
+                $('#AbdomenFull').mapster('select');
+            }
+            else if (name == 'eyes') {
+                $('#head_div').fadeIn();
+                $('#LeftEye').mapster('select');
+            }
+            else if (name == 'jaw') {
+                $('#head_div').fadeIn();
+                $('#Jaw').mapster('select');
+            }
+            else if (name == 'elbow') {
+                $('#hand_front').fadeIn();
+                $('#elbow').mapster('select');
+            }
+            else if (name == 'ankles') {
+                $('#leg_front').fadeIn();
+                $('#leftankle').mapster('select');
+            }
+            else if (name == 'groin') {
+                $('#pelvis_front').fadeIn();
+                $('#groin1').mapster('select');
+            }
+            else if (name == 'wrist joints') {
+                $('#hand_front').fadeIn();
+                $('#wrist').mapster('select');
+            }
+            else if (name == 'back') {
+                $('#abdomen_back').fadeIn();
+                $('#back1').mapster('select');
+            }
+            else if (name == 'hips') {
+                $('#pelvis_front').fadeIn();
+                $('#hip1').mapster('select');
+            }
+            else if (name == 'buttocks') {
+                $('#pelvis_back').fadeIn();
+                $('#buttock').mapster('select');
+            }
+            else if (name == 'chest') {
+                $('#chest_front').fadeIn();
+                $('#chest1').mapster('select');
+            }
+            else if (name == 'ear') {
+                $('#head_div').fadeIn();
+                $('#FrontLeftEar').mapster('select');
+            }
+            else if (name == 'face') {
+                $('#head_div').fadeIn();
+                $('#FaceLeft').mapster('select');
+            }
+            else if (name == 'feet') {
+                $('#leg_front').fadeIn();
+                $('#leftfoot').mapster('select');
+            }
+            else if (name == 'fingers') {
+                $('#hand_front').fadeIn();
+                $('#fingers1').mapster('select');
+            }
+            else if (name == 'genital organs') {
+                $('#pelvis_front').fadeIn();
+                $('#genitals').mapster('select');
+            }
+            else if (name == 'hands') {
+                $('#hand_back').fadeIn();
+                $('#backhand').mapster('select');
+            }
+            else if (name == 'genital organs') {
+                $('#pelvis_front').fadeIn();
+                $('#genitals').mapster('select');
+            }
+            else if (name == 'hands') {
+                $('#hand_back').fadeIn();
+                $('#backhand').mapster('select');
+            }
+            else if (name == 'knee') {
+                $('#leg_front').fadeIn();
+                $('#leftknee').mapster('select');
+            }
+            else if (name == 'legs') {
+                $('#leg_front').fadeIn();
+                $('#Leg1').mapster('select');
+            }
+            else if (name == 'lips') {
+                $('#head_div').fadeIn();
+                $('#Lips').mapster('select');
+            }
+            else if (name == 'neck') {
+                $('#neck_front').fadeIn();
+                $('#neck').mapster('select');
+            }
+            else if (name == 'nose') {
+                $('#head_div').fadeIn();
+                $('#Nose').mapster('select');
+            }
+            else if (name == 'pelvis') {
+                $('#pelvis_front').fadeIn();
+                $('#pelvis').mapster('select');
+            }
+            else if (name == 'scalp') {
+                $('#head_div').fadeIn();
+                $('#Scalp1').mapster('select');
+            }
+            else if (name == 'shoulder') {
+                $('#hand_front').fadeIn();
+                $('#shoulder').mapster('select');
+            }
+            else if (name == 'toes') {
+                $('#leg_front').fadeIn();
+                $('#lefttoes').mapster('select');
+            }
+            else if (name == 'thigh') {
+                $('#leg_front').fadeIn();
+                $('#leftthigh').mapster('select');
+            }
+            else {
+                $('#2DObjectMale > div').fadeOut(function () {
+                    $('#3DMale').fadeIn();
+                });
+            }
+        }
+
+        // Section areas settings for female avatar
+        function bind2dFemaleAvatar(name) {
+            if (window.keep != "")
+                $(window.keep).mapster('deselect');
+            $('#2DObjectFemale > div').hide();
+            $('#2DObjectMale > div').hide();
+            $('#2DObjectFemale').show();
+            $('#3DMale').hide();
+            $('#3DFemale').hide();
+            name = name.toLowerCase();
+            if (name == 'abdomen') {
+                $('#fabdomen_front').fadeIn();
+                $('#fAbdomenFull').mapster('select');
+            }
+            else if (name == 'eyes') {
+                $('#fhead_div').fadeIn();
+                $('#fLeftEye').mapster('select');
+            }
+            else if (name == 'back') {
+                $('#fabdomen_back').fadeIn();
+                $('#fback1').mapster('select');
+            }
+            else if (name == 'jaw') {
+                $('#fhead_div').fadeIn();
+                $('#fJaw').mapster('select');
+            }
+            else if (name == 'groin') {
+                $('#fpelvis_front').fadeIn();
+                $('#fgroin1').mapster('select');
+            }
+            else if (name == 'elbow') {
+                $('#fhand_front').fadeIn();
+                $('#felbow').mapster('select');
+            }
+            else if (name == 'wrist joints') {
+                $('#fhand_front').fadeIn();
+                $('#fwrist').mapster('select');
+            }
+            else if (name == 'ankles') {
+                $('#fleg_front').fadeIn();
+                $('#fleftankle').mapster('select');
+            }
+            else if (name == 'buttocks') {
+                $('#fpelvis_back').fadeIn();
+                $('#fbuttock').mapster('select');
+            }
+            else if (name == 'hips') {
+                $('#fpelvis_front').fadeIn();
+                $('#fhip1').mapster('select');
+            }
+            else if (name == 'chest') {
+                $('#fchest_front').fadeIn();
+                $('#fchest1').mapster('select');
+            }
+            else if (name == 'ear') {
+                $('#fhead_div').fadeIn();
+                $('#fFrontLeftEar').mapster('select');
+            }
+            else if (name == 'face') {
+                $('#fhead_div').fadeIn();
+                $('#fFaceLeft').mapster('select');
+            }
+            else if (name == 'feet') {
+                $('#fleg_front').fadeIn();
+                $('#fleftfoot').mapster('select');
+            }
+            else if (name == 'fingers') {
+                $('#fhand_front').fadeIn();
+                $('#ffingers1').mapster('select');
+            }
+            else if (name == 'genital organs') {
+                $('#fpelvis_front').fadeIn();
+                $('#fgenitals').mapster('select');
+            }
+            else if (name == 'hands') {
+                $('#fhand_back').fadeIn();
+                $('#fbackhand').mapster('select');
+            }
+            else if (name == 'genital organs') {
+                $('#fpelvis_front').fadeIn();
+                $('#fgenitals').mapster('select');
+            }
+            else if (name == 'hands') {
+                $('#fhand_back').fadeIn();
+                $('#fbackhand').mapster('select');
+            }
+            else if (name == 'knee') {
+                $('#fleg_front').fadeIn();
+                $('#fleftknee').mapster('select');
+            }
+            else if (name == 'legs') {
+                $('#fleg_front').fadeIn();
+                $('#fLeg1').mapster('select');
+            }
+            else if (name == 'lips') {
+                $('#fhead_div').fadeIn();
+                $('#fLips').mapster('select');
+            }
+            else if (name == 'neck') {
+                $('#fneck_front').fadeIn();
+                $('#fneck').mapster('select');
+            }
+            else if (name == 'nose') {
+                $('#fhead_div').fadeIn();
+                $('#fNose').mapster('select');
+            }
+            else if (name == 'pelvis') {
+                $('#fpelvis_front').fadeIn();
+                $('#fpelvis').mapster('select');
+            }
+            else if (name == 'scalp') {
+                $('#fhead_div').fadeIn();
+                $('#fSkalp1').mapster('select');
+            }
+            else if (name == 'shoulder') {
+                $('#fhand_front').fadeIn();
+                $('#fshoulder').mapster('select');
+            }
+            else if (name == 'toes') {
+                $('#fleg_front').fadeIn();
+                $('#flefttoes').mapster('select');
+            }
+            else if (name == 'thigh') {
+                $('#fleg_front').fadeIn();
+                $('#fleftthigh').mapster('select');
+            }
+            else {
+                $('#2DObjectFemale > div').fadeOut(function () {
+                    $('#3DFemale').fadeIn();
+                });
+            }
+        }
+    </script>
+
+<script type="text/javascript" src="Scripts/jquery.msgBox.js"></script>
+
+<!--Coupon Code Script Start-->
+<script type='text/javascript'>
+    function coupanpopup() {
+        $("#c_overlay").fadeIn(200);
+        positionPopup();
+    }
+
+    $('.x').click(function () {
+        $("#c_overlay").fadeOut(500);
+    });
+
+    //Popup for PatientInfo
+    //position the popup at the center of the page
+    function positionPopup() {
+        if (!$("#c_overlay").is(':visible')) {
+            return;
+        }
+        $("#c_overlay").css({
+            left: ($(window).width() - $('#c_overlay').width()) / 2,
+            top: ($(window).width() - $('#c_overlay').width()) / 7,
+            position: 'absolute'
+        });
+    }
+
+    //maintain the popup at center of the page when browser resized
+    $(window).bind('resize', positionPopup);
+
+    // Data member for Register Aliment Expert
+    var CName = "";
+    var Cmobile = "";
+    var Cemail = "";
+
+    // Community Section - Register Aliment Expert Validation
+    function CouponCodePopUpValidation() {
+        CName = document.getElementById("Coupon_Name").value;
+        CName = trim(CName);
+        if (CName == null || CName == "" || CName == "Enter Your Name") {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill in your Name.",
+                type: "alert"
+            });
+            //document.getElementById("Coupon_Name").focus();
+            $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+            return false;
+        }
+
+        Cmobile = document.getElementById("Coupon_Mobile").value;
+        if (Cmobile == null || Cmobile == "" || Cmobile == "Enter Your  Mobile No") {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill in your Mobile Number.",
+                type: "alert"
+            });
+            $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+            //document.getElementById("Coupon_Mobile").focus();
+            return false;
+        }
+
+        if (Cmobile < 10) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill in correct Mobile Number.",
+                type: "alert"
+            });
+            $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+            //document.getElementById("Coupon_Mobile").focus();
+            return false;
+        }
+
+        Cemail = document.getElementById("Coupon_Email").value;
+        if ((Cemail == null) || (Cemail == "") || (Cemail == "Enter Your Email Id")) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill in your E-mail Address.",
+                type: "alert"
+            });
+            $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+            //document.getElementById("Coupon_Email").focus();
+            return false;
+        }
+        if (echeck(Cemail) == false) {
+            $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+            //document.getElementById("Coupon_Email").focus();
+            return false;
+        }
+
+        if (!document.getElementById("condition_check").checked) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please accept term & conditions",
+                type: "alert"
+            });
+            $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+            return false;
+        }
+        return true;
+    }
+
+    function echeck(str) {
+        var at = "@";
+        var dot = ".";
+        var lat = str.indexOf(at);
+        var lstr = str.length;
+        var ldot = str.indexOf(dot);
+        if (str.indexOf(at) == -1) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill valid E-mail ID",
+                type: "alert"
+            });
+            return false;
+        }
+
+        if (str.indexOf(at) == -1 || str.indexOf(at) == 0 || str.indexOf(at) == lstr) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill valid E-mail ID",
+                type: "alert"
+            });
+            return false;
+        }
+
+        if (str.indexOf(dot) == -1 || str.indexOf(dot) == 0 || str.indexOf(dot) == lstr) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill valid E-mail ID",
+                type: "alert"
+            });
+            return false;
+        }
+
+        if (str.indexOf(at, (lat + 1)) != -1) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill valid E-mail ID",
+                type: "alert"
+            });
+            return false;
+        }
+
+        if (str.substring(lat - 1, lat) == dot || str.substring(lat + 1, lat + 2) == dot) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill valid E-mail ID",
+                type: "alert"
+            });
+            return false;
+        }
+
+        if (str.indexOf(dot, (lat + 2)) == -1) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill valid E-mail ID",
+                type: "alert"
+            });
+            return false;
+        }
+
+        if (str.indexOf(" ") != -1) {
+            $.msgBox({
+                title: "iClinic",
+                content: "Please fill valid E-mail ID",
+                type: "alert"
+            });
+            return false;
+        }
+
+        return true;
+    }
+
+    //Function to trim extra spaces
+    function trim(str) {
+        var newstr;
+        newstr = str.replace(/^\s*/, "").replace(/\s*$/, "");
+        newstr = newstr.replace(/\s\s+/g, " ");
+        return newstr;
+    }
+
+    //Generate FreeCoupons 100%
+    function GenerateFreeCoupons(type) {
+        $("#SaveCouponCode").removeAttr("onclick");
+        var isvaluevalid = CouponCodePopUpValidation();
+        if (isvaluevalid) {
+            var CouponCodeObject = {
+                Name: CName,
+                Mobile: Cmobile,
+                Email: Cemail,
+                Type: type
+            };
+            var CouponCodeJSON = JSON.stringify(CouponCodeObject);
+            $.ajax({
+                cache: false,
+                type: 'POST',
+                url: "/Home/SavePatientFirstVisitViaCouponCode",
+                data: CouponCodeJSON,
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    if (data.status == "2") {
+                        $.msgBox({
+                            title: "iClinic",
+                            content: "Email Id is Invalid, Please fill proper Email Id",
+                            type: "info"
+                        });
+                        $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+                    }
+                    else if (data.status == "0") {
+                        $.msgBox({
+                            title: "iClinic",
+                            content: "Email Id already exist, please try with another Email Id",
+                            type: "info"
+                        });
+                        $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+                    }
+                    else if (data.status == "1") {
+                        $.msgBox({
+                            title: "iClinic",
+                            content: "Successfully sent Coupon code to your email Id",
+                            type: "success"
+                        });
+                        setTimeout(function () {
+                            window.location.href = "Home.html";
+                        }, 3000);
+                    } else {
+                        $.msgBox({
+                            title: "iClinic",
+                            content: "Unable to Process your request. Please try again.",
+                            type: "error"
+                        });
+                        $('#SaveCouponCode').attr("onclick", "GenerateFreeCoupons(0);");
+                    }
+                }
+            });
+        }
+    }
+
+</script>
+<!--Coupon Code Script Start-->
+
+
+<!-- Mirrored from www.icliniccare.com/symptom-checker by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Feb 2016 12:32:55 GMT -->
+</html>

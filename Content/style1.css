@@ -1,0 +1,430 @@
+
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    color: #0000ee !important;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+.Corporate {
+    width: 982px !important;
+    height: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+}
+
+.Corporate_in {
+    width: 100%;
+    height: auto!important;
+    margin: 0px 0px 0px 0px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+}
+
+.slider {
+    width: 100%;
+    height: 457px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFF;
+}
+
+.slider_left {
+    width: 325px;
+    height: 450px;
+    float: left;
+    margin: 0px 0px 0px 20px;
+    background-image: url(../images/family_image.png);
+    background-repeat: no-repeat;
+}
+
+.slider_right {
+    width: 622px;
+    height: 364px;
+    float: left;
+    margin: 46px 0px 0px -8px;
+    background-image: url(../images/login_img.png);
+    background-repeat: no-repeat;
+}
+
+h2 {
+    margin: 18px 0px 0px 15px;
+    float: left;
+    font-size: 18px;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #515151 !important;
+}
+
+.login_bottom {
+    width: auto;
+    height: auto;
+    margin: 40px 0px 0px -142px !important;
+    float: left;
+    color: #a0a0a0 !important;
+}
+
+.login {
+    width: 600px;
+    height: 100px;
+    float: left;
+    margin: 10px 0px 0px 15px;
+    color: #e2e2e2 !important;
+}
+
+.forget {
+    width: 250px;
+    height: 100px;
+    float: right;
+    margin: 5px -105px 0px 0px !important;
+    border: none !important;
+}
+
+.login_bottom_right {
+    width: 400px;
+    height: 100px;
+    float: left;
+    margin: 45px 0px 0px 0px !important;
+    border: none !important;
+    color: #999;
+}
+
+.query_below {
+    width: 200px;
+    height: 30px;
+    float: left;
+    margin: 5px 0px 0px 0px !important;
+    border: none !important;
+    color: #999;
+    font-size: 14px;
+}
+
+.query_belowbottom_right {
+    width: 400px;
+    height: 110px;
+    float: left !important;
+    margin: 35px 0px 0px -200px;
+}
+
+.query_belowbottom_left {
+    width: 160px !important;
+    height: 60px !important;
+    margin: 20px 1px 0px 20px !important;
+}
+
+.query_belowbottom_left1 {
+    width: 160px;
+    height: 60px !important;
+    float: right;
+    margin: 0px 0px 0px 15px !important;
+}
+
+.forget li {
+    float: left !important;
+    border-bottom: none !important;
+    color: #03F !important;
+}
+
+.login_button {
+    width: 125px;
+    height: 25px;
+    margin: 25px 0px 0px 0px;
+}
+
+.divider {
+    width: 100%;
+    height: 5px;
+    float: left;
+    background-image: url(../images/diwider.png);
+    background-repeat: no-repeat;
+}
+
+.bottom_slider {
+    width: 982px !important;
+    height: 460px !important;
+    margin: 20px 0px 0px 0px;
+}
+
+.bottom_slider_left {
+    width: 450px;
+    height: 400px !important;
+    float: left;
+    margin: 36px 0px 0px 19px;
+}
+
+.text_heading {
+    float: left;
+    margin: 0px 0px 0px 0px;
+    font-size: 22px !important;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.cantent {
+    width: 475px;
+    height: 400px !important;
+    float: left;
+    margin: 15px 0px 0px 19px;
+    font-size: 14px;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #3079d4 !important;
+    line-height: 20px;
+}
+
+.divider_text {
+    width: 269px;
+    height: 2px !important;
+    float: left;
+    margin: 70px 0px 0px 51px;
+    background-image: url(../images/divider_text.png) !important;
+    background-repeat: repeat-x !important;
+}
+
+.text_heading_bottom {
+    float: left;
+    margin: 20px 0px 0px 0px;
+    font-size: 30px !important;
+    background-repeat: no-repeat;
+}
+
+.text_heading_bottom_voda {
+    width: 500px;
+    height: 80px !important;
+    float: left;
+    margin: 8px 0px 0px 0px;
+    background-repeat: no-repeat;
+}
+
+.text_heading_bottom_aircel {
+    width: 200px;
+    height: 51px !important;
+    float: left;
+    margin: 30px 0px 0px 20px;
+    background-repeat: no-repeat;
+}
+
+.bottom_slider_right {
+    width: 441px;
+    height: 440px !important;
+    float: left;
+    margin: 36px 0px 0px 46px;
+    background-image: url(../images/bx_right.png);
+    background-repeat: no-repeat;
+}
+
+.login_bottomright {
+    width: 441px;
+    height: 440px;
+    float: left;
+    margin: 10px 0px 0px 15px;
+    color: #e2e2e2 !important;
+}
+
+.divider_bottomslider {
+    width: 752px;
+    height: 2px;
+    float: left;
+    margin: 10px 0px 0px 79px;
+    background-image: url(../images/divider_text.png) !important;
+    background-repeat: repeat-x !important;
+}
+
+.bottom {
+    width: 100% !important;
+    height: 230px;
+    margin: 60px 0px 0px 0px;
+    padding: 0px;
+}
+
+.bottom_left {
+    width: 421px !important;
+    height: 400px;
+    float: left !important;
+    margin: 0px 0px 0px 36px;
+}
+
+.bottom_right {
+    width: 421px;
+    height: 170px;
+    float: left !important;
+    margin: -42px 0px 0px 80px;
+}
+
+
+/***FIRST STYLE THE BUTTON***/
+input#gobutton {
+    width: 103px;
+    height: 40px;
+    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+    padding: 3px 20px; /*add some padding to the inside of the button*/
+    background: #327ad4; /*the colour of the button*/
+    /*style the text*/
+    color: #FFF;
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    border: none !important;
+    margin: 0px 0px 0px 20px;
+}
+    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+    input#gobutton:hover, input#gobutton:focus {
+        background-color: #e10000; /*make the background a little darker*/
+        /*reduce the drop shadow size to give a pushed button effect*/
+    }
+
+input#Continue {
+    width: 126px;
+    height: 45px;
+    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+    padding: 5px 15px; /*add some padding to the inside of the button*/
+    background: #327ad4; /*the colour of the button*/
+    /*style the text*/
+    color: #FFF;
+    font-size: 18px;
+    border: none !important;
+    margin: 0px 0px 0px -15px;
+}
+    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+    input#Continue:hover, input#gobutton:focus {
+        background-color: #e10000; /*make the background a little darker*/
+        /*reduce the drop shadow size to give a pushed button effect*/
+    }
+
+input#Continue1 {
+    width: 126px;
+    height: 45px;
+    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+    padding: 5px 15px; /*add some padding to the inside of the button*/
+    background: #327ad4; /*the colour of the button*/
+    /*style the text*/
+    color: #FFF;
+    font-size: 18px;
+    border: none !important;
+    margin: 0px 0px 0px -15px;
+}
+    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+    input#Continue1:hover, input#gobutton:focus {
+        background-color: #e10000; /*make the background a little darker*/
+        /*reduce the drop shadow size to give a pushed button effect*/
+    }
+
+a {
+    text-decoration: none !important;
+    color: blue;
+}
+
+.forget a:hover {
+    color: #1179fb !important;
+}
+
+.formwrap {
+    display: block;
+    margin-bottom: 9px;
+}
+
+    .formwrap label {
+        display: inline-block;
+        width: 80px;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #444;
+        font-family: Arial, Tahoma, sans-serif;
+    }
+
+    .formwrap .shadowfield {
+        position: relative;
+        width: 250px;
+        font-size: 17px;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-weight: normal;
+        background: #f7f8f8;
+        color: #7c7c7c;
+        line-height: 1.4;
+        padding: 6px 12px;
+        outline: none;
+        transition: all 0.2s ease-in-out 0s;
+        -webkit-transition: all 0.2s ease-in-out 0s;
+        -moz-transition: all 0.2s ease-in-out 0s;
+        border: 1px solid #ad9c9c;
+        border-radius: 6px 6px 6px 6px;
+        box-shadow: 0 1px rgba(34, 25, 25, 0.2) inset, 0 1px #fff;
+    }
+
+        .formwrap .shadowfield:focus {
+            border-color: #930;
+            background: #fff;
+            color: #5d5d5d;
+            box-shadow: inset 0 1px rgba(34, 25, 25, 0.2), 0 1px rgba(255, 255, 255, 0.6), 0 0 7px rgba(235, 82, 82, 0.5);
+            -moz-box-shadow: inset 0 1px rgba(34, 25, 25, 0.2), 0 1px rgba(255, 255, 255, 0.6), 0 0 7px rgba(235, 82, 82, 0.5);
+            -webkit-box-shadow: inset 0 1px rgba(34, 25, 25, 0.2), 0 1px rgba(255, 255, 255, 0.6), 0 0 7px rgba(235, 82, 82, 0.5);
+        }
+
+/*----- shadow #09 -----*/
+.input {
+    display: block;
+    margin-bottom: 9px;
+    width: 580px;
+}
+
+    .input label {
+        display: inline-block;
+        width: 80px;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #444;
+        font-family: Arial, Tahoma, sans-serif;
+    }
+
+    .input .shadowfield {
+        position: relative;
+        width: 250px;
+        font-size: 17px;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-weight: normal;
+        background: #FFF;
+        color: #7c7c7c;
+        line-height: 1.4;
+        padding: 6px 12px;
+        outline: none;
+        transition: all 0.2s ease-in-out 0s;
+        -webkit-transition: all 0.2s ease-in-out 0s;
+        -moz-transition: all 0.2s ease-in-out 0s;
+        border: 1px #CCC solid;
+        box-shadow: 0 1px rgba(34, 25, 25, 0.2) inset, 0 1px #fff;
+    }
+
+        .input .shadowfield:focus {
+            border-color: #930;
+            background: #fff;
+            color: #5d5d5d;
+            box-shadow: inset 0 1px rgba(10, 96, 204, 0.2), 0 1px rgba(10, 96, 204, 0.6), 0 0 7px rgba(10, 96, 204, 0.5);
+            -moz-box-shadow: inset 0 1px rgba(10, 96, 204, 0.2), 0 1px rgba(10, 96, 204, 0.6), 0 0 7px rgba(10, 96, 204, 0.5);
+            -webkit-box-shadow: inset 0 1px rgba(10, 96, 204, 0.2), 0 1px rgba(10, 96, 204, 0.6), 0 0 7px rgba(10, 96, 204, 0.5);
+        }
+
+.corporateTieup h6 {
+    font-family: "Monotype Corsiva";
+    color: #b8b8b8;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 0 0 0 24px;
+}

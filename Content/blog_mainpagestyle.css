@@ -1,0 +1,1983 @@
+img {
+    max-width: 100%;
+}
+
+html, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+}
+
+
+
+.wrapper_bottom_blog_navigationbutton {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 10px 0px 10px !important;
+    float: left;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.wrapper_bottom_blog_navigationbutton a{
+    font-weight:normal;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'MyriadProSemibold';
+    src: url('../ErrorPage/HttpError404.html');
+    src: url('../ErrorPage/HttpError404.html') format('embedded-opentype'), url('../ErrorPage/HttpError404.html') format('woff'), url('../ErrorPage/HttpError404.html') format('truetype'), url('../ErrorPage/HttpError404.html#MyriadProSemiboldItalic') format('svg');
+}
+
+@font-face {
+    font-family: Tahoma, Geneva, sans-serif;
+    src: url('../ErrorPage/HttpError404.html');
+    src: url('../ErrorPage/HttpError404.html?#iefix') format('embedded-opentype'), url('../ErrorPage/HttpError404.html') format('woff'), url('../ErrorPage/HttpError404.html') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.wrapper_bottom_blog {
+    width: 982px;
+    height: 850px;
+    position: relative;
+    margin: 0px auto 0px;
+    padding: 0px;
+}
+
+.wrapper_bottom_blogleft {
+    width: 70%;
+    height: auto;
+    position: relative;
+    margin: 0px auto 0px;
+    padding: 0px;
+    float: left;
+}
+
+#top_blogheading {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 24px;
+    color: #C00;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    float: left;
+}
+
+.blogbottom_menu {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    float: left;
+}
+
+#blogbottom_menu_navigation {
+    position: relative;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    color: #e10000;
+    height: 30px;
+    text-align: left;
+    float: left !important;
+    padding-top: 0px;
+    font-size: 20px;
+}
+
+    #blogbottom_menu_navigation li {
+        color: #06F !important;
+    }
+
+    #blogbottom_menu_navigation a {
+        font-size: 16px;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: #06F;
+        text-decoration: none;
+    }
+
+        #blogbottom_menu_navigation a:hover {
+            color: #C00;
+        }
+
+.wrapper_bottom_bloglefttext {
+    width: 100%;
+    height:auto;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 10px 0px 10px !important;
+    float: left;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.blod_date {
+    width: 100%;
+    height: auto;
+    color: #c1c1c1;
+    padding: 10px 10px 0px 0px;
+    font-family: Tahoma, Geneva, sans-serif !important;
+    font-size: 12px;
+}
+
+.readmore_button {
+    width: 120px;
+    height: 37px;
+    text-align: center;
+    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+    padding: 10px 10px 10px 10px; /*add some padding to the inside of the button*/
+    background: #2673d2; /*the colour of the button*/
+    /*style the text*/
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Tahoma, Geneva, sans-serif !important;
+    border: none !important;
+    margin: 0px 0px 0px 0px !important;
+    list-style: none;
+    text-decoration: none;
+    float: right;
+}
+
+    .readmore_button a {
+        color: white;
+        text-decoration: none;
+    }
+    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+    .readmore_button:hover, input#gobutton:focus {
+        background-color: #e10000; /*make the background a little darker*/
+        /*reduce the drop shadow size to give a pushed button effect*/
+    }
+
+.blog_icon {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    float: left;
+}
+
+.blog_icon_left {
+    width: 70%;
+    height: 40px;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    float: left;
+}
+
+.horizentalrule {
+    width: 100%;
+    height: 1px;
+    margin: 150px 0px 0px 0px;
+    border: solid 1px #CCC;
+}
+
+.blog_icon_right {
+    width: 30%;
+    height: auto;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    padding-right: 8px;
+    float: right;
+}
+
+.blog_img {
+    float: left;
+    margin: 0px 10px 0px 0px;
+    height: 200px;
+    width: 200px;
+}
+ .blog_img a img {
+            padding:5px;
+        }
+
+.wrapper_bottom_blogright {
+    width: 30%;
+    height: auto;
+    position: relative;
+    background-color: #ffffff;
+    margin: 0px auto 0px;
+    padding: 0px;
+    float: left;
+    border: 1px solid rgb(242, 242, 242);
+    padding: 0px 4px 2px 0px;
+    background: rgb(242,242,242);
+    background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 47%, rgba(216,216,216,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(216,216,216,1)));
+    background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%);
+    background: -o-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%);
+    background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%);
+    background: linear-gradient(to bottom, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#d8d8d8',GradientType=0 );
+    box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+}
+
+
+.wrapper_bottom_bloglefttext_bottom {
+    width: 99%;
+    height: 190px;
+    position: relative;
+    margin: 120px 0px 0px 0px;
+    padding: 0px;
+    float: left;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.blod_date_bottom {
+    width: 100%;
+    height: 50px;
+    color: #c1c1c1;
+    padding: 10px 20px 18px 0px;
+    font-family: Tahoma, Geneva, sans-serif !important;
+    font-size: 12px;
+}
+
+.readmore_button_bottom {
+    width: 120px;
+    height: 37px;
+    text-align: center;
+    cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+    padding: 10px 0px 10px 0px; /*add some padding to the inside of the button*/
+    background: #2673d2; /*the colour of the button*/
+    /*style the text*/
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Tahoma, Geneva, sans-serif !important;
+    border: none !important;
+    margin: 94px 0px 0px 0px !important;
+    list-style: none;
+    text-decoration: none;
+    float: right;
+}
+
+    .readmore_button_bottom a {
+        color: white;
+        text-decoration: none;
+    }
+    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+    .readmore_button_bottom:hover, input#gobutton:focus {
+        background-color: #e10000; /*make the background a little darker*/
+        /*reduce the drop shadow size to give a pushed button effect*/
+    }
+
+.blog_icon_bottom {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    float: left;
+}
+
+.blog_icon_left_bottom {
+    width: 70%;
+    height: 40px;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    float: left;
+}
+
+.horizentalrule_bottom {
+    width: 100%;
+    height: 1px;
+    margin: 150px 0px 0px 0px;
+    border: solid 1px #CCC;
+}
+
+.blog_icon_right_bottom {
+    width: 30%;
+    height: 40px;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    float: left;
+}
+
+.blog_img_bottom {
+    float: left;
+    border: 5px #f5f3f3 solid;
+    margin: 0px 10px 10px 0px;
+}
+
+.top_paraheading {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 18px;
+    list-style: none;
+    line-height: 35px;
+    text-decoration: none !important;
+    padding: 0px;
+    float: left;
+    width: 100%;
+}
+
+.bottom_paraheading {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 18px;
+    list-style: none;
+    text-decoration: none !important;
+    padding-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+
+.wrapper_bottom_blogright_bottom {
+    width: 30%;
+    height: auto;
+    position: relative;
+    background-color: #ffffff;
+    margin: 0px auto 0px;
+    padding: 0px;
+    float: left;
+}
+
+
+/*--Community Pages--*/
+
+.community-header {
+    height: 250px;
+    width: 980px;
+    margin: 0px auto;
+    margin-top: -24px; /*border:1px solid #ccc;*/
+}
+
+.community-header-search {
+    width: 340px;
+    display: block;
+    float: right;
+    padding-top: 15px;
+}
+
+    .community-header-search h1 {
+        font-size: 32px;
+        color: #005aca;
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+
+    .community-header-search span {
+        font-size: 12px;
+        color: #999999;
+    }
+
+.community-header-search-div {
+    padding-top: 15px;
+}
+
+.community-header-search-box {
+    width: 170px;
+    height: 68px;
+    border: 1px solid #d2d2d2;
+    background: #fff url(../images/search-box.gif) no-repeat left center;
+    padding-left: 35px;
+    color: #969696;
+    margin-left: 55px;
+}
+
+.community-header-search-btn {
+    width: 108px;
+    height: 70px;
+    background: #005aca;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: 0px;
+    margin-top: -14px;
+    padding: 0px;
+    display: block;
+    float: right;
+    text-decoration: none;
+    line-height: 70px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+    .community-header-search-btn:hover {
+        width: 108px;
+        height: 70px;
+        background: #005aca;
+        color: #fff;
+        list-style: none;
+        text-decoration: none;
+    }
+
+.blog-paging-btn {
+    color: #005aca;
+    font-size: 18px;
+    font-weight: bold;
+    border: 0px;
+    margin-top: 0px;
+    margin-right: 10px;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+    .blog-paging-btn:hover {
+        list-style: none;
+        text-decoration: none;
+    }
+
+.floatL {
+    float: left;
+}
+
+.floatR {
+    float: right;
+}
+
+.horizontal_line_blog {
+    width: 99%;
+    height: 2px;
+    border-top: 1px solid #CCC;
+}
+
+.blog_cover h1 {
+    font-size: 26px;
+    color: #005aca;
+    font-weight: normal;
+    margin-top: 27px;
+    background: url(../images/com-head-bg.gif) right bottom no-repeat;
+    float: left;
+    padding-right: 20px;
+    line-height: 28px;
+}
+
+.blog_icon_right a {
+    float: right!important;
+}
+
+.blog_cover {
+    width: 980px;
+    height: 980px;
+    margin: 0px auto 0px;
+    padding: 0px;
+}
+
+.blog_rightsidebar {
+    width: 97%;
+    height: 650px;
+    background-color: #fbfbfb;
+    float: left;
+    margin: 10px 0px 0px 10px;
+}
+
+.blog_rightsidebarwhocare {
+    width: 97%;
+    height: 50px;
+    background-color: #969696;
+    float: left;
+    margin: 5px 0px 0px 5px;
+    color: #FFF;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.blog_rightsidebarfeatured {
+    width: 97%;
+    height: 40px;
+    float: left;
+    margin: 5px 0px 0px 6px;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: normal;
+    background: rgb(242,242,242); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 47%, rgba(216,216,216,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(216,216,216,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#d8d8d8',GradientType=0 ); /* IE6-9 */
+    box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+}
+
+.blog_rightsidebardoctor_cover {
+    width: 97%;
+    height: 100px;
+    float: left;
+    margin: 10px 0px 0px 10px;
+}
+
+.blog_rightsidebardoctor_left {
+    width: 30%;
+    height: 100px;
+    background-image: url(../ErrorPage/HttpError404.html);
+    background-repeat: no-repeat;
+    float: left;
+    margin: 0px 0px 0px 0px;
+}
+
+.blog_rightsidebardoctor_right {
+    width: 30%;
+    height: 100px;
+    float: left;
+    margin: 0px 0px 0px 10px;
+}
+
+.blog_rightsidebarposts {
+    width: 97%;
+    height: auto;
+    float: left;
+    margin: 10px 10px 0px 5px;
+    text-align: justify;
+    padding: 2px;
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+
+    .wrapper_bottom_blog {
+        width: 100%;
+        height: 850px !important;
+        position: relative;
+        margin: 0px auto 0px;
+        padding: 0px;
+    }
+
+    .wrapper_bottom_blogleft {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px auto 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    #top_blogheading {
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 24px;
+        color: #C00;
+        padding: 10px;
+        float: left;
+    }
+
+    .blogbottom_menu {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .top_paraheading {
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 18px;
+        list-style: none;
+        text-decoration: none !important;
+        padding: 0px;
+        float: left;
+        width: 100%;
+    }
+
+    .bottom_paraheading {
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 18px;
+        list-style: none;
+        text-decoration: none !important;
+        padding: 0px;
+        float: left;
+        width: 100%;
+    }
+
+    #blogbottom_menu_navigation {
+        position: relative;
+        top: 10;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        color: #e10000;
+        height: 30px;
+        text-align: left;
+        float: left !important;
+        padding-top: 0px;
+        font-size: 20px;
+    }
+
+        #blogbottom_menu_navigation li {
+            color: #06F !important;
+        }
+
+        #blogbottom_menu_navigation a {
+            font-size: 16px;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: #06F;
+            text-decoration: none;
+        }
+
+            #blogbottom_menu_navigation a:hover {
+                color: #C00;
+            }
+
+    .wrapper_bottom_bloglefttext {
+        width: 100%;
+        height:auto;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .blod_date {
+        width: 100%;
+        height: auto !important;
+        color: #c1c1c1;
+        padding: 10px 0px 10px 0px;
+        font-family: Tahoma, Geneva, sans-serif !important;
+        font-size: 12px;
+    }
+
+    .readmore_button {
+        width: 120px;
+        height: 37px;
+        text-align: center;
+        cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+        padding: 10px 0px 10px 0px; /*add some padding to the inside of the button*/
+        background: #2673d2; /*the colour of the button*/
+        /*style the text*/
+        color: #FFF;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: Tahoma, Geneva, sans-serif !important;
+        border: none !important;
+        margin: 94px 0px 0px 0px !important;
+        list-style: none;
+        text-decoration: none;
+        float: right;
+    }
+
+        .readmore_button a {
+            color: white;
+            text-decoration: none;
+        }
+        /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+        .readmore_button:hover, input#gobutton:focus {
+            background-color: #e10000; /*make the background a little darker*/
+            /*reduce the drop shadow size to give a pushed button effect*/
+        }
+
+    .blog_icon {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .blog_icon_left {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .horizentalrule {
+        width: 100%;
+        height: 1px;
+        margin: 150px 0px 0px 0px;
+        border: solid 1px #CCC;
+    }
+
+    .blog_icon_right {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding-right: 8px;
+        float: left;
+    }
+
+    .blog_img {
+        float: left;
+    margin: 0px 10px 0px 0px;
+    height: 200px;
+    width: 200px;
+    }
+
+     .blog_img a img {
+            padding:5px;
+        }
+
+    .wrapper_bottom_blogright {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        background-color: #ffffff;
+        margin: 0px auto 0px;
+        padding: 0px;
+        float: left;
+        border: 1px solid rgb(242, 242, 242);
+        padding: 0px 4px 2px 0px;
+        background: rgb(242,242,242);
+        background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 47%, rgba(216,216,216,1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(216,216,216,1)));
+        background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%);
+        background: -o-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%);
+        background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%);
+        background: linear-gradient(to bottom, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#d8d8d8',GradientType=0 );
+        box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+        -moz-box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+        -webkit-box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+    }
+
+
+    .wrapper_bottom_bloglefttext_bottom {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 20px 0px 0px 0px;
+        padding: 10px;
+        float: left;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .blod_date_bottom {
+        width: 200px;
+        height: 40px;
+        color: #c1c1c1;
+        padding: 10px 0px 10px 0px;
+        font-family: Tahoma, Geneva, sans-serif !important;
+        font-size: 12px;
+    }
+
+    .readmore_button_bottom {
+        width: 120px;
+        height: 37px;
+        text-align: center;
+        cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+        padding: 10px 0px 10px 0px; /*add some padding to the inside of the button*/
+        background: #2673d2; /*the colour of the button*/
+        /*style the text*/
+        color: #FFF;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: Tahoma, Geneva, sans-serif !important;
+        border: none !important;
+        margin: 94px 0px 0px 0px !important;
+        list-style: none;
+        text-decoration: none;
+        float: right;
+    }
+
+        .readmore_button_bottom a {
+            color: white;
+            text-decoration: none;
+        }
+        /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+        .readmore_button_bottom:hover, input#gobutton:focus {
+            background-color: #e10000; /*make the background a little darker*/
+            /*reduce the drop shadow size to give a pushed button effect*/
+        }
+
+    .blog_icon_bottom {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .blog_icon_left_bottom {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .horizentalrule_bottom {
+        width: 100%;
+        height: 1px;
+        margin: 150px 0px 0px 0px;
+        border: solid 1px #CCC;
+    }
+
+    .blog_icon_right_bottom {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .blog_img_bottom {
+        float: left;
+        border: 5px #f5f3f3 solid;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .wrapper_bottom_blogright_bottom {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        background-color: #ffffff;
+        margin: 0px auto 0px;
+        padding: 0px;
+        float: left;
+    }
+
+
+    /*--Community Pages--*/
+
+    .community-header {
+        height: 250px;
+        width: 980px;
+        margin: 0px auto;
+        margin-top: -24px; /*border:1px solid #ccc;*/
+    }
+
+    .community-header-search {
+        width: 340px;
+        display: block;
+        float: right;
+        padding-top: 15px;
+    }
+
+        .community-header-search h1 {
+            font-size: 32px;
+            color: #005aca;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        .community-header-search span {
+            font-size: 12px;
+            color: #999999;
+        }
+
+    .community-header-search-div {
+        padding-top: 15px;
+    }
+
+    .community-header-search-box {
+        width: 170px;
+        height: 68px;
+        border: 1px solid #d2d2d2;
+        background: #fff url(../images/search-box.gif) no-repeat left center;
+        padding-left: 35px;
+        color: #969696;
+        margin-left: 45px;
+    }
+
+    .community-header-search-btn {
+        width: 108px;
+        height: 70px;
+        background: #005aca;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        border: 0px;
+        margin-top: -14px;
+        margin-right: 10px;
+        padding: 0px;
+        display: block;
+        float: right;
+        text-decoration: none;
+        line-height: 70px;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+        .community-header-search-btn:hover {
+            width: 108px;
+            height: 70px;
+            background: #005aca;
+            color: #fff;
+            list-style: none;
+            text-decoration: none;
+        }
+
+    .blog-paging-btn {
+        color: #005aca;
+        font-size: 18px;
+        font-weight: bold;
+        border: 0px;
+        margin-top: 0px;
+        margin-right: 10px;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 0px;
+        cursor: pointer;
+    }
+
+        .blog-paging-btn:hover {
+            list-style: none;
+            text-decoration: none;
+        }
+
+    .blog_rightsidebar {
+        width: 98%;
+        height: auto !important;
+        background-color: #fbfbfb;
+        float: left;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .blog_rightsidebarwhocare {
+        width: 97%;
+        height: 50px;
+        background-color: #969696;
+        float: left;
+        margin: 5px 0px 0px 5px;
+        color: #FFF;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 10px;
+        font-weight: bold;
+    }
+
+    .blog_rightsidebarfeatured {
+        width: 97%;
+        height: 40px;
+        float: left;
+        margin: 5px 0px 0px 5px;
+        color: #000;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 10px;
+        font-weight: normal;
+        background: rgb(242,242,242); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 47%, rgba(216,216,216,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(216,216,216,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#d8d8d8',GradientType=0 ); /* IE6-9 */
+        box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+        -moz-box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+        -webkit-box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+    }
+
+    .blog_rightsidebardoctor_cover {
+        width: 97%;
+        height: 100px;
+        float: left;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .blog_rightsidebardoctor_left {
+        width: 30%;
+        height: 100px;
+        background-image: url(../ErrorPage/HttpError404.html);
+        background-repeat: no-repeat;
+        float: left;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .blog_rightsidebardoctor_right {
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .blog_rightsidebarposts {
+        width: 97%;
+        height: auto;
+        float: left;
+        margin: 10px 0px 0px 5px;
+        text-align: justify;
+        padding: 2px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .wrapper_bottom_blog {
+        width: 100%;
+        height: 850px !important;
+        position: relative;
+        margin: 0px auto 0px;
+        padding: 0px;
+    }
+
+    .wrapper_bottom_blogleft {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px auto 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    #top_blogheading {
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 24px;
+        color: #C00;
+        padding: 10px;
+        float: left;
+    }
+
+    .blogbottom_menu {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .top_paraheading {
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 18px;
+        list-style: none;
+        text-decoration: none !important;
+        padding: 0px;
+        float: left;
+        width: 100%;
+    }
+
+    .bottom_paraheading {
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 18px;
+        list-style: none;
+        text-decoration: none !important;
+        padding: 0px;
+        float: left;
+        width: 100%;
+    }
+
+    #blogbottom_menu_navigation {
+        position: relative;
+        top: 10;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        color: #e10000;
+        height: 30px;
+        text-align: left;
+        float: left !important;
+        padding-top: 0px;
+        font-size: 20px;
+    }
+
+        #blogbottom_menu_navigation li {
+            color: #06F !important;
+        }
+
+        #blogbottom_menu_navigation a {
+            font-size: 16px;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: #06F;
+            text-decoration: none;
+        }
+
+            #blogbottom_menu_navigation a:hover {
+                color: #C00;
+            }
+
+    .wrapper_bottom_bloglefttext {
+        width: 100%;
+      height:auto;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .blod_date {
+        width: 100%;
+        height: auto !important;
+        color: #c1c1c1;
+        padding: 10px 0px 10px 0px;
+        font-family: Tahoma, Geneva, sans-serif !important;
+        font-size: 12px;
+    }
+
+    .readmore_button {
+        width: 120px;
+        height: 37px;
+        text-align: center;
+        cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+        padding: 10px 0px 10px 0px; /*add some padding to the inside of the button*/
+        background: #2673d2; /*the colour of the button*/
+        /*style the text*/
+        color: #FFF;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: Tahoma, Geneva, sans-serif !important;
+        border: none !important;
+        margin: 94px 0px 0px 0px !important;
+        list-style: none;
+        text-decoration: none;
+        float: right;
+    }
+
+        .readmore_button a {
+            color: white;
+            text-decoration: none;
+        }
+        /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+        .readmore_button:hover, input#gobutton:focus {
+            background-color: #e10000; /*make the background a little darker*/
+            /*reduce the drop shadow size to give a pushed button effect*/
+        }
+
+    .blog_icon {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .blog_icon_left {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .horizentalrule {
+        width: 100%;
+        height: 1px;
+        margin: 150px 0px 0px 0px;
+        border: solid 1px #CCC;
+    }
+
+    .blog_icon_right {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding-right: 8px;
+        float: left;
+    }
+
+    .blog_img {
+        float: left;
+    margin: 0px 10px 0px 0px;
+   height: 200px;
+    width: 200px;
+    }
+        .blog_img a img {
+            padding:5px;
+        }
+    .wrapper_bottom_blogright {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        background-color: #ffffff;
+        margin: 0px auto 0px;
+        padding: 0px;
+        float: left;
+        border: 1px solid rgb(242, 242, 242);
+        padding: 0px 4px 2px 0px;
+        background: rgb(242,242,242);
+        background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 47%, rgba(216,216,216,1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(216,216,216,1)));
+        background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%);
+        background: -o-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%);
+        background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%);
+        background: linear-gradient(to bottom, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#d8d8d8',GradientType=0 );
+        box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+        -moz-box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+        -webkit-box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+    }
+
+
+    .wrapper_bottom_bloglefttext_bottom {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 20px 0px 0px 0px;
+        padding: 10px;
+        float: left;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .blod_date_bottom {
+        width: 200px;
+        height: 40px;
+        color: #c1c1c1;
+        padding: 10px 0px 10px 0px;
+        font-family: Tahoma, Geneva, sans-serif !important;
+        font-size: 12px;
+    }
+
+    .readmore_button_bottom {
+        width: 120px;
+        height: 37px;
+        text-align: center;
+        cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+        padding: 10px 0px 10px 0px; /*add some padding to the inside of the button*/
+        background: #2673d2; /*the colour of the button*/
+        /*style the text*/
+        color: #FFF;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: Tahoma, Geneva, sans-serif !important;
+        border: none !important;
+        margin: 94px 0px 0px 0px !important;
+        list-style: none;
+        text-decoration: none;
+        float: right;
+    }
+
+        .readmore_button_bottom a {
+            color: white;
+            text-decoration: none;
+        }
+        /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+        .readmore_button_bottom:hover, input#gobutton:focus {
+            background-color: #e10000; /*make the background a little darker*/
+            /*reduce the drop shadow size to give a pushed button effect*/
+        }
+
+    .blog_icon_bottom {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .blog_icon_left_bottom {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .horizentalrule_bottom {
+        width: 100%;
+        height: 1px;
+        margin: 150px 0px 0px 0px;
+        border: solid 1px #CCC;
+    }
+
+    .blog_icon_right_bottom {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .blog_img_bottom {
+        float: left;
+        border: 5px #f5f3f3 solid;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .wrapper_bottom_blogright_bottom {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        background-color: #ffffff;
+        margin: 0px auto 0px;
+        padding: 0px;
+        float: left;
+    }
+
+
+    /*--Community Pages--*/
+
+    .community-header {
+        height: 250px;
+        width: 980px;
+        margin: 0px auto;
+        margin-top: -24px; /*border:1px solid #ccc;*/
+    }
+
+    .community-header-search {
+        width: 340px;
+        display: block;
+        float: right;
+        padding-top: 15px;
+    }
+
+        .community-header-search h1 {
+            font-size: 32px;
+            color: #005aca;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        .community-header-search span {
+            font-size: 12px;
+            color: #999999;
+        }
+
+    .community-header-search-div {
+        padding-top: 15px;
+    }
+
+    .community-header-search-box {
+        width: 170px;
+        height: 68px;
+        border: 1px solid #d2d2d2;
+        background: #fff url(../images/search-box.gif) no-repeat left center;
+        padding-left: 35px;
+        color: #969696;
+        margin-left: 45px;
+    }
+
+    .community-header-search-btn {
+        width: 108px;
+        height: 70px;
+        background: #005aca;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        border: 0px;
+        margin-top: -14px;
+        margin-right: 10px;
+        padding: 0px;
+        display: block;
+        float: right;
+        text-decoration: none;
+        line-height: 70px;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+        .community-header-search-btn:hover {
+            width: 108px;
+            height: 70px;
+            background: #005aca;
+            color: #fff;
+            list-style: none;
+            text-decoration: none;
+        }
+
+    .blog-paging-btn {
+        color: #005aca;
+        font-size: 18px;
+        font-weight: bold;
+        border: 0px;
+        margin-top: 0px;
+        margin-right: 10px;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 0px;
+        cursor: pointer;
+    }
+
+        .blog-paging-btn:hover {
+            list-style: none;
+            text-decoration: none;
+        }
+
+    .blog_rightsidebar {
+        width: 98%;
+        height: auto !important;
+        background-color: #fbfbfb;
+        float: left;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .blog_rightsidebarwhocare {
+        width: 97%;
+        height: 50px;
+        background-color: #969696;
+        float: left;
+        margin: 5px 0px 0px 5px;
+        color: #FFF;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 10px;
+        font-weight: bold;
+    }
+
+    .blog_rightsidebarfeatured {
+        width: 97%;
+        height: 40px;
+        float: left;
+        margin: 5px 0px 0px 5px;
+        color: #000;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 10px;
+        font-weight: normal;
+        background: rgb(242,242,242); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 47%, rgba(216,216,216,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(216,216,216,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#d8d8d8',GradientType=0 ); /* IE6-9 */
+        box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+        -moz-box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+        -webkit-box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+    }
+
+    .blog_rightsidebardoctor_cover {
+        width: 97%;
+        height: 100px;
+        float: left;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .blog_rightsidebardoctor_left {
+        width: 30%;
+        height: 100px;
+        background-image: url(../ErrorPage/HttpError404.html);
+        background-repeat: no-repeat;
+        float: left;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .blog_rightsidebardoctor_right {
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .blog_rightsidebarposts {
+        width: 97%;
+        height: auto;
+        float: left;
+        margin: 10px 0px 0px 5px;
+        text-align: justify;
+        padding: 2px;
+    }
+}
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+
+    .wrapper_bottom_blog {
+        width: 100%;
+        height: 850px !important;
+        position: relative;
+        margin: 0px auto 0px;
+        padding: 0px;
+    }
+
+    .wrapper_bottom_blogleft {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px auto 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    #top_blogheading {
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 24px;
+        color: #C00;
+        padding: 10px;
+        float: left;
+    }
+
+    .blogbottom_menu {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .top_paraheading {
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 18px;
+        list-style: none;
+        text-decoration: none !important;
+        padding: 0px;
+        float: left;
+        width: 100%;
+    }
+
+    .bottom_paraheading {
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 18px;
+        list-style: none;
+        text-decoration: none !important;
+        padding: 0px;
+        float: left;
+        width: 100%;
+    }
+
+    #blogbottom_menu_navigation {
+        position: relative;
+        top: 10;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        color: #e10000;
+        height: 30px;
+        text-align: left;
+        float: left !important;
+        padding-top: 0px;
+        font-size: 20px;
+    }
+
+        #blogbottom_menu_navigation li {
+            color: #06F !important;
+        }
+
+        #blogbottom_menu_navigation a {
+            font-size: 16px;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: #06F;
+            text-decoration: none;
+        }
+
+            #blogbottom_menu_navigation a:hover {
+                color: #C00;
+            }
+
+    .wrapper_bottom_bloglefttext {
+        width: 100%;
+        height:auto;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding:10px 10px 0px 10px;
+        float: left;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .blod_date {
+        width: 100%;
+        height: auto !important;
+        color: #c1c1c1;
+        padding: 10px 0px 10px 0px;
+        font-family: Tahoma, Geneva, sans-serif !important;
+        font-size: 12px;
+    }
+
+    .readmore_button {
+        width: 120px;
+        height: 37px;
+        text-align: center;
+        cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+        padding: 10px 0px 10px 0px; /*add some padding to the inside of the button*/
+        background: #2673d2; /*the colour of the button*/
+        /*style the text*/
+        color: #FFF;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: Tahoma, Geneva, sans-serif !important;
+        border: none !important;
+        margin: 94px 0px 0px 0px !important;
+        list-style: none;
+        text-decoration: none;
+        float: right;
+    }
+
+        .readmore_button a {
+            color: white;
+            text-decoration: none;
+        }
+        /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+        .readmore_button:hover, input#gobutton:focus {
+            background-color: #e10000; /*make the background a little darker*/
+            /*reduce the drop shadow size to give a pushed button effect*/
+        }
+
+    .blog_icon {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .blog_icon_left {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .horizentalrule {
+        width: 100%;
+        height: 1px;
+        margin: 150px 0px 0px 0px;
+        border: solid 1px #CCC;
+    }
+
+    .blog_icon_right {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding-right: 8px;
+        float: left;
+    }
+
+    .blog_img {
+        float: left;
+    margin: 0px 10px 0px 0px;
+    height: 200px;
+    width: 200px;
+    }
+     .blog_img a img {
+            padding:5px;
+        }
+
+    .wrapper_bottom_blogright {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        background-color: #ffffff;
+        margin: 0px auto 0px;
+        padding: 0px;
+        float: left;
+        border: 1px solid rgb(242, 242, 242);
+        padding: 0px 4px 2px 0px;
+        background: rgb(242,242,242);
+        background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 47%, rgba(216,216,216,1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(216,216,216,1)));
+        background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%);
+        background: -o-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%);
+        background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%);
+        background: linear-gradient(to bottom, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#d8d8d8',GradientType=0 );
+        box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+        -moz-box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+        -webkit-box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+    }
+
+
+    .wrapper_bottom_bloglefttext_bottom {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 20px 0px 0px 0px;
+        padding: 10px !important;
+        float: left;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .blod_date_bottom {
+        width: 200px;
+        height: 40px;
+        color: #c1c1c1;
+        padding: 10px 0px 10px 0px;
+        font-family: Tahoma, Geneva, sans-serif !important;
+        font-size: 12px;
+    }
+
+    .readmore_button_bottom {
+        width: 120px;
+        height: 37px;
+        text-align: center;
+        cursor: pointer; /*forces the cursor to change to a hand when the button is hovered*/
+        padding: 10px 0px 10px 0px; /*add some padding to the inside of the button*/
+        background: #2673d2; /*the colour of the button*/
+        /*style the text*/
+        color: #FFF;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: Tahoma, Geneva, sans-serif !important;
+        border: none !important;
+        margin: 94px 0px 0px 0px !important;
+        list-style: none;
+        text-decoration: none;
+        float: right;
+    }
+
+        .readmore_button_bottom a {
+            color: white;
+            text-decoration: none;
+        }
+        /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+        .readmore_button_bottom:hover, input#gobutton:focus {
+            background-color: #e10000; /*make the background a little darker*/
+            /*reduce the drop shadow size to give a pushed button effect*/
+        }
+
+    .blog_icon_bottom {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .blog_icon_left_bottom {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .horizentalrule_bottom {
+        width: 100%;
+        height: 1px;
+        margin: 150px 0px 0px 0px;
+        border: solid 1px #CCC;
+    }
+
+    .blog_icon_right_bottom {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+        float: left;
+    }
+
+    .blog_img_bottom {
+        float: left;
+        border: 5px #f5f3f3 solid;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .wrapper_bottom_blogright_bottom {
+        width: 100%;
+        height: auto !important;
+        position: relative;
+        background-color: #ffffff;
+        margin: 0px auto 0px;
+        padding: 0px;
+        float: left;
+    }
+
+
+    /*--Community Pages--*/
+
+    .community-header {
+        height: 250px;
+        width: 980px;
+        margin: 0px auto;
+        margin-top: -24px; /*border:1px solid #ccc;*/
+    }
+
+    .community-header-search {
+        width: 340px;
+        display: block;
+        float: right;
+        padding-top: 15px;
+    }
+
+        .community-header-search h1 {
+            font-size: 32px;
+            color: #005aca;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        .community-header-search span {
+            font-size: 12px;
+            color: #999999;
+        }
+
+    .community-header-search-div {
+        padding-top: 15px;
+    }
+
+    .community-header-search-box {
+        width: 170px;
+        height: 68px;
+        border: 1px solid #d2d2d2;
+        background: #fff url(../images/search-box.gif) no-repeat left center;
+        padding-left: 35px;
+        color: #969696;
+        margin-left: 45px;
+    }
+
+    .community-header-search-btn {
+        width: 108px;
+        height: 70px;
+        background: #005aca;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        border: 0px;
+        margin-top: -14px;
+        margin-right: 10px;
+        padding: 0px;
+        display: block;
+        float: right;
+        text-decoration: none;
+        line-height: 70px;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+        .community-header-search-btn:hover {
+            width: 108px;
+            height: 70px;
+            background: #005aca;
+            color: #fff;
+            list-style: none;
+            text-decoration: none;
+        }
+
+    .blog-paging-btn {
+        color: #005aca;
+        font-size: 18px;
+        font-weight: bold;
+        border: 0px;
+        margin-top: 0px;
+        margin-right: 10px;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 0px;
+        cursor: pointer;
+    }
+
+        .blog-paging-btn:hover {
+            list-style: none;
+            text-decoration: none;
+        }
+
+
+    .blog_rightsidebar {
+        width: 98%;
+        height: auto !important;
+        background-color: #fbfbfb;
+        float: left;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .blog_rightsidebarwhocare {
+        width: 97%;
+        height: 50px;
+        background-color: #969696;
+        float: left;
+        margin: 5px 0px 0px 5px;
+        color: #FFF;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 10px;
+        font-weight: bold;
+    }
+
+    .blog_rightsidebarfeatured {
+        width: 97%;
+        height: 40px;
+        float: left;
+        margin: 5px 0px 0px 5px;
+        color: #000;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 10px;
+        font-weight: normal;
+        background: rgb(242,242,242); /* Old browsers */
+        background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(246,246,246,1) 47%, rgba(216,216,216,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(216,216,216,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom, rgba(242,242,242,1) 0%,rgba(246,246,246,1) 47%,rgba(216,216,216,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#d8d8d8',GradientType=0 ); /* IE6-9 */
+        box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+        -moz-box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+        -webkit-box-shadow: 0px 0px 1px 1px rgba(119, 119, 119, 0.75);
+    }
+
+    .blog_rightsidebardoctor_cover {
+        width: 97%;
+        height: 100px;
+        float: left;
+        margin: 10px 0px 0px 0px;
+    }
+
+    .blog_rightsidebardoctor_left {
+        width: 30%;
+        height: 100px;
+        background-image: url(../ErrorPage/HttpError404.html);
+        background-repeat: no-repeat;
+        float: left;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .blog_rightsidebardoctor_right {
+        width: 30%;
+        height: 100px;
+        float: left;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .blog_rightsidebarposts {
+        width: 97%;
+        height: auto;
+        float: left;
+        margin: 10px 0px 0px 5px;
+        text-align: justify;
+        padding: 2px;
+    }
+}
